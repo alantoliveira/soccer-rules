@@ -19,13 +19,11 @@ endif::basebackend-html[]
 
 //TODO: revert to official Soccer rules for final release
 Estas são as regras oficiais  da categoria RoboCupJunior Soccer. Elas são divulgadas pelo Comitê da RoboCupJunior Soccer League. A versão em inglês dessas regras tem prioridade sobre qualquer tradução.
-Esta versão é portiguês é uma traduação e adaptação da regra oficial.
+Esta versão é português é uma tradução e adaptação da regra oficial.
 
 As equipes são aconselhadas a verificar o site RoboCupJunior Soccer
-https://junior.forum.robocup.org/ para obter os procedimentos e requisitos para a competição internacional e com os organizadores de torneios locais para competições locais, regionais e super-regionais. Cada equipe é responsável por verificar a versão mais recente das regras antes da competição. {Equipes devem solicitar esclarecimentos no Fórum sempre que necessário.}
-footnote:[The current version of these rules can be found at
-https://robocupjuniortc.github.io/soccer-rules/master/rules.html in HTML form
-and at https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
+https://junior.forum.robocup.org/ para obter os procedimentos e requisitos para a competição internacional e com os organizadores de torneios locais para competições locais, regionais e super-regionais. Cada equipe é responsável por verificar a versão mais recente das regras antes da competição. {++Equipes devem solicitar esclarecimentos no Fórum sempre que necessário.++}
+footnote:[A versão atual dessas regras pode ser encontrada em https://robocupjuniortc.github.io/soccer-rules/master/rules.html em formato HTML e em https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
 form.]
 
 [title="Duas equipes de dois robôs com uma bola laranja em um campo de futebol RoboCupJunior."]
@@ -130,7 +128,7 @@ A única exceção para segurar é o uso de um tambor giratório (um "driblador"
 
 Outros jogadores devem ter acesso à bola.
 
-{A bola precisa ficar dentro dos limites do campo, conforme definido pelas paredes. Se um robô mover a bola para fora do campo (ou seja, além das paredes ou acima de sua altura), ela será considerada danificada. (<<damaged-robots>>)++}
+{++A bola precisa ficar dentro dos limites do campo, conforme definido pelas paredes. Se um robô mover a bola para fora do campo (ou seja, além das paredes ou acima de sua altura), ela será considerada danificada. (Robôs danificados)++}
 
 [[scoring]]
 === Pontuação
@@ -155,7 +153,7 @@ Se um gol for marcado como resultado de uma situação de "empurrão", ele não 
 
 A falta de progresso ocorre se não houver progresso no jogo por um período de tempo razoável e a situação provavelmente não mudará. Situações típicas de falta de progresso são quando a bola está presa entre os robôs, quando não há mudança nas posições da bola e do robô, ou quando a bola está além da detecção ou capacidade de alcance de todos os robôs no campo.
 
-Após uma contagem visível e alta footnote:[usually a count of three],
+Após uma contagem visível e alta footnote:[geralmente uma contagem de três],
 um árbitro informará `*falta de pregresso*` e moverá a bola para o ponto neutro desocupado mais próximo. Se isso não resolver a falta de progresso, o árbitro pode mover a bola para um ponto neutro diferente.
 
 [[out-of-bounds]]
@@ -173,7 +171,7 @@ Um árbitro pode dispensar a penalidade se o robô for acidentalmente empurrado 
 A bola pode sair e voltar para o campo de jogo. O árbitro chama
 `*fora de alcance*`, e moverá a bola para o ponto neutro desocupado mais próximo quando ocorrer uma das seguintes condições:
 
-1. a bola permanece fora do campo de jogo por muito tempo, após uma contagem visível e alta footnote:[usually a count of three],
+1. a bola permanece fora do campo de jogo por muito tempo, após uma contagem visível e alta footnote:[geralmente uma contagem de três],
 
 2. algum dos robôs não conseguir devolvê-lo ao campo de jogo (sem que todo o corpo saia do campo de jogo) ou
 
@@ -262,7 +260,7 @@ Não é permitido o uso de controle remoto de qualquer tipo durante a partida. O
 === Comunicação
 
 Os robôs não podem usar nenhum tipo de comunicação durante o jogo, a menos que a comunicação entre os robôs seja via Bluetooth classe 2 ou classe 3
-footnote:[range shorter than 20 meters] ou qualquer outro dispositivo que se comunique usando o protocolo 802.15.4 (por exemplo, ZigBee e XBee).
+footnote:[alcance inferior a 20 metros] ou qualquer outro dispositivo que se comunique usando o protocolo 802.15.4 (por exemplo, ZigBee e XBee).
 
 As equipes são responsáveis por sua comunicação. A disponibilidade de frequências não pode ser garantida.
 
@@ -339,9 +337,9 @@ As paredes interiores e de cada baliza são de cor mate, uma baliza amarela e a 
 [[floor]]
 === Piso
 
-{~~O piso é composto por carpete verde escuro sobre uma superfície dura e nivelada~>O piso é composto por carpete verde idealmente de tom mais escuro sobre uma superfície dura e nivelada. As equipes devem estar preparadas para se ajustar a diferentes níveis de contraste entre o tapete verde e as linhas, pois alguns eventos podem ser restritos ao uso de tons mais claros de verde~~} Todas as {~~linhas retas >linhas ~} no campo devem ser { ~ pintadas >pintado, marcado com fita adesiva ou instalado como carpete branco e ser um pouco resistente a rasgar ou rasgar.~~} {~~e ter uma largura de 20 mm.~>As linhas devem ter uma largura de 20 mm (±10%).~~}
+{~~O piso é composto por carpete verde escuro sobre uma superfície dura e nivelada~>O piso é composto por carpete verde idealmente de tom mais escuro sobre uma superfície dura e nivelada. As equipes devem estar preparadas para se ajustar a diferentes níveis de contraste entre o tapete verde e as linhas, pois alguns eventos podem ser restritos ao uso de tons mais claros de verde~~} Todas as {~~linhas retas ~>linhas~~} no campo devem ser {~~pintadas ~>pintadas, marcadas com fita adesiva ou instaladas como carpete branco e ser um pouco resistente a rasgar ou rasgar.~~} {~~e ter uma largura de 20 mm.~>As linhas devem ter uma largura de 20 mm (±10%).~~}
 
-É impraticável definir restrições internacionais para carpetes além de ser {~~verde escuro >verde~}. No espírito da competição, as equipes devem projetar robôs para serem tolerantes ou adaptáveis ​​a diferentes fibras, texturas, construção, densidade, { ~e >tons e~~} desenhos de tapetes, especialmente quando competindo entre diferentes regiões. As equipes são encorajadas a visitar os recursos regionais ou entrar em contato com o Comitê de Organização Local para obter sugestões se desejarem construir seu(s) próprio(s) campo(s) de prática.
+É impraticável definir restrições internacionais para carpetes além de ser {~~verde escuro ~>verde~~}. No espírito da competição, as equipes devem projetar robôs para serem tolerantes ou adaptáveis ​​a diferentes fibras, texturas, construção, densidade, {~~e ~>tons e~~} desenhos de tapetes, especialmente quando competindo entre diferentes regiões. As equipes são encorajadas a visitar os recursos regionais ou entrar em contato com o Comitê de Organização Local para obter sugestões se desejarem construir seu(s) próprio(s) campo(s) de prática.
 
 [[neutral-spots]]
 === Pontos Neutros
@@ -378,7 +376,7 @@ image:media/SoccerFieldDrawings.png[image,scaledwidth=90.0%]
 == BOLA
 
 [[specification-for-soccer-lightweight-ball]]
- === Especificação para Bola da categoria Soccer Lightweight
+=== Especificação para Bola da categoria Soccer Lightweight
 
 Veja <<technical-specification-for-pulsed-soccer-ball>>.
 
@@ -431,7 +429,7 @@ O entendimento de que quaisquer desenvolvimentos tecnológicos e curriculares de
 
 Espera-se que todos os participantes, alunos, mentores e pais respeitem a missão da RoboCupJunior.
 
-* _Não é se você ganha ou perde, mas quanto você aprende que conta!_ *
+*_Não é se você ganha ou perde, mas quanto você aprende que conta!_*
 
 [[violations-disqualification]]
 === Violações / Desqualificação
@@ -482,7 +480,7 @@ Cada competição RoboCupJunior pode ter os seus próprios estatutos regulamenta
 De acordo com a regra 3.8 das Regras do Futebol RoboCupJunior, cada liga tem seus próprios regulamentos adicionais. Eles se tornam parte das regras.
 
 Para a RoboCupJunior, existem duas sub-ligas da seguinte forma
-footnote:[biggest differences are described in <<dimensions>>]:
+footnote:[maiores diferenças são descritas na <<dimensions>>]:
 
 * Soccer Lightweight
 * Soccer Open
@@ -490,8 +488,7 @@ footnote:[biggest differences are described in <<dimensions>>]:
 Todos os membros da equipe precisam estar dentro da faixa etária especificada nas Regras Gerais do RoboCupJunior, que podem ser encontradas em
 http://junior.robocup.org/robocupjunior-general-rules/.
 
-Conforme descrito na <<specification-for-soccer-lightweight-ball>> e
-<<specification-for-soccer-open-ball>>,  as partidas na subliga Soccer Open são conduzidas usando uma bola passiva, enquanto as partidas na subliga Soccer Lightweight liga são jogados com a bola IR.
+Conforme descrito na  <<specification-for-soccer-lightweight-ball>> e <<specification-for-soccer-open-ball>>,  as partidas na subliga Soccer Open são conduzidas usando uma bola passiva, enquanto as partidas na subliga Soccer Lightweight liga são jogados com a bola IR.
 
 [[regulations]]
 === Regulamentos
@@ -510,20 +507,20 @@ Os robôs serão medidos na posição vertical com todas as partes estendidas. A
 |tensão | 15.0 V ^[3]^ ^[4]^ | 12.0 V ^[3]^ ^[4]^ +
 |===
 
-DICA: [0] O robô deve caber {++suavemente++} em um cilindro deste diâmetro
+TIP: [0] O robô deve caber {++suavemente++} em um cilindro deste diâmetro
 
-DICA: [1] A alça e os marcadores superiores de um robô podem exceder a altura.
+TIP: [1] A alça e os marcadores superiores de um robô podem exceder a altura.
 
-DICA: [2] O peso do robô inclui o da alça.
+TIP: [2] O peso do robô inclui o da alça.
 
-IMPORTANTE: [3] Encorajamos *fortemente* as equipes a incluir circuitos de proteção para baterias à base de lítio
+IMPORTANT: [3] Encorajamos *fortemente* as equipes a incluir circuitos de proteção para baterias à base de lítio
 
-NOTA: [4] Os limites de tensão referem-se aos *valores nominais*, serão tolerados desvios na fonte de alimentação devido ao fato de estar carregado.
+NOTE: [4] Os limites de tensão referem-se aos *valores nominais*, serão tolerados desvios na fonte de alimentação devido ao fato de estar carregado.
 
 A zona de captura de bola é definida como qualquer espaço interno criado quando uma aresta reta é colocada nos pontos salientes de um robô. Isso significa que a bola não deve entrar no casco convexo de um robô além da profundidade especificada. Além disso, deve ser possível que outro robô tome posse da bola.
 
 [[regulations-inference-in-lightweight]]
-====  Interferência infravermelha em na categoria Lightweight
+====  Interferência infravermelha na categoria Lightweight
 
 {~~No Lightweight, o robô não deve emitir luz infravermelha.~>Componentes projetados para emitir IR (por exemplo, ToF, LiDAR, sensores de distância IR, LEDs IR/LASERs etc.) não são permitidos e os organizadores do torneio exigirão que tais dispositivos sejam removido ou coberto.~~}
 
@@ -534,7 +531,7 @@ Em Lightweight, os materiais que refletem a luz infravermelha não devem ser vis
 
 {~~Um único robô pode usar apenas uma câmera. Todas as lentes/câmeras omnidirecionais comerciais não são permitidas. Somente lentes/câmeras omnidirecionais feitas pelos alunos são permitidas, o que significa que sua construção precisa ser primordialmente e substancialmente o trabalho original de uma equipe. As equipes que os usam em seus robôs devem provar como os fizeram em seu pôster de apresentação e em uma entrevista. Para o propósito destas regras, omnidirecional é definido como tendo um campo de visão de mais de 140 graus na horizontal e mais de 80 graus na vertical (esses valores refletem o sistema óptico do olho humano).~>Um robô pode usar qualquer número de câmeras sem restrições de lentes, peças óticas, sistemas óticos e campo de visão total. Os componentes podem ser adquiridos de qualquer maneira que a equipe achar adequada.~~}
 
-Os circuitos da bomba de tensão são permitidos apenas para uma unidade de kicker. {Nenhuma tensão pode exceder 48 V em nenhum momento e a tensão de reforço máxima deve estar disponível para demonstração e medição nas inspeções. Quando não estiver em uso, os contatos de medição devem ser protegidos contra toques acidentais ou curtos-circuitos.} Todos os outros circuitos elétricos dentro do robô não podem exceder 15,0 V para Soccer Open e 12,0 V para Soccer Lightweight. Cada robô deve ser projetado para permitir a verificação da tensão das fontes de alimentação e seus circuitos, a menos que a tensão nominal seja óbvia ao olhar para o robô, suas fontes de alimentação e conexões.
+Os circuitos da bomba de tensão são permitidos apenas para uma unidade de kicker. {++Nenhuma tensão pode exceder 48 V em nenhum momento e a tensão de reforço máxima deve estar disponível para demonstração e medição nas inspeções. Quando não estiver em uso, os contatos de medição devem ser protegidos contra toques acidentais ou curtos-circuitos.++} Todos os outros circuitos elétricos dentro do robô não podem exceder 15,0 V para Soccer Open e 12,0 V para Soccer Lightweight. Cada robô deve ser projetado para permitir a verificação da tensão das fontes de alimentação e seus circuitos, a menos que a tensão nominal seja óbvia ao olhar para o robô, suas fontes de alimentação e conexões.
 
 Dispositivos pneumáticos podem usar apenas ar ambiente.
 
@@ -543,7 +540,7 @@ A força do kicker está sujeita a verificação de conformidade a qualquer mome
 [[regulations-construction]]
 ==== Construção
 
-IMPORTANTE: Os robôs devem ser construídos exclusivamente pelos alunos membros de uma equipe. Mentores, professores, pais ou empresas não podem estar envolvidos no projeto, construção e montagem de robôs.
+IMPORTANT: Os robôs devem ser construídos exclusivamente pelos alunos membros de uma equipe. Mentores, professores, pais ou empresas não podem estar envolvidos no projeto, construção e montagem de robôs.
 
 Para a construção de um robô, qualquer kit de robô ou bloco de construção pode ser usado, desde que o projeto e a construção sejam principalmente e substancialmente o trabalho original de uma equipe. Isso significa que kits comerciais podem ser usados, mas devem ser substancialmente modificados pela equipe. Não é permitido seguir principalmente um manual de construção, nem apenas trocar peças sem importância.
 
@@ -553,11 +550,11 @@ Os robôs devem ser construídos de forma que possam ser iniciados pelo capitão
 
 Como não é possível prever totalmente um contato com um robô adversário e/ou driblador que possa danificar algumas partes dos robôs, *os robôs devem ter todos os seus elementos ativos devidamente protegidos com materiais resistentes.* Por exemplo, circuitos elétricos e dispositivos pneumáticos, como tubulações e garrafas, devem ser protegidos de todo contato humano e contato direto com outros robôs.
 
-IMPORTANTE: Todas as engrenagens do driblador acionado devem ser cobertas com metal ou plástico rígido.
+IMPORTANT: Todas as engrenagens do driblador acionado devem ser cobertas com metal ou plástico rígido.
 
 Quando as baterias são transportadas ou movidas, é *altamente* recomendável o uso de bolsas de segurança. Devem ser feitos esforços razoáveis ​​para garantir que, em todas as circunstâncias, os robôs evitem curtos-circuitos e vazamentos de produtos químicos ou de ar.
 
-IMPORTANTE: Não é permitido o uso de bateria inchada, esfarrapada ou perigosa.
+IMPORTANT: Não é permitido o uso de bateria inchada, esfarrapada ou perigosa.
 
 
 [[regulations-programming]]
@@ -675,25 +672,25 @@ Durante os dias de competição da competição internacional (bem como antes do
 
 Haverá também uma competição SuperTeam, na qual várias equipes de todo o mundo compartilham seus robôs em um "SuperTeam" e jogam contra outros SuperTeams em um chamado "Big Field". As regras completas deste desafio podem ser encontradas em https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html
 
-NOTA: {Para tornar os jogos do SuperTeam mais gerenciáveis ​​no momento e facilitar a comunicação entre vários robôs em um SuperTeam no futuro, o Comitê da Liga de Futebol fornecerá a cada time um módulo de comunicação. Espera-se que cada equipe faça interface com este módulo usando um único pino GPIO de 2,54 mm no momento e o Comitê da Liga de Futebol planeja estender isso para usar UART ou I²C para aplicações mais complexas nos próximos anos. Mais detalhes serão fornecidos pelo Comitê da Liga de Futebol antes da competição.}
+NOTE: {++Para tornar os jogos do SuperTeam mais gerenciáveis ​​no momento e facilitar a comunicação entre vários robôs em um SuperTeam no futuro, o Comitê da Liga de Futebol fornecerá a cada time um módulo de comunicação. Espera-se que cada equipe faça interface com este módulo usando um único pino GPIO de 2,54 mm no momento e o Comitê da Liga de Futebol planeja estender isso para usar UART ou I²C para aplicações mais complexas nos próximos anos. Mais detalhes serão fornecidos pelo Comitê da Liga de Futebol antes da competição.++}
 
 As equipes que competem na competição internacional podem receber prêmios por seu desempenho. Esses prêmios são decididos e apresentados pelo Comitê da Liga de Futebol, que publica todos os detalhes necessários bem antes do evento real. Nos últimos anos, eles foram premiados por melhor pôster, apresentação, design de robô, espírito de equipe e jogos individuais.
 
-Observe que, conforme declarado na <<spirit>>, *_inão é se você ganha ou perde, mas o quanto você aprende que conta!_*
+Observe que, conforme declarado na <<spirit>>, *_não é se você ganha ou perde, mas o quanto você aprende que conta!_*
 
 [[entry-league]]
 === Liga de entrada (Não disponível na RoboCup Brazil)
 
-A fim de ajudar os recém-chegados a experimentar a competição RoboCupJunior Soccer, o Comitê da Liga de Futebol gostaria de encorajar as competições a incluir a chamada "Liga de Entrada". Embora tal liga não faça parte da competição internacional, o Comitê da Liga de Futebol ainda acredita que vale a pena integrá-la às competições regionais e super-regionais. Para esse fim, o Comitê da Liga de Futebol preparou um conjunto de regras sugerido. footnote:[Avaliable as HTML and PDF at https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html and
-https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf respectively]
-Algumas competições regionais e super-regionais já possuem conjuntos de regras e provavelmente farão alterações nos conjuntos de regras sugeridos ou os substituirão inteiramente em seus eventos. footnote:[Examples: https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf, https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf]
+A fim de ajudar os recém-chegados a experimentar a competição RoboCupJunior Soccer, o Comitê da Liga de Futebol gostaria de encorajar as competições a incluir a chamada "Liga de Entrada". Embora tal liga não faça parte da competição internacional, o Comitê da Liga de Futebol ainda acredita que vale a pena integrá-la às competições regionais e super-regionais. Para esse fim, o Comitê da Liga de Futebol preparou um conjunto de regras sugerido. footnote:[ Disponível como HTML e PDF em https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html e
+https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf respectivamente.]
+Algumas competições regionais e super-regionais já possuem conjuntos de regras e provavelmente farão alterações nos conjuntos de regras sugeridos ou os substituirão inteiramente em seus eventos. footnote:[Examplos: https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf, https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf]
 As equipes devem solicitar aos organizadores de torneios locais/regionais/super-regionais detalhes sobre quais ligas de entrada (se houver) serão realizadas em sua região.
 
 O Comitê da Liga de Futebol também publicará o que sabe no tópico de notícias do fórum (https://junior.forum.robocup.org/t/soccer-entry-league-news-feed/2677).
 
 [appendix]
 [[technical-specification-for-pulsed-soccer-ball]]
-== Especificação Técnica para Bola de Futebol
+== Especificação Técnica para Bola de Futebol Ativa
 
 [[pulsed-preamble]]
 === Preâmbulo
@@ -754,10 +751,11 @@ Observe que essa bola era chamada anteriormente de RCJ-05. Embora você não con
 [[passive-ball-spec-preamble]]
 === Preâmbulo
 
-A fim de impulsionar o estado da arte na competição de futebol, ao mesmo tempo em que tenta preencher a lacuna entre as ligas júnior e principal, o Comitê da Liga de Futebol escolheu uma bola de golfe laranja padrão como a bola "passiva". Esta é a mesma escolha que a Small Size League faz footnote:[See the SSL rules at https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] e, como essas bolas são padronizadas, elas devem ser baratas e fáceis de obter em qualquer lugar do mundo.
+A fim de impulsionar o estado da arte na competição de futebol, ao mesmo tempo em que tenta preencher a lacuna entre as ligas júnior e principal, o Comitê da Liga de Futebol escolheu uma bola de golfe laranja padrão como a bola "passiva". Esta é a mesma escolha que a Small Size League faz footnote:[Veja as regras SSL  https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] e, como essas bolas são padronizadas, elas devem ser baratas e fáceis de obter em qualquer lugar do mundo.
 
 [[specifications]]
-=== e, como essas bolas são padronizadas, elas devem ser baratas e fáceis de obter em qualquer lugar do mundo.
+=== Especificações
+
 
 [[passive-diameter]]
 ==== Diâmetro
@@ -778,7 +776,8 @@ A bola deve ser de cor laranja. Como a definição da cor laranja em geral não 
 [[passive-surface]]
 ==== Superfície
 
-Gravações {++e etiquetas impressas++} na superfície da bola são toleradas. {~~O interior da bola deve ser oco ~>A bola não deve ter um acabamento de toque suave. As equipes devem estar preparadas para jogar com as bolas fornecidas pelos organizadores do torneio.~~}
+Gravações {++e etiquetas impressas++} na superfície da bola são toleradas. 
+{~~O interior da bola deve ser oco ~>A bola não deve ter um acabamento de toque suave. As equipes devem estar preparadas para jogar com as bolas fornecidas pelos organizadores do torneio.~~}
 
 [[passive-weight]]
 ==== Peso
@@ -817,7 +816,7 @@ image:media/image8.png[image,scaledwidth=100.0%]
 |Parafusos M3             | 10
 |===
 
-NOTA: Os espaçadores M3 são diferentes para cada liga, devido ao tamanho diferente da bola. Para liga leve, use espaçador de **40 mm** e para liga aberta, use espaçador de **25 mm**.
+NOTE: Os espaçadores M3 são diferentes para cada liga, devido ao tamanho diferente da bola. Para liga leve, use espaçador de **40 mm** e para liga aberta, use espaçador de **25 mm**.
 
 [[device-schematics]]
 ==== Esquemas do dispositivo
@@ -835,7 +834,7 @@ b.  Cole o papel em uma placa de plástico. A linha de inclinação (linhas verm
 c.  Corte ao longo das linhas e faça os furos.
 d.  As duas placas devem ser conectadas usando espaçadores de 40mm (Lightweight) ou 25mm (Open).
 
-NOTA: Você pode encontrar a imagem do esquema em https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png e imprimi-lo como PDF em https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
+NOTE: Você pode encontrar a imagem do esquema em https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png e imprimi-lo como PDF em https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
 
 [[inspection]]
 ==== Procedimento de medição de potência de chute para categoria Soccer Lightweight
@@ -843,5 +842,4 @@ NOTA: Você pode encontrar a imagem do esquema em https://github.com/RoboCupJuni
 a.  Coloque uma bola na parte inferior da rampa do dispositivo e coloque o robô na frente da bola, apontando o chutador para o topo da rampa.
 b.  Ative o kicker do robô para um único tiro.
 c.  Meça a distância que a bola percorreu no dispositivo. A distância não deve exceder 22 cm.
-
 
