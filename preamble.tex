@@ -26,6 +26,7 @@
 \usepackage{lastpage}
 \usepackage{changes}
 \usepackage{etoolbox}
+%\usepackage{draftwatermark}
 
 \let\openbox\relax
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
@@ -41,6 +42,9 @@
 \usepackage[defaultsans]{droidsans}
 \renewcommand{\familydefault}{\sfdefault}
 
+%\SetWatermarkText{Draft}
+%\SetWatermarkScale{2.3}
+%\SetWatermarkAngle{70}
 
 % Set paragraph numbers correctly (skip susubsection)
 \setcounter{secnumdepth}{4}
@@ -84,7 +88,7 @@
   \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
 }
 
-\title{\vspace{-5ex}RoboCupJunior Soccer Rules 2023\vspace{-5ex}}
+\title{\vspace{-5ex}RoboCupJunior Soccer Rules 2024\vspace{-5ex}}
 \date{\vspace{-2ex}}
 
 \definecolor{color-1}{rgb}{1,1,1}
@@ -103,23 +107,23 @@
 \begin{tabular}{rl}
 \resizebox{0.50\textwidth}{!}{
 \begin{tabular}{lr}
+    \multicolumn{2}{l}{\textbf{Soccer League Committee 2024:}}\\
+    Michael Ambrose           & USA \\
+    Ryely Burtenshaw-Day      & New Zealand \\
+    Ivan Kolarić              & Croatia \\
+    David Schwarz             & Germany \\
+    William Plummer           & Australia (CHAIR) \\
+    Adrián Matejov            & Slovakia \\
+\end{tabular}}
+&
+\resizebox{0.50\textwidth}{!}{
+\begin{tabular}{lr}
     \multicolumn{2}{l}{\textbf{Soccer League Committee 2023:}}\\
     Michael Ambrose           & USA (CO-CHAIR)\\
     Javier E. Delgado Moreno  & Mexico \\
     Hikaru Sugiura            & Japan\\
     David Schwarz             & Germany (CHAIR)\\
     William Plummer           & Australia\\
-    Adrián Matejov            & Slovakia\\
-\end{tabular}}
-&
-\resizebox{0.50\textwidth}{!}{
-\begin{tabular}{lr}
-    \multicolumn{2}{l}{\textbf{Soccer League Committee 2022:}}\\
-    Michael Ambrose           & USA\\
-    Javier E. Delgado Moreno  & Mexico \\
-    Hikaru Sugiura            & Japan\\
-    Marco Dankel              & Germany (CHAIR)\\
-    James Riley               & Australia\\
     Adrián Matejov            & Slovakia\\
 \end{tabular}}
 
