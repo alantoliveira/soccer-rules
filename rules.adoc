@@ -17,29 +17,29 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-Estas são as regras de Futebol para o RoboCupJunior 2025. Elas são divulgadas
+Estas são as regras de Futebol para o Competição BRasileira de Robótica, Liga RoboCupJunior 2025. Elas são divulgadas
 pelo Comitê da Liga de Futebol do RoboCupJunior. A versão em inglês destas
 regras tem prioridade sobre qualquer tradução.
 
 As equipes são aconselhadas a verificar o site do RoboCupJunior
-nota de rodapé:[https://junior.robocup.org/] e o fórum de Futebol
-nota de rodapé:[https://junior.forum.robocup.org/c/robocupjunior-soccer/5]
+footnote:[https://junior.robocup.org/] e o fórum de Futebol
+footnote:[https://junior.forum.robocup.org/c/robocupjunior-soccer/5]
 para procedimentos e requisitos para a
 competição internacional. Em vez disso, pergunte aos organizadores do torneio sobre as regras locais,
 regionais e super-regionais. Cada equipe é responsável
 por garantir que possui as regras corretas para cada competição. As equipes
 devem solicitar esclarecimentos no Fórum quando necessário.
-nota de rodapé:[A versão atual destas regras pode ser encontrada em
+footnote:[A versão atual destas regras pode ser encontrada em
 https://robocup-junior.github.io/soccer-rules/master/rules.html em formato HTML
 e em https://robocup-junior.github.io/soccer-rules/master/rules.pdf em formato PDF
 .]
 
-DICA: As equipes são encorajadas a entrar em contato com a comunidade do RoboCupJunior no
+TIP: As equipes são encorajadas a entrar em contato com a comunidade do RoboCupJunior no
 nosso Discord. Mostre o que você está trabalhando, faça perguntas ou participe das discussões semanais
-sobre futuras regras e design da liga. nota de rodapé:[Você pode entrar no servidor em
+sobre futuras regras e design da liga. footnote:[Você pode entrar no servidor em
 https://robocup-junior.github.io/soccer-rules/discord/]
 Você também pode contatar o Comitê da Liga de Futebol diretamente por e-mail
-nota de rodapé:[robocupjunior-soccer [ at \] robocup [ dot \] org]
+footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
 
 [title="Dois times de dois robôs com uma bola laranja em um campo de Futebol do RoboCupJunior."]
 image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
@@ -61,13 +61,13 @@ O RoboCupJunior Soccer consiste em duas sub-ligas: *Soccer Open* e *Soccer Light
 
 * *Soccer Open* é jogado com uma bola de golfe passiva, de cor laranja brilhante. Os robôs não possuem restrição de peso e podem ter uma zona de captura de bola de até 1,5 cm.
 
-**IMPORTANTE:** Uma grande parte da classificação geral (para o torneio internacional, outros torneios operam de forma diferente) é determinada pelas categorias avaliadas. Há pontos para documentação, desempenho em entrevistas, etc. O método para cálculo das pontuações gerais será publicado no site do RoboCupJunior Soccer em uma data posterior, mas antes da competição internacional. Nota de rodapé: [ consulte https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou https://robocup-junior.github.io/soccer-rules/master/scoring.html ]
+IMPORTANT: Uma grande parte da classificação geral (para o torneio internacional, outros torneios operam de forma diferente) é determinada pelas categorias avaliadas. Há pontos para documentação, desempenho em entrevistas, etc. O método para cálculo das pontuações gerais será publicado no site do RoboCupJunior Soccer em uma data posterior, mas antes da competição internacional. footnote: [ https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou https://robocup-junior.github.io/soccer-rules/master/scoring.html ]
 
 _Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o organizador da competição regional do RoboCupJunior e pergunte sobre a_ <<entry-league>>.
 
 A menos que especificado de outra forma, todas as partes destas regras são liberadas sob os termos da Licença Creative Commons Attribution-ShareAlike.
 
-[[general-rules]]
+[[general-rules]] 
 include::general-rules/general-rules.adoc[]
 
 [discrete]
@@ -213,7 +213,7 @@ de falta de progresso são quando a bola está presa entre robôs, quando
 não há mudança na posição da bola e dos robôs, ou quando a bola está além
 da detecção ou capacidade de alcance de todos os robôs em campo.
 
-Após uma contagem visível e alta nota de rodapé:[geralmente uma contagem de três],
+Após uma contagem visível e alta footnote:[geralmente uma contagem de três],
 um árbitro chamará `*falta de progresso*` e
 moverá a bola para o ponto neutro desocupado mais próximo. Se isso não
 resolver a falta de progresso, o árbitro pode mover a bola para um ponto
@@ -330,9 +330,6 @@ confirmada pelos organizadores do torneio se uma reclamação for feita pela out
 O uso de controle remoto de qualquer tipo não é permitido durante a partida. Os robôs
 devem ser controlados de forma autônoma.
 
-{++Apenas para o Campeonato Mundial, começando no Brasil 2025, o uso de um Módulo de Comunicação
-é obrigatório para que os árbitros controlem os robôs.
-Veja <<international-competition-specifics>>++}
 
 [[agility]]
 === Agilidade
@@ -389,7 +386,7 @@ torneio.
 === Especificações de materiais
 
 Especificações detalhadas da bola e dos campos podem ser encontradas aqui
-nota de rodapé:[
+footnote:[
 https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf
 ou https://robocup-junior.github.io/soccer-rules/master/field_specification.html 
 e https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
@@ -405,7 +402,7 @@ serão divulgadas durante a temporada de 2025 pelo Comitê. Esta bola é
 Open-Source, então qualquer um pode produzir uma a partir dos arquivos e instruções na
 página do GitHub aqui: https://github.com/robocup-junior/ir-golf-ball . As Ligas de Entrada
 continuarão a usar a bola infravermelha grande.++}
-nota de rodapé:[As Ligas de Entrada usam frequentemente kits de robótica como Lego, FischerTechnik, Vex ou outros
+footnote:[As Ligas de Entrada usam frequentemente kits de robótica como Lego, FischerTechnik, Vex ou outros
 com os quais manusear uma bola pequena é mais difícil, especialmente
 para iniciantes.]
 
@@ -487,7 +484,7 @@ Para o RoboCupJunior , existem duas sub-ligas conforme segue
 As partidas na sub-liga Soccer Open
 são conduzidas usando uma bola passiva, enquanto as partidas na
 sub-liga Soccer Lightweight são jogadas usando a bola IR.
-nota de rodapé:[ para especificações detalhadas da bola veja: <<specifications>>]
+footnote:[ para especificações detalhadas da bola veja: <<specifications>>]
 
 [[regulations]]
 === Regulamentos
@@ -506,7 +503,7 @@ dimensões de um robô não devem exceder os seguintes limites:
 |zona de captura de bola | 1.5 cm | 3.0 cm +
 |===
 
-DICA: [0] O robô deve caber suavemente dentro de um cilindro deste diâmetro
+TIP: [0] O robô deve caber suavemente dentro de um cilindro deste diâmetro
 
 A zona de captura de bola é definida como qualquer espaço interno criado quando uma borda
 reta é colocada nos pontos salientes de um robô. Isso significa que a bola não deve
@@ -547,7 +544,7 @@ entrevistas com as equipes durante o Dia de Preparação do evento. Isso signifi
 precisam estar presentes desde o início deste dia.
 
 Detalhes sobre o que é necessário e o que esperar das entrevistas podem
-ser encontrados no documento de pontuação disponível aqui (nota de rodapé): [
+ser encontrados no documento de pontuação disponível aqui (footnote): [
 https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou
 https://robocup-junior.github.io/soccer-rules/master/scoring.html].
 

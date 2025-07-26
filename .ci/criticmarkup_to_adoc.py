@@ -94,11 +94,11 @@ class CriticMarkupPreprocessor:
 
     def __init__(self,
                  change_listing_fmt='- {CHANGE}',
-                 addition_note_fmt='Added "{CURRENT}"',
+                 addition_note_fmt='Adicionado "{CURRENT}"',
                  addition_replacement_fmt='{CURRENT}',
-                 deletion_note_fmt='Deleted "{PREVIOUS}"',
+                 deletion_note_fmt='Removido "{PREVIOUS}"',
                  deletion_replacement_fmt='(used to be "{PREVIOUS}")',
-                 substitution_note_fmt='Changed "{PREVIOUS}" to "{CURRENT}"',
+                 substitution_note_fmt='Mudou "{PREVIOUS}" para "{CURRENT}"',
                  substitution_replacement_fmt='{CURRENT} (used to be "{PREVIOUS}")'): # noqa
         self.changes = []
         self.change_listing_fmt = change_listing_fmt
