@@ -61,14 +61,14 @@ O RoboCupJunior Soccer consiste em duas sub-ligas: *Soccer Open* e *Soccer Light
 
 * *Soccer Open* é jogado com uma bola de golfe passiva, de cor laranja brilhante. Os robôs não possuem restrição de peso e podem ter uma zona de captura de bola de até 1,5 cm.
 
-IMPORTANT: Uma grande parte da classificação geral (para o torneio internacional, outros torneios operam de forma diferente) é determinada pelas categorias avaliadas. Há pontos para documentação, desempenho em entrevistas, etc. O método para cálculo das pontuações gerais será publicado no site do RoboCupJunior Soccer em uma data posterior, mas antes da competição internacional. footnote: [ https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou https://robocup-junior.github.io/soccer-rules/master/scoring.html ]
+IMPORTANT: Uma grande parte da classificação geral (para o torneio internacional, outros torneios operam de forma diferente) é determinada pelas categorias avaliadas. Há pontos para documentação, desempenho em entrevistas, etc. O método para cálculo das pontuações gerais será publicado no site do RoboCupJunior Soccer em uma data posterior, mas antes da competição internacional. footnote:[https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou https://robocup-junior.github.io/soccer-rules/master/scoring.html ]
 
-_Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o organizador da competição regional do RoboCupJunior e pergunte sobre a_ <<entry-league>>.
+_Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o organizador da competição regional do RoboCupJunior._
 
 A menos que especificado de outra forma, todas as partes destas regras são liberadas sob os termos da Licença Creative Commons Attribution-ShareAlike.
 
 [[general-rules]] 
-include::general-rules/general-rules.adoc[]
+include::general-rules/general-rules-ptbr.adoc[]
 
 [discrete]
 === Mudanças em relação às Regras do RoboCupJunior Soccer 2024
