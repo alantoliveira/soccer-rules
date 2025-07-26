@@ -17,686 +17,569 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the Soccer rules for RoboCupJunior 2025. They are released
-by the RoboCupJunior Soccer League Committee. The English version of these
-rules has priority over any translations.
+Estas são as regras de Futebol para o RoboCupJunior 2025. Elas são divulgadas
+pelo Comitê da Liga de Futebol do RoboCupJunior. A versão em inglês destas
+regras tem prioridade sobre qualquer tradução.
 
-Teams are advised to check the RoboCupJunior Soccer site
-footnote:[https://junior.robocup.org/] and Soccer forum 
-footnote:[https://junior.forum.robocup.org/c/robocupjunior-soccer/5]
-for procedures and requirements for the
-international competition. Instead ask tournament organizers for local,
-regional and super-regional competitions. Each team is responsible
-for making sure they have the correct rules for each competition. Teams
-should ask for clarifications on the Forum where necessary.
-footnote:[The current version of these rules can be found at
-https://robocup-junior.github.io/soccer-rules/master/rules.html in HTML form
-and at https://robocup-junior.github.io/soccer-rules/master/rules.pdf in PDF
-form.]
+As equipes são aconselhadas a verificar o site do RoboCupJunior
+nota de rodapé:[https://junior.robocup.org/] e o fórum de Futebol
+nota de rodapé:[https://junior.forum.robocup.org/c/robocupjunior-soccer/5]
+para procedimentos e requisitos para a
+competição internacional. Em vez disso, pergunte aos organizadores do torneio sobre as regras locais,
+regionais e super-regionais. Cada equipe é responsável
+por garantir que possui as regras corretas para cada competição. As equipes
+devem solicitar esclarecimentos no Fórum quando necessário.
+nota de rodapé:[A versão atual destas regras pode ser encontrada em
+https://robocup-junior.github.io/soccer-rules/master/rules.html em formato HTML
+e em https://robocup-junior.github.io/soccer-rules/master/rules.pdf em formato PDF
+.]
 
-TIP: Teams are encouraged to get in touch with the RoboCupJunior community on
-our Discord. Show what you're working on, ask questions or join the weekly
-discussions on future rules and league design. footnote:[You can join the server at
+DICA: As equipes são encorajadas a entrar em contato com a comunidade do RoboCupJunior no
+nosso Discord. Mostre o que você está trabalhando, faça perguntas ou participe das discussões semanais
+sobre futuras regras e design da liga. nota de rodapé:[Você pode entrar no servidor em
 https://robocup-junior.github.io/soccer-rules/discord/]
-You can also reach the Soccer League Committee directly via email
-footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
+Você também pode contatar o Comitê da Liga de Futebol diretamente por e-mail
+nota de rodapé:[robocupjunior-soccer [ at \] robocup [ dot \] org]
 
-[title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
+[title="Dois times de dois robôs com uma bola laranja em um campo de Futebol do RoboCupJunior."]
 image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
 
 [discrete]
-== Preface
+== Prefácio
 
-In the RoboCupJunior Soccer challenge, teams of young engineers design, build,
-and program two fully autonomous mobile robots to compete against another team
-in matches. The robots must detect a ball and score into a color-coded goal on
-a special field that resembles a human soccer field.
+No desafio do RoboCupJunior Soccer, equipes de jovens engenheiros projetam, constroem,
+e programam dois robôs móveis totalmente autônomos para competir contra outra equipe
+em partidas. Os robôs devem detectar uma bola e marcar em um gol codificado por cor em
+um campo especial que se assemelha a um campo de futebol humano.
 
-To be successful, participants must demonstrate skill in programming, robotics,
-electronics and mechatronics. Teams are also expected to contribute to the
-advancement of the community as a whole by sharing their discoveries with other
-participants and by engaging in good sportsmanship, regardless of culture, age
-or result in the competition. *All are expected to compete, learn, have fun, and grow.*
+Para ter sucesso, os participantes devem demonstrar habilidade em programação, robótica,
+eletrônica e mecatrônica. As equipes também são esperadas a contribuir para o avanço da comunidade como um todo, compartilhando suas descobertas com outros participantes e demonstrando espírito esportivo, independentemente de cultura, idade ou resultado na competição. *Todos são esperados a competir, aprender, se divertir e crescer.*
 
-RoboCupJunior Soccer consist of two sub-leagues: *Soccer Open* and *Soccer
-Lightweight*. These rules apply for both sub-leagues. There are two main
-differences between the two leagues.
+O RoboCupJunior Soccer consiste em duas sub-ligas: *Soccer Open* e *Soccer Lightweight*. Estas regras se aplicam a ambas as sub-ligas. Existem duas principais diferenças entre as ligas:
 
-* *Soccer Lightweight* is played using a special ball that emits an IR
-signal. Robots may weigh up to 1.4 kg, may have a ball-capturing zone of
-up to 3.0 cm.
+* *Soccer Lightweight* é jogado com uma bola especial que emite um sinal IR. Os robôs podem pesar até 1,4 kg e podem ter uma zona de captura de bola de até 3,0 cm.
 
-* *Soccer Open* is played using a passive, brightly colored orange golf
-ball. Robots have no weight restriction and may have a ball-capturing zone of up to
-1.5 cm.
+* *Soccer Open* é jogado com uma bola de golfe passiva, de cor laranja brilhante. Os robôs não possuem restrição de peso e podem ter uma zona de captura de bola de até 1,5 cm.
 
-IMPORTANT: A large part of the overall ranking (for the international tournament,
-other tournaments operate differently) is determined by the judged
-categories. There are points for documentation, inteview performance etc.
-The method for calculation of the overall scores will be published on the
-RoboCupJunior Soccer Website at a later date but before the international
-competition. footnote:[
-see https://robocup-junior.github.io/soccer-rules/master/scoring.pdf
-or https://robocup-junior.github.io/soccer-rules/master/scoring.html
-]
+**IMPORTANTE:** Uma grande parte da classificação geral (para o torneio internacional, outros torneios operam de forma diferente) é determinada pelas categorias avaliadas. Há pontos para documentação, desempenho em entrevistas, etc. O método para cálculo das pontuações gerais será publicado no site do RoboCupJunior Soccer em uma data posterior, mas antes da competição internacional. Nota de rodapé: [ consulte https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou https://robocup-junior.github.io/soccer-rules/master/scoring.html ]
 
-_If you would like to start with RoboCupJunior Soccer, please contact the
-organizer of your regional RoboCupJunior competition and ask them about_ <<entry-league>>.
+_Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o organizador da competição regional do RoboCupJunior e pergunte sobre a_ <<entry-league>>.
 
-Unless specified otherwise, all parts of these rules are released under the
-terms of the Creative Commons Attribution-ShareAlike License.
+A menos que especificado de outra forma, todas as partes destas regras são liberadas sob os termos da Licença Creative Commons Attribution-ShareAlike.
 
 [[general-rules]]
 include::general-rules/general-rules.adoc[]
 
 [discrete]
-=== Changes from the 2024 RoboCupJunior Soccer Rules
+=== Mudanças em relação às Regras do RoboCupJunior Soccer 2024
 
-// TODO: Summarize changes here
-// The rule changes developed by the Soccer League Committee in cooperation with the
-// RoboCup Junior Soccer Community (please continue to post ideas for the future on
-// the forum any time) aim to improve gameplay.
+// TODO: Resumir mudanças aqui
+// As mudanças nas regras desenvolvidas pelo Comitê da Liga de Futebol em cooperação com a
+// Comunidade do RoboCup Junior Soccer (por favor, continue postando ideias para o futuro no
+// fórum a qualquer momento) visam melhorar o jogo.
 
-Detailed changes are listed below and link to the corresponding place in the rules.
+Mudanças detalhadas estão listadas abaixo e linkam para o local correspondente nas regras.
 
 {+-~TOC-CHANGES~-+}
 
 [[gameplay]]
-== GAMEPLAY
+== JOGO
 
 [[game-procedure-and-length-of-a-game]]
-=== Game procedure and length of a game
+=== Procedimento do jogo e duração de uma partida
 
-RCJ Soccer games consist of two teams of robots playing soccer against each
-other. Each team has two autonomous robots. The game will consist of two
-halves. The duration of each half is 10-minutes. There will be a 5-minute break
-in between the halves.
+Os jogos de RCJ Soccer consistem em duas equipes de robôs jogando futebol uma contra a outra.
+Cada equipe tem dois robôs autônomos. O jogo consistirá em duas
+metades. A duração de cada tempo é de 10 minutos. Haverá um intervalo de 5 minutos
+entre os tempos.
 
-Teams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game may be penalized one goal *per 30 seconds*
-at the referee’s discretion.
+Espera-se que as equipes estejam no campo 5 minutos antes do início de seu jogo. Estar
+na mesa de inspeção não conta a favor desse limite de tempo. As equipes que
+chegarem atrasadas ao início do jogo podem ser penalizadas com um gol *por 30 segundos*
+a critério do árbitro.
 
-The final game score will be trimmed so that there is at most 10-goal
-difference between the losing and the winning team.
+O placar final do jogo será ajustado para que haja no máximo 10 gols
+de diferença entre a equipe perdedora e a vencedora.
 
 [[pre-match-meeting]]
-=== Pre-match meeting
+=== Reunião pré-jogo
 
-At the start of the first half of the game, a referee will toss a coin. The
-team mentioned first in the draw shall call the coin. The winner of the toss
-can choose either which end to kick towards, or to kick off first. The loser of
-the toss chooses the other option. After the first half, teams switch sides.
-The team not kicking off in the first half of the game will kick off to begin
-the second half of the game.
+No início do primeiro tempo do jogo, um árbitro irá lançar uma moeda. A
+equipe mencionada primeiro no sorteio deverá chamar a moeda. O vencedor do sorteio
+pode escolher entre qual lado chutar, ou chutar primeiro. O perdedor do
+sorteio escolhe a outra opção. Após o primeiro tempo, as equipes trocam de lado.
+A equipe que não chutar no início do primeiro tempo do jogo será a responsável por dar o
+pontapé inicial para começar o segundo tempo do jogo.
 
-During the pre-match meeting the referee(s) may check whether
-the robots are capable of playing (i.e., whether they are at least able to
-follow and react to the ball). If none of the robots is capable of playing, the
-game will not be played and zero goals will be awarded to both teams.
+Durante a reunião pré-jogo, o(s) árbitro(s) podem verificar se
+os robôs são capazes de jogar (ou seja, se eles são pelo menos capazes de
+seguir e reagir à bola). Se nenhum dos robôs for capaz de jogar, o
+jogo não será realizado e zero gols serão atribuídos a ambas as equipes.
 
 [[kick-off]]
-=== Kick-off
+=== Pontapé inicial
 
-Each half of the game begins with a kick-off. All robots must be located on
-their own side of the field. All robots must be halted. The ball is positioned
-by a referee in the center of the field.
+Cada metade do jogo começa com um pontapé inicial. Todos os robôs devem estar localizados em
+seu próprio lado do campo. Todos os robôs devem estar parados. A bola é posicionada
+por um árbitro no centro do campo.
 
-The team kicking off places their robots on the field first.
+A equipe que está dando o pontapé inicial coloca seus robôs em campo primeiro.
 
-The team not kicking off will now place their robots on the defensive end of
-the field. All robots on the team not kicking off must be at least 30 cm away
-from the ball (outside of the center circle).
+A equipe que não está dando o pontapé inicial agora colocará seus robôs na defesa.
+Todos os robôs da equipe que não está dando o pontapé inicial devem estar a pelo menos 30 cm de distância
+da bola (fora do círculo central).
 
-Robots cannot be placed out of bounds. Robots cannot be repositioned once they
-have been placed, except if the referee requests to adjust their placement to
-make sure that the robots are placed properly within the field positions.
+Os robôs não podem ser colocados fora dos limites do campo. Os robôs não podem ser reposicionados uma vez que tenham sido colocados, exceto se o árbitro solicitar o ajuste de sua colocação para
+garantir que os robôs estejam posicionados corretamente dentro das posições de campo.
 
-On the referee’s command (usually by whistle), all robots will be started
-immediately. Any robots that are started early will be removed
-by the referee from the field and deemed damaged.
+Ao comando do árbitro (geralmente por apito), todos os robôs serão acionados
+imediatamente. Quaisquer robôs que forem acionados antes do tempo serão removidos
+pelo árbitro do campo e considerados danificados.
 
-Before a kick-off, *all damaged or out-of-bounds robots* are allowed to return to
-the playing field immediately if they are _ready and fully functional_.
+Antes de um pontapé inicial, *todos os robôs danificados ou fora dos limites* têm permissão para retornar ao
+campo de jogo imediatamente se estiverem _prontos e totalmente funcionais_.
 
-If no robots are present at a kick-off (because they have moved out-of-bounds
-<<out-of-bounds>> or are damaged <<damaged-robots>>), the penalties are
-discarded and the match resumes with a <<neutral-kickoff>>.
+Se nenhum robô estiver presente em um pontapé inicial (porque se moveram para fora dos limites
+<<out-of-bounds>> ou estão danificados <<damaged-robots>>), as penalidades são
+descartadas e a partida recomeça com um <<neutral-kickoff>>.
 
 [[neutral-kickoff]]
-==== Neutral kick-off
+==== Pontapé inicial neutro
 
-A neutral kick-off is the same as the one described in <<kick-off>> with a
-small change: all robots must be at least 30 cm away from the ball
-(outside of the center circle).
+Um pontapé inicial neutro é igual ao descrito em <<kick-off>> com uma
+pequena mudança: todos os robôs devem estar a pelo menos 30 cm de distância da bola
+(fora do círculo central).
 
 [[scoring]]
-=== Scoring
+=== Marcação de gols
 
-A goal is scored when the ball strikes or touches the back wall of the goal.
-Goals scored by any robot have the same end result: they give one goal to the
-team on the opposite side. After a goal, the game will be restarted with a
-kick-off from the team who was scored against.
+Um gol é marcado quando a bola atinge ou toca a parede de fundo do gol.
+Os gols marcados por qualquer robô têm o mesmo resultado final: eles concedem um gol para a
+equipe do lado oposto. Após um gol, o jogo será reiniciado com um
+pontapé inicial da equipe que sofreu o gol.
 
 [[ball-movement]]
-=== Ball movement
+=== Movimento da bola
 
-A robot cannot hold a ball. Holding a ball is defined as taking full control of
-the ball by removing all of degrees of freedom. Examples for ball holding
-include fixing a ball to the robot’s body, surrounding a ball using the robot’s
-body to prevent access by others, encircling the ball or somehow trapping the
-ball with any part of the robot’s body. If a ball does not roll while a robot
-is moving, it is a good indication that the ball is trapped.
+Um robô não pode segurar uma bola. Segurar uma bola é definido como assumir o controle total da
+bola, removendo todos os graus de liberdade. Exemplos de como segurar a bola
+incluem fixar uma bola ao corpo do robô, cercar uma bola usando o corpo do robô para impedir o acesso por outros, encerrar a bola ou de alguma forma prender a bola com qualquer parte do corpo do robô. Se uma bola não rolar enquanto um robô
+está se movendo, é uma boa indicação de que a bola está presa.
 
-The only exception to holding is the use of a rotating drum (a "dribbler") that
-imparts dynamic back spin on the ball to keep the ball on its surface.
+A única exceção para segurar é o uso de um tambor rotativo (um "driblador") que
+imparte um efeito dinâmico na bola para mantê-la em sua superfície.
 
-Other players must be able to access the ball.
+Outros jogadores devem ser capazes de acessar a bola.
 
-The ball needs to stay within the bounds of the field, as defined by the
-walls. If a robot moves the ball outside of the field (that is, beyond the walls
-or above their height), it is deemed damaged. (<<damaged-robots>>)
+A bola precisa permanecer dentro dos limites do campo, conforme definido pelas
+paredes. Se um robô mover a bola para fora do campo (ou seja, além das paredes
+ou acima de sua altura), é considerado danificado. (<<damaged-robots>>)
 
-Any robot must approach and touch the ball when it is placed on the nearest
-neutral spot. It must do this before lack of progress is called. When on its
-own side of the field, any robot must be able to move the ball from the nearest
-neutral spot to the opponent's side of the field. If a specific robot does not act
-this way, referees may deem it damaged at their discretion.
-(See <<damaged-robots, Damaged Robots>>.) This rule does not apply if the robot
-is hindered from detecting or playing the ball by the opponent.
+Qualquer robô deve se aproximar e tocar a bola quando ela for colocada no mais próximo
+ponto neutro. Ele deve fazer isso antes que a falta de progresso seja chamada. Quando em seu
+próprio lado do campo, qualquer robô deve ser capaz de mover a bola do mais próximo
+ponto neutro para o lado da campo do oponente. Se um robô específico não agir
+dessa forma, os árbitros podem considerá-lo danificado a critério deles.
+(Veja <<damaged-robots, Robôs Danificados>>.) Esta regra não se aplica se o robô
+estiver impedido de detectar ou jogar a bola pelo oponente.
 
 [[inside-penalty-area]]
-=== Inside the Penalty Area
+=== Dentro da Área de Penalidade
 
-No robots are allowed to be fully inside the penalty area. As the penalty
-areas are marked with a white line, the Out of Bounds rule
-applies. (<<out-of-bounds>>)
+Nenhum robô pode estar totalmente dentro da área de penalidade. Como as áreas de penalidade
+são marcadas com uma linha branca, a regra de Fora dos Limites se aplica.
+(<<out-of-bounds>>)
 
-If two robots from the same team are at least partially in a penalty area,
-the robot further from the ball will be moved to the _furthest unoccupied
-neutral spot_ immediately. If this happens repeatedly, a robot may be deemed
-damaged at referee's discretion. (<<damaged-robots>>)
+Se dois robôs da mesma equipe estiverem pelo menos parcialmente em uma área de penalidade,
+o robô mais distante da bola será movido para o _mais distante ponto neutro desocupado_
+imediatamente. Se isso acontecer repetidamente, um robô pode ser considerado
+danificado a critério do árbitro. (<<damaged-robots>>)
 
-If an attacking and a defending robot touch each other while at least one of
-them is at least partially inside the penalty area, and at least one of them
-has physical contact with the ball, this may be called "pushing" at the
-referee's discretion. In this case, the ball will be moved to the _furthest
-unoccupied neutral spot_ immediately.
+Se um robô atacante e um robô defensor se tocarem enquanto pelo menos um deles
+estiver pelo menos parcialmente dentro da área de penalidade, e pelo menos um deles
+tiver contato físico com a bola, isso pode ser chamado de "empurrão" a
+critério do árbitro. Nesse caso, a bola será movida para o _mais distante
+ponto neutro desocupado_ imediatamente.
 
-If a goal is scored as a result of a "pushing" situation, it will not be
-granted.
+Se um gol for marcado como resultado de uma situação de "empurrão", ele não será
+concedido.
 
 [[lack-of-progress]]
-=== Lack of progress
+=== Falta de progresso
 
-Lack of progress occurs if there is no progress in the gameplay for a
-reasonable period of time and the situation is not likely to change. Typical
-lack of progress situations are when the ball is stuck between robots, when
-there is no change in ball and robot’s positions, or when the ball is beyond
-detection or reach capability of all robots on the field.
+A falta de progresso ocorre se não houver progresso no jogo por um
+período razoável de tempo e a situação não estiver prestes a mudar. Situações típicas
+de falta de progresso são quando a bola está presa entre robôs, quando
+não há mudança na posição da bola e dos robôs, ou quando a bola está além
+da detecção ou capacidade de alcance de todos os robôs em campo.
 
-After a visible and loud count footnote:[usually a count of three],
-a referee will call `*lack of progress*` and
-will move the ball to the nearest unoccupied neutral spot. If this does not
-solve the lack of progress, the referee can move the ball to a different
-neutral spot.
+Após uma contagem visível e alta nota de rodapé:[geralmente uma contagem de três],
+um árbitro chamará `*falta de progresso*` e
+moverá a bola para o ponto neutro desocupado mais próximo. Se isso não
+resolver a falta de progresso, o árbitro pode mover a bola para um ponto
+neutro diferente.
 
 [[out-of-bounds]]
-=== Out of bounds
+=== Fora dos limites
 
-If a robot touches a wall or moves completely into the penalty area it
-will be called for being `*out of bounds*`. When this situation arises, the
-robot is removed from the field for a one-minute penalty. 
-There is no time stoppage for the game itself. The robot is
-allowed to return if a kick-off occurs before the penalty has elapsed.
+Se um robô tocar em uma parede ou se mover completamente para dentro da área de penalidade, ele
+será considerado `*fora dos limites*`. Quando essa situação ocorrer, o
+robô é removido do campo por uma penalidade de um minuto.
+Não há parada de tempo para o jogo em si. O robô é
+permitido retornar se um pontapé inicial ocorrer antes que a penalidade tenha terminado.
 
-The one-minute penalty starts when the robot is removed from play.
-Furthermore, any goal scored by the penalized team while the penalized robot is
-on the field will not be granted. Out-of-bounds robots can be fixed if the team
-needs to do so, as described in <<damaged-robots>>.
+A penalidade de um minuto começa quando o robô é removido do jogo.
+Além disso, qualquer gol marcado pela equipe penalizada enquanto o robô penalizado estiver
+em campo não será concedido. Robôs fora dos limites podem ser consertados se a equipe
+precisar fazê-lo, conforme descrito em <<damaged-robots>>.
 
-After the penalty time has passed, robot will be placed on the unoccupied
-neutral spot furthest from the ball, facing its own goal.
+Após o tempo de penalidade ter passado, o robô será colocado no ponto neutro desocupado
+mais distante da bola, de frente para seu próprio gol.
 
-A referee can waive the penalty if the robot was accidentally pushed out of
-bounds by an opposing robot. In such a case, the referee may have to slightly
-push the robot back onto the field.
+Um árbitro pode dispensar a penalidade se o robô foi acidentalmente empurrado para fora de
+limites por um robô adversário. Nesse caso, o árbitro pode ter que empurrar levemente
+o robô de volta para o campo.
 
 [[damaged-robots]]
-=== Damaged robots
+=== Robôs danificados
 
-If a robot is damaged, it has to be taken off the field and must be fixed
-before it can play again. Even if repaired, the robot must remain off the field
-for at least one minute or until the next kick-off is due.
+Se um robô está danificado, ele deve ser retirado de campo e consertado
+antes que possa jogar novamente. Mesmo se reparado, o robô deve permanecer fora de campo
+por pelo menos um minuto ou até que o próximo pontapé inicial ocorra.
 
-Some examples of a damaged robot include:
+Alguns exemplos de robôs danificados incluem:
 
-* it does not respond to the ball, or is unable to move (it lost pieces,
-power, etc.).
-* it continually moves into the penalty area or out of bounds.
-* it turns over on its own accord.
+* não responde à bola, ou é incapaz de se mover (perdeu peças,
+energia, etc.).
+* move-se continuamente para a área de penalidade ou para fora dos limites.
+* vira-se de cabeça para baixo por conta própria.
 
-After a robot has been fixed, it will be placed on the unoccupied neutral spot
-furthest from the ball, facing its own goal.
+Após um robô ser consertado, ele será colocado no ponto neutro desocupado
+mais distante da bola, de frente para seu próprio gol.
 
-*Only the referee decides whether a robot is damaged.* A robot can only be
-taken off or returned with the referee’s permission.
+*Somente o árbitro decide se um robô está danificado.* Um robô só pode ser
+retirado ou retornado com a permissão do árbitro.
 
-If both robots from the same team are deemed damaged at kick-off, gameplay will
-be paused and the remaining team will be awarded 1 goal for each elapsed 30
-seconds that their opponent’s robots remain damaged. However, these rules only
-apply when none of the two robots from the same team were damaged as the result
-of the opponent team violating the rules.
+Se ambos os robôs da mesma equipe forem considerados danificados no pontapé inicial, o jogo será
+pausado e a equipe restante será premiada com 1 gol para cada 30
+segundos decorridos que os robôs do oponente permanecerem danificados. No entanto, essas regras só se aplicam quando nenhum dos dois robôs da mesma equipe foi danificado como resultado de uma violação das regras pela equipe adversária.
 
-Whenever a robot is removed from play, its motors must be turned off.
+Sempre que um robô é removido do jogo, seus motores devem ser desligados.
 
 
 [[human-interference]]
-=== Human interference
+=== Interferência humana
 
-Except for the kick-off, human interference from the teams (e.g. touching the
-robots) during the game is not allowed unless explicitly permitted by a
-referee. Violating team(s)/team member(s) may be disqualified from the game.
+Exceto pelo pontapé inicial, a interferência humana das equipes (por exemplo, tocar os
+robôs) durante o jogo não é permitida, a menos que explicitamente autorizada por um
+árbitro. A(s) equipe(s) que violarem essa regra podem ser desqualificadas do jogo.
 
-The referee(s) can help robots get unstuck if the ball is
-not being disputed near them and if the situation was created from normal
-interaction between robots (i.e. it was not a design or programming flaw of the
-robot alone). The referee(s) will pull back the robots just
-enough for them to be able to move freely again.
+O(s) árbitro(s) podem ajudar robôs a se soltarem se a bola não estiver
+sendo disputada perto deles e se a situação foi criada a partir da interação normal
+entre robôs (ou seja, não foi uma falha de design ou programação do
+robô sozinho). O(s) árbitro(s) puxará(ão) os robôs para trás apenas
+o suficiente para que eles possam se mover livremente novamente.
 
 [[interruption-of-game-ref-interruption]]
-=== Interruption of Game
+=== Interrupção do Jogo
 
-In principle, a game will not be stopped.
+Em princípio, um jogo não será interrompido.
 
-A referee can stop the game if there is a situation on or around the field
-which the referee wants to discuss with an official of the tournament or if the
-ball malfunctions and a replacement is not readily available.
+Um árbitro pode parar o jogo se houver uma situação em ou ao redor do campo
+que o árbitro queira discutir com um oficial do torneio ou se a
+bola apresentar mau funcionamento e uma substituição não estiver prontamente disponível.
 
-When the referee has stopped the game, all robots must be stopped and remain on
-the field untouched. The referee may decide whether the game will be
-continued/resumed from the situation in which the game was stopped or by a
-neutral kick-off.
+Quando o árbitro parar o jogo, todos os robôs devem ser parados e permanecer em
+campo sem serem tocados. O árbitro pode decidir se o jogo será
+continuado/retomado a partir da situação em que foi parado ou por um
+pontapé inicial neutro.
 
 [[robots]]
-== ROBOTS
+== ROBÔS
 
 [[robots-interference]]
-=== Interference
+=== Interferência
 
-Robots are not allowed to be colored orange, yellow or blue in order to avoid
-interference. Orange, yellow, blue colored parts used in the construction of
-the robot must either be occluded by other parts from the perception by other
-robots or be taped/painted with a neutral color.
+Os robôs não têm permissão para serem coloridos de laranja, amarelo ou azul para evitar
+interferência. Partes coloridas de laranja, amarelo ou azul usadas na construção do
+robô devem estar ocultas por outras partes da percepção por outros
+robôs ou serem cobertas/pintadas com uma cor neutra.
 
-Robots must not produce magnetic interference in other robots on the field.
+Os robôs não devem produzir interferência magnética em outros robôs em campo.
 
-Robots must not produce visible light that may prevent the opposing team from
-playing when placed on a flat surface. Any part of a robot that produces light
-that may interfere with the opposing robot’s vision system must be covered.
-For Lightweight-specific regulations see <<regulations-inference-in-lightweight>>
+Os robôs não devem produzir luz visível que possa impedir a equipe adversária de
+jogar quando colocados em uma superfície plana. Qualquer parte de um robô que produza luz
+que possa interferir com o sistema de visão do robô adversário deve ser coberta.
+Para regulamentos específicos do Lightweight, veja <<regulations-inference-in-lightweight>>
 
-Robots are expected to be capable of dealing with any visible colors above the
-walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. 
-limiting the field of view from looking up) or in software (e.g. masking
-the input image).
+Espera-se que os robôs sejam capazes de lidar com quaisquer cores visíveis acima das
+paredes (por exemplo, camisas azuis, amarelas, verdes ou laranjas) seja em hardware (por exemplo,
+limitando o campo de visão olhando para cima) ou em software (por exemplo, mascarando
+a imagem de entrada).
 
-The referee can interrupt a game in progress if any kind of interference from
-spectators is suspected (IR emitters, camera flashes, mobile
-phones, radios, computers, etc.).
+O árbitro pode interromper um jogo em andamento se qualquer tipo de interferência de
+espectadores for suspeita (emissores IR, flashes de câmera, celulares,
+rádios, computadores, etc.).
 
-A team claiming that their robot is affected by the other team’s robot in any
-way must provide proof or evidence of the interference. Any interference needs to
-be confirmed by the tournament organizers if a claim is placed by the other team.
+Uma equipe que alegar que seu robô está sendo afetado de alguma forma pelo robô da outra equipe deve fornecer prova ou evidência da interferência. Qualquer interferência precisa ser
+confirmada pelos organizadores do torneio se uma reclamação for feita pela outra equipe.
 
 [[robots-control]]
-=== Control & Communication
+=== Controle e Comunicação
 
-The use of remote control of any kind is not allowed during the match. Robots
-must be controlled autonomously.
+O uso de controle remoto de qualquer tipo não é permitido durante a partida. Os robôs
+devem ser controlados de forma autônoma.
 
-{++For only the World Championships, starting in Brazil 2025, use of a Communications
-Module is required for referees to control the robots. 
-See <<international-competition-specifics>>++}
+{++Apenas para o Campeonato Mundial, começando no Brasil 2025, o uso de um Módulo de Comunicação
+é obrigatório para que os árbitros controlem os robôs.
+Veja <<international-competition-specifics>>++}
 
 [[agility]]
-=== Agility
+=== Agilidade
 
-Robots must be constructed and programmed in a way that their movement is not
-limited to only one dimension (defined as a single axis, such as only moving in
-a straight line). They must move in all directions, for example by turning.
+Os robôs devem ser construídos e programados de uma maneira que seu movimento não seja
+limitado a apenas uma dimensão (definida como um único eixo, como se mover em linha
+reta). Eles devem se mover em todas as direções, por exemplo, girando.
 
 [[handle]]
-=== Handle
+=== Alça
 
-All robots must have a stable and easily noticeable handle to hold and to lift
-them. The handle must be easily accessible and allow the robot to be picked up
-from at least 5 cm above the highest structure of the robot. {++ There must be a
-minimum clearance of 5 cm for hands between the highest non-handle part of the
-robot and the handle. ++}
+Todos os robôs devem ter uma alça estável e facilmente notável para segurar e levantar
+eles. A alça deve ser facilmente acessível e permitir que o robô seja pego
+a partir de pelo menos 5 cm acima da estrutura mais alta do robô. {++ Deve haver um
+espaçamento mínimo de 5 cm para as mãos entre a parte não alça mais alta do
+robô e a alça. ++}
 
-The dimensions of the handle may exceed the robot height
-limitation, but the part of the handle that exceeds this
-limit cannot be used to mount components of the robot.
+As dimensões da alça podem exceder a limitação de altura do robô,
+mas a parte da alça que excede esse
+limite não pode ser usada para montar componentes do robô.
 
-The weight of the robot includes that of the handle.
+O peso do robô inclui o da alça.
 
 [[top-markers]]
-=== Top Markers
+=== Marcadores Superiores
 
-A robot must have markings in order to be distinguished by the referee. Each
-robot must have a white plastic circle with a diameter of at least 4 cm mounted
-horizontally on top. This white circle will be used by the referee to write
-numbers on the robots using markers, therefore the white circles must be
-accessible and visible. The top markers do not need to be within the size
-limit of the robot.
+Um robô deve ter marcações para ser distinguido pelo árbitro. Cada
+robô deve ter um círculo plástico branco com um diâmetro de pelo menos 4 cm montado
+horizontalmente na parte superior. Este círculo branco será usado pelo árbitro para escrever
+números nos robôs usando marcadores, portanto, os círculos brancos devem ser
+acessíveis e visíveis. Os marcadores superiores não precisam estar dentro do tamanho
+limite do robô.
 
-Before the game, the referee will designate the numbers for each robot and will
-write them on the top white circle. Robots not carrying the top white circle
-are not eligible to play.
+Antes do jogo, o árbitro designará os números para cada robô e os escreverá no
+círculo branco superior. Robôs que não carregam o círculo branco superior
+não são elegíveis para jogar.
 
-.A visualization of the top marker
+.Uma visualização do marcador superior
 image::media/image4.jpeg[scaledwidth=50.0%]
 
 [[violations]]
-=== Violations
+=== Violações
 
-Robots that do not abide by the specifications/regulations (see
-<<regulations>>) are not allowed to play, unless these rules specify otherwise.
+Robôs que não cumprem as especificações/regulamentos (veja
+<<regulations>>) não têm permissão para jogar, a menos que estas regras especifiquem o contrário.
 
-If violations are detected during a running game the team may be disqualified for
-that game.
+Se violações forem detectadas durante um jogo em andamento, a equipe pode ser desqualificada por
+aquele jogo.
 
-If similar violations occur repeatedly, the team may be disqualified from the
-tournament.
+Se violações semelhantes ocorrerem repetidamente, a equipe pode ser desqualificada do
+torneio.
 
 [[specifications]]
-=== Material specifications
+=== Especificações de materiais
 
-Detailed specifications of the ball and fields can be found here
-footnote:[
+Especificações detalhadas da bola e dos campos podem ser encontradas aqui
+nota de rodapé:[
 https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/master/field_specification.html 
-and https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectively].
+ou https://robocup-junior.github.io/soccer-rules/master/field_specification.html 
+e https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
+ou https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectivamente].
 
 [[lightweight-ball-change]]
-=== Soccer Lightweight Ball change 2026
+=== Mudança da Bola do Soccer Lightweight 2026
 
-{++Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
-difference with this ball is the size change from 74mm to 42mm diameter,
-which is the same size as the Open League's passive ball. More information
-will be released during the 2025 season by the Committee. This ball is
-Open-Source, so anyone can produce one from the files & instructions on the
-GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . Entry
-Leagues will continue to use the large infrared ball.++}
-footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
-robotics kits with which handling a small ball is more difficult, especially
-for beginners.]
+{++A partir de 2026, o Soccer Lightweight passará a usar uma nova Bola IR. A principal
+diferença com esta bola é a mudança de tamanho de 74mm para 42mm de diâmetro,
+que é o mesmo tamanho da bola passiva da Liga Open. Mais informações
+serão divulgadas durante a temporada de 2025 pelo Comitê. Esta bola é
+Open-Source, então qualquer um pode produzir uma a partir dos arquivos e instruções na
+página do GitHub aqui: https://github.com/robocup-junior/ir-golf-ball . As Ligas de Entrada
+continuarão a usar a bola infravermelha grande.++}
+nota de rodapé:[As Ligas de Entrada usam frequentemente kits de robótica como Lego, FischerTechnik, Vex ou outros
+com os quais manusear uma bola pequena é mais difícil, especialmente
+para iniciantes.]
 
 [[tournament-balls]]
-=== Tournament balls
+=== Bolas do torneio
 
-Balls for the tournament must be made available by the tournament organizers.
-Tournament organizers are not responsible for providing balls for practice.
+Bolas para o torneio devem ser disponibilizadas pelos organizadores do torneio.
+Os organizadores do torneio não são responsáveis por fornecer bolas para prática.
 
 [[code-of-conduct]]
-== CODE OF CONDUCT
+== CÓDIGO DE CONDUTA
 
 [[fair-play]]
-=== Fair Play
+=== Jogo Limpo
 
-It is expected that the aim of all teams is to play a fair and clean game of
-robot soccer. It is expected that all robots will be built with consideration
-to other participants.
+Espera-se que o objetivo de todas as equipes seja jogar uma partida justa e limpa de
+futebol robô. Espera-se que todos os robôs sejam construídos com consideração
+aos outros participantes.
 
-Robots are not allowed to cause deliberate interference with or damage to other
-robots during normal gameplay.
+Os robôs não têm permissão para causar interferência deliberada ou danos a outros
+robôs durante o jogo normal.
 
-Robots are not allowed to cause damage to the field or to the ball during
-normal gameplay.
+Os robôs não têm permissão para causar danos ao campo ou à bola durante
+o jogo normal.
 
-A robot that causes damage may be disqualified from a specific match at the
-tournament organizer's discretion.
+Um robô que causar danos pode ser desqualificado de uma partida específica a critério do
+organizador do torneio.
 
-Humans are not allowed to cause deliberate interference with robots or damage
-to the field or the ball.
+Humanos não têm permissão para causar interferência deliberada com robôs ou danos
+ao campo ou à bola.
 
 [[conflict-resolution]]
-== CONFLICT RESOLUTION
+== RESOLUÇÃO DE CONFLITOS
 
 [[referees]]
-=== Referees
+=== Árbitros
 
-The referee(s) are in charge of making decisions with regards to the game,
-according to these rules.
+O(s) árbitro(s) são responsáveis por tomar decisões com relação ao jogo,
+de acordo com estas regras.
 
-*During gameplay, the decisions made by the referee(s) are final.*
+*Durante o jogo, as decisões tomadas pelo(s) árbitro(s) são finais.*
 
-Only the team member(s) at the table have a mandate to freely speak to the referee(s).
+Somente o(s) membro(s) da equipe na mesa têm mandato para falar livremente com o(s) árbitro(s).
 
-At the conclusion of the game the results become final with signatures from
-both teams. Disputes need to be settled before signing.
+Na conclusão do jogo, os resultados se tornam finais com as assinaturas de
+ambas as equipes. Disputas precisam ser resolvidas antes da assinatura.
 
 [[rule-clarification]]
-=== Rule clarification
+=== Esclarecimento de regras
 
-Rule clarification may be made by members of the tournament organizers
-and the Soccer League Committee, if necessary even during a tournament.
+O esclarecimento de regras pode ser feito por membros dos organizadores do torneio
+e do Comitê da Liga de Futebol, se necessário até mesmo durante um torneio.
 
 [[rule-modification]]
-=== Rule modification
+=== Modificação de regras
 
-If special circumstances, such as unforeseen problems or capabilities of a
-robot occur, rules may be modified by the tournament organizers, if
-necessary even during a tournament.
+Se circunstâncias especiais, como problemas imprevistos ou capacidades de um
+robô ocorrerem, as regras podem ser modificadas pelos organizadores do torneio, se
+necessário até mesmo durante um torneio.
 
 [[competition-specifics]]
-=== Competition specifics
+=== Específicos da competição
 
-Each competition (from local to international) may have adapted rules and
-added specifics (scoring, interviews, tournament modes, rule variations
-etc.). Check with organizers of each tournament you participate in.
+Cada competição (de local a internacional) pode ter regras adaptadas e
+específicos adicionais (pontuação, entrevistas, modos de torneio, variações de regras
+etc.). Verifique com os organizadores de cada torneio em que você participar.
 
 [[league-regulations]]
-== LEAGUE REGULATIONS
+== REGULAMENTOS DA LIGA
 
 [[league-regulations-preamble]]
-=== Preamble
+=== Preâmbulo
 
-For RoboCupJunior , there are two sub-leagues as follows
+Para o RoboCupJunior , existem duas sub-ligas conforme segue
 
 * Soccer Lightweight
 * Soccer Open
 
-The matches in the Soccer Open
-sub-league are conducted using a passive ball, whereas the matches in the
-Soccer Lightweight sub-league are played using the IR ball.
-footnote:[ for detailled ball specifications see: <<specifications>>]
+As partidas na sub-liga Soccer Open
+são conduzidas usando uma bola passiva, enquanto as partidas na
+sub-liga Soccer Lightweight são jogadas usando a bola IR.
+nota de rodapé:[ para especificações detalhadas da bola veja: <<specifications>>]
 
 [[regulations]]
-=== Regulations
+=== Regulamentos
 
 [[dimensions]]
-==== Dimensions
+==== Dimensões
 
-Robots will be measured in an upright position with all parts extended. A
-robot’s dimensions must not exceed the following limits:
+Os robôs serão medidos em uma posição ereta com todas as partes estendidas. As
+dimensões de um robô não devem exceder os seguintes limites:
 
 |===
-|sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size ^[0]^  | 18.0 cm | 22.0 cm +
-|height | 18.0 cm | 22.0 cm +
-|weight | {~~2200 g~>No limit~~} | 1400 g +
-|ball-capturing zone | 1.5 cm | 3.0 cm +
+|sub-liga | *Soccer* *Open* | *Soccer Lightweight*
+|tamanho ^[0]^  | 18.0 cm | 22.0 cm +
+|altura | 18.0 cm | 22.0 cm +
+|peso | {~~2200 g~>Sem limite~~} | 1400 g +
+|zona de captura de bola | 1.5 cm | 3.0 cm +
 |===
 
-TIP: [0] Robot must fit smoothly into a cylinder of this diameter
+DICA: [0] O robô deve caber suavemente dentro de um cilindro deste diâmetro
 
-Ball-capturing zone is defined as any internal space created when a straight
-edge is placed on the protruding points of a robot. This means the ball must
-not enter the convex hull of a robot by more than the specified depth.
-Furthermore, it must be possible for another robot to take possession of the
-ball.
+A zona de captura de bola é definida como qualquer espaço interno criado quando uma borda
+reta é colocada nos pontos salientes de um robô. Isso significa que a bola não deve
+entrar no casco convexo de um robô por mais do que a profundidade especificada.
+Além disso, deve ser possível para outro robô tomar posse da bola.
 
 [[regulations-inference-in-lightweight]]
-==== Infrared interference in Lightweight
+==== Interferência Infravermelha no Lightweight
 
-Components designed
-to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not
-allowed and tournament organizers will require such devices to be removed or
-covered up.
-
+Componentes projetados
+para emitir infravermelho (por exemplo, ToF, LiDAR, sensores de distância infravermelhos, LEDs/LASERs infravermelhos etc.) não são
+permitidos e os organizadores do torneio exigirão que tais dispositivos sejam removidos ou
+cobertos.
 [[regulations-limitations]]
-==== Limitations
+==== Limitações
 
-A robot may use any number of cameras without restrictions on lenses,
-optical parts, optical systems, and total field of view. Components may be
-sourced in any way the team sees fit.
+Um robô pode usar qualquer número de câmeras sem restrições quanto a lentes,
+peças ópticas, sistemas ópticos e campo de visão total. Os componentes podem ser
+obtidos da maneira que a equipe considerar adequada.
 
-{--Pneumatic devices are allowed to use ambient air only.--}
+{--Dispositivos pneumáticos podem usar apenas ar ambiente.--}
 
-Kicker strength is subject to compliance check at any time during the
-competition. During gameplay, a referee can ask to see a sample kick on the
-field before each half when a damaged robot is returned to the field or when
-the game is about to be restarted after a goal. If the referee strongly
-suspects that a kicker exceeds the power limit, they can require an official
-measurement. See <<kicker-power-measuring>> for more details.
+A força do chute está sujeita a verificação de conformidade a qualquer momento durante a
+competição. Durante o jogo, o árbitro pode solicitar uma amostra do chute em campo
+antes de cada tempo, quando um robô danificado for devolvido ao campo ou quando
+o jogo estiver prestes a ser reiniciado após um gol. Se o árbitro suspeitar fortemente que um chutador excede o limite de potência, ele poderá exigir uma medição oficial. Consulte <<kicker-power-measuring>> para mais detalhes.
 
 [[regulations-inspections]]
-==== Inspections
 
-Robots must be inspected and certified every day before the first game is
-played. The tournament organizers may request other inspections if necessary,
-including random inspections which may happen at any time.
-
-[[international-competition]]
-== INTERNATIONAL COMPETITION
-
-[[international-competition-team]]
-=== Team
-
-{~~Soccer Lightweight team members can participate in the World
-Championship only twice. After their second participation, they need to move to
-Soccer Open.~>This rule has been removed from 2025 onwards.~~}
-
-[[international-competition-specifics]]
-=== International Competition Specifics
-
-{++Starting from the 2025 International Competition in Brazil, the Soccer League
-Committee will provide each team with a Communication Module. This allow for 
-easier co-ordination of games and referee control of robots during matches. Each
-team will be expected to interface with this module using a single 2.54mm GPIO
-pin at present to start and stop the robots. The Soccer League Committee plans 
-on extending this to using UART for more complex applications in future
-years. Please see the GitHub page for more information on the module:
-https://github.com/robocup-junior/soccer-communication-module
-
-The module itself may exceed the maximum height of the robot. It must
-be placed at least 1cm away from the outside and protected from impact
-damage.++}
+Os robôs devem ser inspecionados e certificados todos os dias antes do primeiro jogo.
+Os organizadores do torneio podem solicitar outras inspeções, se necessário,
+incluindo inspeções aleatórias, que podem ocorrer a qualquer momento.
 
 [[interviews]]
-=== Interviews
 
-During the international competition, the tournament organizers may arrange to
-interview teams during the Setup Day of the event. This means that the teams
-need to be already present early on this day.
+Durante a competição internacional, os organizadores do torneio podem agendar
+entrevistas com as equipes durante o Dia de Preparação do evento. Isso significa que as equipes
+precisam estar presentes desde o início deste dia.
 
-Details on what is required for and what to expect from interviews can be
-found in the scoring document available here footnote:[
-https://robocup-junior.github.io/soccer-rules/master/scoring.pdf or 
+Detalhes sobre o que é necessário e o que esperar das entrevistas podem
+ser encontrados no documento de pontuação disponível aqui (nota de rodapé): [
+https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou
 https://robocup-junior.github.io/soccer-rules/master/scoring.html].
 
-The Soccer League Committee recommends the implementation of interviews in regional
-competitions as well, but this is not mandatory. Teams should check with tournament
-organizers if they hold interviews and if so and what kind of interview to expect.
+O Comitê da Liga de Futebol recomenda a implementação de entrevistas também em
+competições regionais, mas isso não é obrigatório. As equipes devem verificar com os organizadores do torneio
+se realizam entrevistas e, em caso afirmativo, que tipo de entrevista esperar.
 
 [[technical-challenges]]
-=== Technical Challenges
 
-Inspired by the major leagues and the need for further technological
-advancement of the leagues, the Soccer League Committee runs what are
-called *Technical Challenges*. New challenges are added each year, and
-are unknown until during the International Competition.
+Inspirado pelas grandes ligas e pela necessidade de maior avanço tecnológico
+das ligas, o Comitê da Liga de Futebol organiza os
+chamados *Desafios Técnicos*. Novos desafios são adicionados a cada ano e
+são desconhecidos até a Competição Internacional.
 
-The idea of these challenges is to give the teams an opportunity to show off
-various abilities of their robots which may not get noticed during the regular
-games. Furthermore, the Soccer League Committee envisions these challenges to be a
-place for testing new ideas that may make it to the future rules, or otherwise
-shape the competition.
+A ideia desses desafios é dar às equipes a oportunidade de exibir
+várias habilidades de seus robôs que podem não ser notadas durante os
+jogos regulares. Além disso, o Comitê da Liga de Futebol prevê que esses desafios sejam um
+lugar para testar novas ideias que possam chegar às regras futuras ou, de alguma forma,
+moldar a competição.
 
-Any RoboCupJunior Soccer team will be eligible to try to tackle these
-challenges.
+Qualquer equipe de futebol da RoboCupJunior poderá tentar enfrentar esses
+desafios.
 
-[[further-information-on-international-competition]]
-=== Further information on International Competition
+[[further-information-on-competition]]
 
-All teams qualified to the international competition *must* share their
-designs, both hardware and software, with all present and future participants.
-These teams are also required to send a digital portfolio before the
-competition. Further details on how will be provided by the Soccer League
-Committee which acts as the tournament organizers for the international competition.
+Todas as equipes classificadas para a competição *devem* compartilhar seus
+projetos, tanto de hardware quanto de software, com todos os participantes atuais e futuros.
 
-During the competition days of the international competition (as well as before
-the event) the team members are responsible for checking all relevant
-information published by the Soccer League Committee
-or any other RoboCup official.
+Essas equipes também devem enviar um portfólio digital antes da competição. Mais detalhes sobre como isso será fornecido pelo Comitê da Liga de Futebol, que atua como organizador do torneio para a competição internacional.
 
-There will also be a SuperTeam competition, in which various teams from around
-the world share their robots in one "SuperTeam" and play against other
-SuperTeams on a so called "Big Field". Teams could utilise different camera 
-lenses or sensors optimised for the larger playing fields to improve their
-performance. The full rules of this challenge can be found at
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html or 
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf 
+Durante os dias de competição  (bem como antes
+do evento), os membros das equipes são responsáveis por verificar todas as informações relevantes
+publicadas pelo Comitê da Liga de Futebol
+ou qualquer outro oficial da RoboCup.
 
-Teams competing in the international competition can receive awards for their
-performance. These awards are decided and introduced by the Soccer League
-Committee, which publishes all necessary details well before the actual event.
-In the past years they were awarded for best poster, presentation, robot
-design, team spirit and individual games. footnote:[for details see
-https://robocup-junior.github.io/soccer-rules/master/scoring.pdf or 
-https://robocup-junior.github.io/soccer-rules/master/scoring.html]
-
-[[entry-league]]
-== ENTRY LEAGUE
-
-In order to help newcomers experience the RoboCupJunior Soccer competition, the
-Soccer League Committee would like to encourage competitions to include
-a so called "Entry League". Although such a league will not be part of the
-international competition, the Soccer League Committee still believes that it is
-worthwhile to make it part of regional and super-regional competitions. To this end,
-the Soccer League Committee has prepared a suggested ruleset. footnote:[Avaliable
-as HTML and PDF at
-https://robocup-junior.github.io/soccer-rules-entry/master/rules.html and
-https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf respectively]
-Some regional and super-regional competitions already have rulesets and will likely
-make changes to the suggested rulesets or replace them entirely for their events.
-footnote:[Examples:
-https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf,
-https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf]
-Teams should ask their local/regional/super-regional tournament organizers for
-details on what Entry leagues (if any) will be running in their region.
-
-[appendix]
-[[kicker-power-measuring]]
-== Kicker Power Measuring Procedures
-
-All robot kickers will be tested with the tournament ball used in the sub-league they
-participate in.
-Kicker Power will be measured by means of an on-field test.
-The bounce off the walls can change depending on field consturction. Teams
-should make sure they can adjust the power of their kicker if necessary.
-
-The test is performed as follows:
-
-.  {~~Place robot inside the goal.~>Place robot inside a goal with the robot touching the back goal wall.~~}
-.  Perform a kick into the opposing goal
-.  {~~The Open League kicker power test is passed if after bouncing off of the opposite goal
-the ball does not return further than the front line of to the penalty area
-it was shot from.
-The Light Weight League power test is passed if after bouncing off of the opposite goal
-the ball does not leave the penalty area of the opposing goal after bouncing back.~>The
-kick power test is passed if after bouncing off the opposite goal the ball does not
-hit the back wall of the goal the robot performed the kick power test from.~~}
