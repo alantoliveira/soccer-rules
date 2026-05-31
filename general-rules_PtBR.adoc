@@ -1,0 +1,199 @@
+== Regras Gerais da RoboCupJunior Internacional 2026
+
+Estas regras se aplicam à competição internacional da RoboCupJunior.
+No entanto, torneios regionais, Super-Regionais e locais podem ter
+variações ou adaptações nestas regras para atender às suas necessidades
+específicas de competição. É importante verificar com os organizadores dos
+torneios em que você está participando para confirmar quais regras exatas
+serão utilizadas.
+
+Se as equipes tiverem dúvidas sobre qualquer aspecto das Regras Gerais ou das
+Regras Específicas da Liga, elas são encorajadas a consultar o Fórum Oficial
+da RoboCupJunior para esclarecimentos: https://junior.forum.robocup.org/
+
+Para perguntas sobre quaisquer regras ou sobre a RoboCupJunior em geral, as equipes
+também podem entrar em contato com a comunidade RoboCupJunior pelo https://robocup-junior.github.io/soccer-rules/discord/[Servidor Discord Oficial].
+
+=== Requisitos das Equipes
+
+==== Tamanho da Equipe
+*Tamanho Mínimo da Equipe*: As equipes devem ser compostas por pelo menos 2 membros.
+
+*Tamanho Máximo da Equipe*:
+
+* Ligas de Soccer e Resgate: 4 membros.
+
+* Liga OnStage: 5 membros.
+
+Competições regionais e Super-Regionais podem definir seus próprios tamanhos de equipe dependendo da capacidade do local e das variações regionais. As equipes que participam da competição Internacional poderão ter apenas o número máximo de participantes registrados na equipe classificada.
+
+*Membros e Robôs Compartilhados*: Nenhum membro ou robô pode ser
+compartilhado entre equipes.
+
+==== Supervisão da Equipe
+*Requisito de Mentor Júnior*: Cada equipe Júnior deve ter pelo menos
+um Mentor Júnior registrado e presente com a equipe.
+
+Mentores e Pais/Acompanhantes são responsáveis por supervisionar suas equipes
+e manter o dever de cuidado e bem-estar de seus membros, conforme apropriado para as regulamentações de sua região de origem.
+Qualquer preocupação referente ao bem-estar dos membros da equipe deve ser comunicada imediatamente aos organizadores do evento.
+
+O Mentor Júnior deve estar presente durante todos os eventos oficiais de competição com sua equipe.
+Eles não devem interagir de maneira impositiva com equipes, robôs, juízes ou o processo de julgamento. Qualquer incidente considerado inadequado será tratado pelos organizadores do evento e pode levar a ações disciplinares.
+
+==== Requisitos de Idade
+
+*Membros Estudantes Júnior:* Devem ter entre 14 e 19 anos de idade em 1º de julho do ano da competição.
+
+*Mentores Júnior e Pais/Acompanhantes:* Devem ter 19 anos ou mais em 1º de julho do ano da competição.
+
+==== Membros da Equipe
+
+*Ligas de Entrada*: As ligas de entrada da RoboCupJunior e outras divisões "Primárias"
+(onde a idade mínima pode variar) não são realizadas na competição internacional,
+mas estão presentes em muitas regiões e torneios Super-Regionais.
+
+*Funções Técnicas*: Todo membro da equipe deve ter uma função técnica definida
+(mecânica/design, elétrica/sensoriamento, software, etc.) e deve ser capaz de explicar sua função durante o julgamento técnico.
+
+=== Processo de Qualificação para a Equipe Internacional
+* Para se qualificar para a competição Internacional, o Representante Regional de cada região completará o Processo de Alocação de Vagas no início do ano da competição. Os Representantes Regionais podem ser encontrados no https://junior.robocup.org/gettingstarted/[Site Oficial].
+* Após o torneio classificatório local da região, o Representante Regional
+atribuirá as vagas. Uma vez confirmadas pelos organizadores da RoboCupJunior, as equipes qualificadas serão convidadas a se registrar pelo sistema oficial de registro da Federação RoboCup.
+* O processo de qualificação difere dependendo do tamanho de cada região,
+mas a alocação de vagas deve refletir fortemente os resultados das competições regionais.
+* Se uma região não utilizar ou liberar suas vagas alocadas, os Representantes Regionais
+podem solicitar vagas adicionais durante uma fase posterior do processo de alocação.
+
+=== Requisitos dos Robôs
+
+==== Comunicação do Robô
+
+*Comunicação Permitida*: A comunicação entre robôs durante o jogo é permitida, desde que utilize o espectro de 2,4 GHz e sua potência de saída não exceda 100 mW EIRP (Potência Radiada Isotropicamente Efetiva) em nenhuma circunstância.
+
+*Responsabilidade*: As equipes são responsáveis por gerenciar a comunicação de seus robôs. A disponibilidade do espectro não é garantida.
+
+*Comunicação entre Componentes*: A comunicação entre componentes do
+mesmo robô é permitida.
+
+*Adaptabilidade da Liga*: Cada liga pode modificar as regras de comunicação do robô
+para garantir que atendam aos seus requisitos específicos.
+
+==== Requisitos de Segurança e Energia
+
+*Energia Elétrica*:
+
+* Os robôs não devem usar energia da rede elétrica.
+
+* Tensão máxima permitida: 48V CC ou 25V CA RMS (Valor Quadrático Médio).
+
+* A tensão deve ser facilmente medida durante as inspeções, e os pontos de medição
+devem ser cobertos para segurança ou projetados com considerações de segurança.
+
+
+*Segurança das Baterias*:
+
+* As baterias de lítio devem ser armazenadas em bolsas de segurança, e o carregamento deve ser
+supervisionado pelos membros da equipe nas áreas de competição.
+
+* As equipes devem seguir os protocolos de segurança, incluindo procedimentos de manuseio de incêndio em baterias e evacuação.
+
+*Design de Segurança do Robô*:
+
+* *Gerenciamento de Energia*: Baterias seguras, fiação segura e funcionalidade de parada de emergência.
+
+* *Segurança Mecânica*: Sem bordas afiadas, pontos de aperto ou outros riscos.
+Os atuadores devem ser apropriados para o tamanho e a função do robô.
+
+* *Comportamento Perigoso*: As equipes devem reportar comportamentos potencialmente perigosos dos robôs pelo menos duas semanas antes de um evento da RoboCupJunior.
+
+=== Requisitos de Documentação e Compartilhamento
+
+==== Pôsteres das Equipes da RoboCupJunior
+
+*Finalidade*: Os pôsteres são uma ferramenta para compartilhar designs de robôs e insights
+com juízes, equipes e o público. Os pôsteres serão afixados em áreas públicas da competição no local e cópias digitais ou fotografias serão compartilhadas pela RoboCupJunior após a competição.
+
+*Tamanho*: Os pôsteres não devem ser maiores que o tamanho A1 (60 x 84 cm).
+
+*Conteúdo*: Os pôsteres devem resumir os documentos de design e apresentar as
+capacidades do robô em um formato envolvente.
+
+==== Vídeo de Descrição Técnica (Ver Documentação da Liga)
+
+*Conteúdo*:
+
+* *Demonstração Robótica*: Mostrar sistemas de robôs totalmente funcionais para
+destacar aspectos técnicos.
+
+* *Processo de Design*: Explicar as escolhas de design e as abordagens de resolução de problemas da equipe.
+
+* *Apresentação*: Clara e de alta qualidade, explicando técnicas inovadoras ou incomuns.
+
+* *Inovação e Sustentabilidade*: Destacar novas tecnologias e práticas sustentáveis.
+
+*Submissão*: As diretrizes especificarão a duração do vídeo e os prazos por liga.
+
+==== Compartilhamento de Recursos da Equipe
+
+*Compartilhamento*: Os materiais submetidos pelas equipes como parte da submissão de documentação serão compartilhados nos repositórios do GitHub para as ligas:
+https://github.com/robocup-junior
+
+*Crédito*: As equipes devem creditar os criadores de trabalhos externos e respeitar as regras de licenciamento. O foco deve permanecer no crescimento pessoal e no aprendizado.
+
+==== Diretrizes sobre Plágio
+
+*Uso de Código Externo*: As equipes têm permissão para usar código externo, mas devem
+creditar os criadores originais.
+
+*Prioridade de Aprendizado*: As equipes devem priorizar o aprendizado e não usar
+soluções completas de terceiros. Sempre preste atenção às regras de licenciamento.
+
+==== Lista de Materiais (BOM)
+
+*Submissão*: As equipes devem enviar uma BOM (Lista de Materiais) listando os principais componentes e
+materiais utilizados.
+
+*Detalhes*: A BOM deve incluir:
+
+* Nome/descrição do componente (ex.: número da peça).
+
+* Fornecedor/fonte do componente (incluindo PCBs/componentes usinados).
+
+* Status (novo/reutilizado).
+
+* Kit ou construído sob medida.
+
+* Preço.
+
+*Modelo*: Um modelo padronizado de BOM será fornecido com as submissões de documentação da liga para a competição internacional.
+
+=== Espírito e Comportamento
+
+==== Comportamento
+
+Espera-se que todos os participantes se comportem de maneira adequada, sendo atenciosos e educados,
+especialmente, mas não somente, em relação a outros participantes, voluntários, árbitros e
+organizadores de todas as Ligas Júnior e Principais, bem como ao local do evento.
+
+==== Código de Conduta
+Todos os organizadores, voluntários, membros de equipes, mentores, apoiadores e visitantes devem respeitar o Código de Conduta da Federação RoboCup. Qualquer situação que não atenda ao código de conduta deve ser reportada a um membro da organização da Federação RoboCup e será investigada.
+
+==== Mentoria e Assistência no Local
+O apoio de outras equipes, mentores, professores, pais, patrocinadores, comunidades na internet etc. é uma parte fundamental de como as equipes aprendem e crescem.
+
+Para garantir uma competição justa e maximizar o aprendizado, é necessário que nenhum apoio recebido realize o trabalho de competição pela equipe. Um bom indicativo é a capacidade da equipe de explicar não apenas o que os componentes dos seus robôs fazem, mas também como eles fazem.
+
+==== Equipes no Local
+* Durante a competição, apenas os membros oficiais da equipe (máximo 4/5 dependendo da liga)
+podem representar a equipe no registro, dia de instalação e ter acesso às áreas de competição para rodadas e entrevistas.
+* Deve haver pelo menos 2 membros da equipe presentes no local, a menos que a equipe possa apresentar evidências de circunstâncias atenuantes, incluindo comprovante de viagem para outros membros. Equipes em que apenas um participante comparecer ao local poderão competir, mas não serão elegíveis para finais ou prêmios.
+* É responsabilidade das equipes garantir que os membros estejam presentes no horário e local corretos para todas as atividades programadas.
+* As equipes não têm permissão para se comunicar com ou receber ajuda virtualmente de partes externas com a intenção de impactar o desempenho da equipe durante as áreas de competição. A comunicação virtual inclui, mas não se limita a, chamadas telefônicas prolongadas, videochamadas, controle remoto de desktop etc.
+* Qualquer equipe que violar estas regras poderá estar sujeita a ações disciplinares.
+* Recomenda-se que as equipes busquem ajuda de outras equipes ou organizadores caso estejam enfrentando algum problema no local.
+
+==== Violações
+
+Equipes, Mentores/Apoiadores ou Membros de Equipes que repetidamente se comportem de maneira inaceitável ou em violação às Regras Gerais ou das Ligas poderão ser
+desqualificados do torneio e solicitados a deixar o local.

@@ -95,7 +95,7 @@ que podem acomodar. Informações de contato para o campeonato mundial:
 robocupjunior-soccer [ at \] robocup [ dot \] org
 
 [[general-rules]]
-include::general-rules/general-rules_PtBR.adoc[]
+include::general-rules_PtBR.adoc[]
 
 [discrete]
 === Mudanças nas Regras RoboCupJunior Soccer 2025
