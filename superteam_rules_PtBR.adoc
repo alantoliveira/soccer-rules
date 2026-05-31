@@ -1,0 +1,357 @@
+= Regras RoboCupJunior Soccer SuperTeam 2026
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+:numbered:
+
+Estas são as regras SuperTeam de Soccer para a RoboCupJunior 2026. Elas são divulgadas
+pelo Comitê da RoboCupJunior Soccer League. A versão em inglês dessas regras tem
+prioridade sobre qualquer tradução.
+
+As equipes são aconselhadas a verificar o site RoboCupJunior Soccer
+footnote:[https://junior.robocup.org/] e o fórum Soccer
+footnote:[https://junior.forum.robocup.org/c/robocupjunior-soccer/5]
+para obter os procedimentos e requisitos para a competição internacional. Para
+competições locais, regionais e super-regionais, consulte os organizadores dos
+torneios. Cada equipe é responsável por verificar a versão mais recente das regras
+antes de cada competição. Equipes devem solicitar esclarecimentos no Fórum sempre que
+necessário.
+footnote:[A versão atual dessas regras pode ser encontrada em
+https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html em formato HTML e
+em https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf em formato PDF.]
+
+TIP: As equipes são encorajadas a entrar em contato com a comunidade RoboCupJunior
+em nosso Discord. Mostre o que você está trabalhando, faça perguntas ou participe
+das discussões semanais sobre futuras regras e design da liga.
+footnote:[Você pode entrar no servidor em
+https://robocup-junior.github.io/soccer-rules/discord/]
+Você também pode contatar o Comitê da Soccer League diretamente por e-mail
+footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
+
+[title="Duas equipes de dois robôs com uma bola laranja em um campo de futebol RoboCupJunior."]
+image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
+
+[discrete]
+== Prefácio
+
+No desafio RoboCupJunior Soccer, equipes de jovens engenheiros projetam, constroem e
+programam dois robôs móveis totalmente autônomos para competir contra outro time em
+partidas. Os robôs devem detectar uma bola e marcar em um gol codificado por cores em
+um campo especial que se assemelha a um campo de futebol humano.
+
+Para ter sucesso, os participantes devem demonstrar habilidade em programação, robótica,
+eletrônica e mecatrônica. Espera-se também que as equipes contribuam para o avanço da
+comunidade como um todo, compartilhando suas descobertas com outros participantes e
+praticando o bom espírito esportivo, independentemente da cultura, idade ou resultado
+da competição. *Espera-se que todos compitam, aprendam, se divirtam e cresçam.*
+
+**Estas regras são divulgadas junto com as regras de jogo regular vigentes. Onde uma
+mudança é necessária por causa da diferença em relação aos jogos regulares, as situações
+foram analisadas e estão regulamentadas aqui. Para todas as outras situações que não
+mudam em relação às regras de jogo regular, normalmente são apenas mencionadas aqui
+como sendo a mesma regra de jogo regular.**
+
+[discrete]
+=== Mudanças nas Regras RoboCupJunior Soccer SuperTeam 2025
+
+// TODO: Resumir as mudanças aqui
+As mudanças nas regras desenvolvidas pelo Comitê da Liga de Soccer em cooperação com a
+Comunidade RoboCup Junior Soccer (por favor, continue postando ideias para o futuro a
+qualquer momento) visam melhorar a jogabilidade.
+
+Alterações detalhadas estão listadas abaixo e vinculadas ao local correspondente nas regras.
+
+{+-~TOC-CHANGES~-+}
+
+[[general-rules]]
+== Regras Gerais RoboCupJunior Internacional 2026
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<general-rules>> se aplica.
+
+[[gameplay]]
+== JOGABILIDADE
+
+[[game-procedure-and-length-of-a-game]]
+=== Procedimento de jogo e duração de uma partida
+
+As partidas RCJ Soccer SuperTeam consistem em dois times de robôs jogando futebol um
+contra o outro. Cada equipe tem cinco robôs autônomos. O jogo será composto por dois
+tempos. A duração de cada tempo é de 10 minutos. Haverá um intervalo de 5 minutos
+entre os tempos.
+
+Espera-se que os SuperTeams estejam em campo 5 minutos antes do início do jogo. Estar
+na mesa de inspeção não conta a favor desse limite de tempo. As equipes que se atrasarem
+para o início do jogo podem ser penalizadas em um gol a cada *30 segundos*, a critério
+do árbitro. As equipes membros devem garantir que todos os seus companheiros de
+SuperTeam compareçam para o jogo.
+
+O placar final do jogo será limitado para que haja no máximo 10 gols de diferença entre
+o time perdedor e o time vencedor.
+
+[[pre-match-meeting]]
+=== Reunião pré-jogo
+
+No início do primeiro tempo do jogo, um árbitro lançará uma moeda. A equipe mencionada
+primeiro no sorteio deve chamar a moeda. O vencedor do sorteio pode escolher para qual
+extremidade chutar ou chutar primeiro. O perdedor do sorteio escolhe a outra opção.
+Após o primeiro tempo, as equipes trocam de lado. O SuperTeam que não deu o pontapé
+inicial no primeiro tempo dará o pontapé inicial para iniciar o segundo tempo.
+
+Durante a reunião pré-jogo, o(s) árbitro(s) pode(m) verificar se os robôs são capazes
+de jogar (ou seja, se são pelo menos capazes de seguir e reagir à bola). Se nenhum dos
+robôs for capaz de jogar, o jogo não será disputado e zero gols serão concedidos a
+ambos os SuperTeams.
+
+[[kick-off]]
+=== Pontapé inicial
+
+Cada tempo do jogo começa com um pontapé inicial. Todos os robôs devem estar localizados
+em seu próprio lado do campo. Todos os robôs devem estar parados. A bola é posicionada
+por um árbitro no centro do campo.
+
+A equipe que dá o pontapé inicial coloca seus robôs no Big Field primeiro e o restante
+dos robôs pode ser colocado em qualquer lugar do seu lado do campo de jogo, desde que
+estejam a no máximo 10 cm de qualquer linha branca.
+
+O SuperTeam que não está dando o pontapé inicial colocará seus robôs no lado defensivo
+do Big Field.
+
+Os robôs não podem ser colocados atrás da linha de gol ou fora dos limites. Os robôs
+não podem ser reposicionados depois de colocados, exceto se o árbitro solicitar um
+ajuste de posicionamento para garantir que os robôs estejam posicionados corretamente.
+
+Ao comando do árbitro (geralmente por apito), todos os robôs serão iniciados
+imediatamente pelos membros da equipe a que pertencem. Quaisquer robôs iniciados
+antecipadamente serão removidos do campo pelo árbitro e considerados danificados.
+
+Antes de um pontapé inicial, *todos os robôs danificados ou fora dos limites* têm
+permissão de retornar ao campo de jogo imediatamente se estiverem _prontos e
+totalmente funcionais_.
+
+[[neutral-kickoff]]
+==== Pontapé inicial neutro
+
+Um pontapé inicial neutro é o mesmo descrito em <<kick-off>> com uma pequena
+alteração: todos os robôs devem estar a pelo menos 30 cm de distância da bola
+(fora do círculo central).
+
+[[scoring]]
+=== Pontuação
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<scoring>> se aplica.
+
+[[ball-movement]]
+=== Movimento da bola
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<ball-movement>> se aplica.
+
+[[inside-penalty-area]]
+=== Dentro da Área de Pênalti (Empurrão e Defesa Múltipla)
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<inside-penalty-area>> se aplica.
+
+[[lack-of-progress]]
+=== Falta de progresso
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<lack-of-progress>> se aplica.
+
+[[out-of-bounds]]
+=== Fora dos limites
+
+Se o corpo inteiro de um robô sair além da linha branca do Big Field, será chamado
+fora dos limites. Quando essa situação ocorrer, o robô receberá uma penalidade de um
+minuto e o SuperTeam será solicitado a remover o robô do Big Field. Não há interrupção
+do tempo para o jogo em si. O robô pode retornar se um pontapé inicial ocorrer antes
+que a penalidade tenha decorrido.
+
+A penalidade de um minuto começa quando o robô é removido do jogo. Além disso, qualquer
+gol marcado pelo SuperTeam penalizado enquanto o robô penalizado estiver no Big Field
+não será concedido. Os robôs fora dos limites podem ser consertados se o SuperTeam
+precisar, conforme descrito em <<damaged-robots>>.
+
+Após o término da penalidade, o robô será colocado no ponto neutro desocupado mais
+distante da bola, de frente para seu próprio gol.
+
+Um árbitro pode dispensar a penalidade se o robô for acidentalmente empurrado para fora
+de campo por um robô adversário. Nesse caso, o árbitro {++chamará "empurrado para fora"++}
+e poderá empurrar levemente o robô de volta ao campo.
+
+[[damaged-robots]]
+=== Robôs danificados
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<damaged-robots>>
+
+[[human-interference]]
+=== Interferência humana
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<human-interference>> se aplica.
+
+[[interruption-of-game-ref-interruption]]
+=== Interrupção do Jogo
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<interruption-of-game-ref-interruption>> se aplica.
+
+[[tournament-mode-byes]]
+=== Modo de torneio e jogos de Bye
+Em alguns casos (por exemplo, número ímpar de equipes), nem todas as equipes podem
+jogar cada rodada. Nesses casos, a equipe que está livre de jogo recebe um Bye. Em
+partidas SuperTeam onde menos gols são marcados, o Bye é concedido como uma vitória
+por 3:0 em vez do usual 10:0. Consulte os organizadores de torneio regional/super-regional
+para detalhes em torneios que não sejam o RoboCupJunior internacional.
+
+[[robots]]
+== ROBÔS
+
+[[robots-interference]]
+=== Interferência
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<robots-interference>> se aplica.
+
+[[robots-control]]
+=== Controle e Comunicação
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<robots-control>> se aplica.
+
+[[agility]]
+=== Agilidade
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<agility>> se aplica.
+
+[[handle]]
+=== Alça
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<handle>> se aplica.
+
+[[top-markers]]
+=== Marcadores Superiores
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<top-markers>> se aplica.
+
+[[violations]]
+=== Violações
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<violations>> se aplica.
+
+[[specifications]]
+=== Especificações de materiais
+
+link:https://robocup-junior,github.io/soccer-rules/master.rules.html[Regras RoboCupJunior Soccer] <<specifications>> se aplica.
+
+[[infrared-ball-change]]
+=== Mudança de Bola da Liga Soccer Infrared 2026
+
+link:https://robocup-junior.github.io/soccer-rules/master.rules.html[Regras RoboCupJunior Soccer] <<infrared-ball-change>> se aplica.
+
+[[tournament-balls]]
+=== Bolas do torneio
+
+link://https://robocup-junior.github.io/soccer-rules/master.rules.html[Regras RoboCupJunior Soccer] <<tournament-balls>> se aplica.
+
+[[number-of-robots-substitution]]
+=== Número de robôs / substituição
+
+O SuperTeam terá todos os robôs de suas respectivas equipes individuais disponíveis para
+jogar. No campo de jogo, o SuperTeam pode usar no máximo 5 robôs simultaneamente, que
+são seus jogadores ativos. Os demais robôs constituem seus jogadores reservas. Como o
+campo de jogo é grande, sugere-se que o SuperTeam estabeleça posições para os robôs
+dentro do campo (goleiro, zagueiros, meio-campistas, atacantes, etc.), ajustando a
+mecânica e programação dos robôs.
+
+A substituição de robôs durante a competição com outros SuperTeams é proibida. Os robôs
+receberão um código especial que os distinguirá de outros SuperTeams. Cada robô que
+pertence a um superteam receberá um ID identificando-o como membro de uma equipe.
+
+Exemplo: Robô A-2: o árbitro identificaria o robô com o adesivo A-2 como o robô número
+2 pertencente à equipe A. Esses IDs serão escritos nos Marcadores Superiores dos robôs
+(veja link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<top-markers>>).
+
+Cada equipe individual é obrigada a ter pelo menos um de seus robôs como jogador ativo,
+com exceção de uma sexta equipe, caso em que o SuperTeam é obrigado a ter rodízio de
+equipes individuais permitindo incluir todas as equipes individuais de forma equilibrada.
+Os membros do SuperTeam podem decidir livremente como substituir robôs entre os jogadores
+atuais e os reservas durante o jogo, mas o capitão é obrigado a solicitar autorização ao
+árbitro para a substituição de robôs.
+
+As substituições são permitidas apenas a cada pontapé inicial (veja <<kick-off>>).
+
+[[code-of-conduct]]
+== CÓDIGO DE CONDUTA
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<code-of-conduct>> e suas subseções se aplicam.
+
+[[conflict-resolution]]
+== RESOLUÇÃO DE CONFLITOS
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<conflict-resolution>> e suas subseções se aplicam.
+
+[[league-regulations]]
+== REGULAMENTOS DA LIGA
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<league-regulations>> e suas subseções se aplicam.
+
+[[kicker-power-measuring]]
+== Procedimentos de Medição de Potência do Chutador
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<kicker-power-measuring>> e suas subseções se aplicam.
+
+[[field]]
+== BIG FIELD
+
+[[dimensions-of-the-field]]
+=== Dimensões do campo
+
+O Big Field tem 540 cm por 340 cm. O Big Field é marcado por uma linha branca que faz
+parte do campo de jogo. Ao redor do campo de jogo, além da linha branca, há uma área
+externa de 30 cm de largura. As dimensões totais do Big Field, incluindo a área externa,
+são 600 cm por 400 cm. A área de jogo é dividida em lados para cada SuperTeam por uma
+linha preta.
+
+O chão próximo à parede exterior inclui uma rampa, que é uma inclinação com 10 cm de
+base e 2 +/- 1 cm de elevação para permitir que a bola role de volta ao jogo quando
+sair do campo. Note que o gol não deve conter a rampa.
+
+[[neutral-spots]]
+=== Pontos neutros
+
+Há cinco pontos neutros definidos no Big Field. Um está no centro do Big Field. Os outros
+quatro estão localizados sobre as diagonais que passam pelos cantos do campo de jogo, na
+metade da distância entre o centro do campo e cada canto. Os pontos neutros podem ser
+desenhados com um marcador preto fino. Os pontos neutros devem ter formato circular
+medindo 1 cm de diâmetro.
+
+[[center-circle]]
+=== Círculo central
+
+Um círculo central será desenhado no Big Field. Tem 80 cm de diâmetro. É uma linha fina
+de marcador preto. Serve como orientação para árbitros e membros do SuperTeam durante
+o pontapé inicial.
+
+[[penalty-areas]]
+=== Áreas de penalidade
+
+Na frente de cada gol há uma área de penalidade de 35 cm de largura e 120 cm de
+comprimento.
+
+As áreas de penalidade são marcadas por uma linha branca de 20 mm (±10%) de largura.
+A linha faz parte da área.
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[Regras RoboCupJunior Soccer] <<specifications>> e suas subseções se aplicam com as exceções acima.
+
+[discrete]
+[[big-field-diagram]]
+== DIAGRAMA DO BIG FIELD
+
+image:media/bigfield.png[image,scaledwidth=85.0%]

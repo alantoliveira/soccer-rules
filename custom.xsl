@@ -32,8 +32,17 @@
   <xsl:param name="local.l10n.xml" select="document('')"/>
   <l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
     <l:l10n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0" language="en">
+     <l:context name="title">
+        <l:template name="note" text="Nota"/>
+        <l:template name="tip" text="Dica"/>
+        <l:template name="important" text="Importante"/>
+        <l:template name="warning" text="Aviso"/>
+        <l:template name="caution" text="Cuidado"/>
+        <l:template name="figure" text="Figura %n. %t"/>
+        <l:template name="table" text="Tabela %n. %t"/>
+      </l:context>
      <l:context name="xref-number-and-title">
-        <l:template name="section" text="Rule %n, %t"/>
+        <l:template name="section" text="Regra %n, %t"/>
       </l:context>
     </l:l10n>
   </l:i18n>

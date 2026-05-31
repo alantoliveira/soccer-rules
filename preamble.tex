@@ -5,7 +5,8 @@
 
 \documentclass{article}
 
-\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
 
 \usepackage{graphicx}
 \usepackage{multirow}
@@ -59,6 +60,12 @@
 
 \newcommand*{\p}{\paragraph{}}
 
+% Data em portugu\^es sem babel
+\newcommand{\hoje}{\number\day\ de
+  \ifcase\month\or janeiro\or fevereiro\or mar\c{c}o\or abril\or maio\or
+  junho\or julho\or agosto\or setembro\or outubro\or novembro\or dezembro\fi
+  \ de \number\year}
+
 \newlength\titleindent
 \setlength\titleindent{1.2cm}
 
@@ -78,15 +85,15 @@
 \renewcommand{\headrulewidth}{0pt}
 %\renewcommand{\topmargin}{-20pt}
 
-\rfoot{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
-\lfoot{\textit{Final rules as of \today}}
+\rfoot{P\'agina \textbf{\thepage} de \textbf{\pageref{LastPage}}}
+\lfoot{\textit{Regras finais em \hoje}}
 \cfoot{}
 
 % First page
 \fancypagestyle{firststyle}{%
   \fancyhf{}
-  \fancyfoot[L]{\textit{Final rules as of \today}}
-  \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
+  \fancyfoot[L]{\textit{Regras finais em \hoje}}
+  \fancyfoot[R]{P\'agina \textbf{\thepage} de \textbf{\pageref{LastPage}}}
   \fancyhead[R]{\includegraphics[width=8cm]{media/image15.png}}
 }
 
@@ -133,6 +140,20 @@
     Isa El Doori              & Netherlands \\
 \end{tabular}
 \end{minipage}
+\end{tabular}
+\end{center}
+
+\vspace{10pt}
+
+\begin{center}
+\begin{tabular}{ll}
+    \multicolumn{2}{l}{\textbf{Comit\^e RoboCupJunior Brasil:}}\\
+    Andrique Amorim            & General Chair \\
+    Alan Teixeira de Oliveira  & RoboCupJunior Soccer \\
+    Diogo Novais               & RoboCupJunior Rescue Maze \\
+    Luiz Miguel Pessotti       & RoboCupJunior Rescue Simulation \\
+    Daniele Ortiz              & RoboCupJunior Rescue Line (OBR) \\
+    Amanda Fonseca             & RoboCupJunior OnStage (Rob\'otica Art\'istica) \\
 \end{tabular}
 \end{center}
 

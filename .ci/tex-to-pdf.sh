@@ -12,7 +12,8 @@ dblatex -T db2latex $OUTPUT_PREFIX.xml -t tex --texstyle=./manual.sty -p custom.
 cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}'  > $OUTPUT_PREFIX"_without_preamble.tex"
 
 # Extract the document title from the .adoc file (first line, removing the "= " prefix)
-DOCUMENT_TITLE=$(head -n 1 "$OUTPUT_FILE.adoc" | sed 's/^= //')
+# Convert from UTF-8 to Latin-1 to match the preamble encoding
+DOCUMENT_TITLE=$(head -n 1 "$OUTPUT_FILE.adoc" | sed 's/^= //' | iconv -f utf-8 -t latin1)
 
 # Create a preamble with the correct title substituted
 sed "s/@@DOCUMENT_TITLE@@/$DOCUMENT_TITLE/" preamble.tex > $OUTPUT_PREFIX"_preamble.tex"

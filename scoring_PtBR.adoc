@@ -1,0 +1,519 @@
+= Critérios de Premiação, Requisitos de Documentação e Compartilhamento e Diretrizes de Entrevista
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+
+
+
+RoboCupJunior Soccer  
+Critérios de Premiação e Rubricas 2026  
+
+Estas são as diretrizes oficiais de premiação para a Liga Internacional RoboCupJunior
+Soccer, emitidas pelo Comitê da RoboCupJunior Soccer League. A versão em inglês tem
+precedência sobre todas as traduções. Para dúvidas ou sugestões, visite o
+https://junior.forum.robocup.org/c/robocupjunior-soccer/5[*Fórum RoboCupJunior Soccer*] ou o
+https://discord.com/invite/45pxMQY4nJ[*Servidor Discord RoboCupJunior*].
+
+Este documento de Critérios de Premiação e Rubricas é garantido para uso apenas no
+Torneio Internacional. Cada região pode ter métodos diferentes para premiar equipes e
+determinar classificações. Os Torneios Regionais podem usá-lo como diretriz como está
+ou com modificações para suas próprias competições. Verifique com os organizadores dos
+torneios dos quais está participando para descobrir qual versão estão usando.
+
+*Registro de Mudanças*  
+  
+|===
+|Mudança                                                                          | Data
+|Criação do Documento Inicial para a Temporada 2024                               | 2024-04-01 +
+|Reformulação do Documento de Rubricas e Critérios para a Temporada 2025          | 2025-05-08 +
+|Adição de 3 pontos bônus mencionados no formulário TDP                           | 2025-06-18 +
+|Correção dos 3 pontos bônus para menção no formulário TDP                        | 2025-06-18 +
+|Atualização 2026/Adição de regras e sistema de pontos sobre o TDP em vídeo curto | 2026-04-10 +
+|===
+
+
+[[award-types]]
+== Tipos de Premiação
+
+Dois tipos de premiação são concedidos no torneio internacional: troféus e certificados.
+Apenas uma equipe (ou SuperTeam) pode ganhar cada troféu. Os certificados serão
+concedidos a todas as equipes que atenderem aos critérios de excelência e podem ser
+ganhos por qualquer número de equipes.
+
+[[award-criteria]]
+== Critérios de Premiação
+ 
+.As equipes serão avaliadas com base nos seguintes critérios:
+*1.*	*Torneio Individual de Jogabilidade* (Máximo de 30 Pontos) +
+*2.*	*Formulário de Documentação Técnica (TDP Form)* (Máximo de 8 Pontos) +
+*3.*	*Design e Apresentação de Pôster* (Máximo de 5 Pontos) +
+*4.*	*Entrevista em Grupo da Equipe* (Máximo de 5 Pontos) +
+*5.*	*Espírito Esportivo* (Máximo de 3 Pontos) +
+*6.*	*Documentação e Contribuição à Comunidade* (Máximo de 5 Pontos) +
+*7.*	*TDP em Vídeo Curto* (Máximo de 1 Ponto) +
+
+[[trophy-winners]]
+=== Vencedores de Troféus
+
+Há 3 *Troféus Individuais de Equipe* para 1º, 2º e 3º lugar geral, com base nos
+resultados do *Torneio Individual de Jogabilidade combinado com os Critérios de
+Premiação* descritos neste documento.
+Esta explicação é dividida em duas partes: primeiro uma breve explicação nesta seção
+e depois uma explicação mais detalhada na próxima parte deste documento.
+A pontuação final de uma equipe será a soma das pontuações em todos os *Critérios de
+Premiação*. Se houver empate em pontuação, a ordem das equipes no *Torneio Individual
+de Jogabilidade* será o critério de desempate.
+
+O *Prêmio Comunidade* será concedido a uma equipe votada por todas as outras equipes.
+
+Os SuperTeams vencedores receberão o *Prêmio SuperTeam*, que é separado da pontuação
+individual das equipes (as pontuações individuais e do SuperTeam não se afetam).
+
+[[individual-gameplay-tournament]]
+==== Torneio Individual de Jogabilidade
+
+A colocação no Torneio Individual de Jogabilidade se converte em pontos de ranking
+geral da seguinte forma:
+*	30 Pontos para 1º, 27 Pontos para 2º, 25 Pontos para 3º.
+*	Cada colocação após o 3º tem 1 ponto a menos que a anterior, mas nunca menos que 0.
+
+.Pontuações do Torneio Individual de Jogabilidade — Exemplo com 29 equipes 
+|===
+|1º | 2º | 3º | 4º | 5º | ... | 27º | 28º | 29º +
+|30 Pontos | 27 Pontos | 25 Pontos | 24 Pontos | 23 Pontos | ... | 1 Ponto | 0 Pontos | 0 Pontos +
+|===
+
+[[technical-documentation-paper-tdp-form]]
+==== Formulário de Documentação Técnica (TDP Form)
+
+O Formulário TDP é um questionário online a ser preenchido antes da competição. Consiste
+em uma série de perguntas projetadas para ajudar a criar um documento estruturado
+semelhante a um Artigo de Descrição Técnica. Você receberá este formulário por
+comunicação oficial após se inscrever nas competições internacionais. Note que há dois
+pontos bônus mencionados no formulário TDP.
+
+.Valores de Pontuação do Formulário TDP
+|===
+| Em Desenvolvimento | Satisfatório | Proficiente   | Excelente +
+| 0 | 1 | 3 | 5 +
+|===
+
+[[poster-design-and-presentation]]
+==== Design e Apresentação de Pôster
+
+Antes da competição, as equipes criarão um pôster sobre seu robô e equipe. Durante a
+competição, haverá uma sessão de pôsteres onde as equipes apresentarão os seus e
+verão os dos outros, ajudando a explicar partes de seus robôs para compartilhar suas
+inovações e designs. Você receberá comunicação oficial sobre como e quando enviar
+este pôster.
+
+https://github.com/robocup-junior/awesome-rcj-soccer[*Clique aqui para ver o Repositório GitHub Awesome RCJ Soccer com pôsteres de equipes anteriores!*]
+
+.Valores de Pontuação de Design e Apresentação de Pôster
+|===
+| Em Desenvolvimento | Satisfatório | Proficiente   | Excelente +
+| 0 | 1 | 3 | 5 +
+|===
+
+[[group-team-interview]]
+==== Entrevista em Grupo da Equipe
+
+Nesta avaliação baseada em desafios, as equipes completarão uma pequena tarefa robótica
+para demonstrar trabalho em equipe, resolução de problemas e compreensão técnica. Esta
+tarefa ocorrerá junto com uma a três outras equipes. Os juízes avaliarão colaboração,
+comunicação e conhecimento de design.
+
+As equipes devem trazer seus Robôs, Laptops e equipamentos de programação para as
+entrevistas e esperar que as entrevistas contenham estes elementos:
+*	Apresentação: Mostre seu robô a todos, explique seu design básico e o que você considera como a característica mais interessante.
+*	Tarefa em Equipe: Programe seu robô para resolver uma tarefa definida pelos juízes no momento. É aqui que você demonstra sua compreensão do robô e como trabalha em equipe.
+*	Perguntas: Outras equipes e juízes podem querer saber coisas sobre como seu robô funciona, como você o projetou, por que tomou as decisões de design que tomou, etc.
+
+Os juízes têm uma lista padrão de perguntas que podem fazer, com algumas modificações
+para ajudar a minimizar problemas de tradução. Consulte <<group-interview-questions>>.
+Se sua equipe precisar de assistência de idioma, informe-nos o quanto antes (por exemplo,
+no check-in no balcão de Soccer) e tentaremos providenciar um tradutor. Esteja ciente
+de que esse tradutor não pode ser um mentor ou responsável. A disponibilidade de
+tradução infelizmente não pode ser garantida.
+
+.Valores de Pontuação da Entrevista em Grupo da Equipe
+|===
+| Em Desenvolvimento | Satisfatório | Proficiente   | Excelente +
+| 0 | 1 | 3 | 5 +
+|===
+
+[[sportsmanship]]
+==== Espírito Esportivo
+
+O espírito esportivo é a pedra angular de qualquer torneio de sucesso. Portanto, não
+apenas pedimos que as equipes demonstrem respeito por outras equipes, ligas, oficiais
+do torneio, anfitriões e locais, mas também recompensamos isso com pontos. Para obter
+esses pontos, chegue pontualmente para partidas, reuniões e entrevistas, seja justo
+com seus adversários, seja educado com todos, seja aberto ao compartilhamento do que
+sabe e não acuse ninguém de mau comportamento sem uma razão muito boa.
+
+.Valores de Pontuação de Espírito Esportivo
+|===
+| Em Desenvolvimento | Satisfatório | Proficiente   | Excelente +
+| 0 | 1 | 2 | 3 +
+|===
+
+[[documentation-and-community-contribution]]
+==== Documentação e Contribuição à Comunidade
+
+A missão da RoboCup é avançar o campo da robótica e superar humanos no futebol até
+2050. Ninguém consegue fazer isso sozinho, por isso compartilhamos nosso conhecimento
+livremente no espírito da cooperação acadêmica.
+As equipes que disponibilizam seu trabalho para outros contribuem para a capacidade de
+todas as equipes futuras (incluindo as que não estão nos mesmos eventos) de desenvolver
+robôs mais avançados construindo sobre o trabalho delas. Isso pode ter qualquer forma,
+mas geralmente são artigos, vídeos, resultados de testes, instruções de como fazer
+coisas, às vezes com código-fonte, diagramas de circuito ou arquivos CAD.
+Fazer isso é obrigatório para um certificado de "Documentação Excepcional".
+
+.Valores de Pontuação de Documentação e Contribuição à Comunidade
+|===
+| Em Desenvolvimento | Satisfatório | Proficiente   | Excelente +
+| 0 | 1 | 3 | 5 +
+|===
+
+[[short-form-video-tdp]]
+==== TDP em Vídeo Curto
+
+A RoboCupJunior coloca grande ênfase na inovação, e esta seção foi especificamente
+projetada para dar às equipes a oportunidade de mostrar em poucas palavras o recurso
+do qual mais se orgulham.
+O que queremos que você faça é criar um vídeo com menos de 3 minutos sobre esse recurso.
+Esta seção é pontuada com base em se você conseguiu explicar claramente qual é esse
+recurso e por que o considera o mais interessante.
+
+.Valores de Pontuação do TDP em Vídeo Curto
+|===
+| Em Desenvolvimento | Satisfatório  +
+| 0 | 1  +
+|===
+
+[[community-award]]
+==== Prêmio Comunidade
+
+O prêmio comunidade é apresentado à equipe que mais contribui para construir e fomentar
+um senso de comunidade ao longo da competição. Seja passando seu conhecimento para
+outras equipes, ajudando outros com quaisquer problemas que surjam, ou simplesmente
+sendo agradável de se estar por perto.
+
+Este prêmio é votado pelas próprias equipes. Cada equipe vota nas suas 3 melhores
+equipes em cada uma das seguintes categorias:
+
+*	*Documentação*: Equipes que criaram os pôsteres, TDP e outras documentações mais informativos e visualmente atraentes, combinando efetivamente apelo visual com informações claras e concisas. Durante a sessão de pôsteres, essas equipes também devem demonstrar habilidades sólidas de apresentação, comunicando eficazmente seu trabalho para outras equipes, respondendo perguntas detalhadamente e despertando o interesse dos colegas.
+*	*Espírito de Equipe*: Equipes que melhor exemplificam entusiasmo e atitude positiva ao longo da competição. Apoiam e encorajam consistentemente uns aos outros, demonstram bom espírito esportivo em relação a outras equipes e contribuem para uma atmosfera animada e energética. Essas equipes mostram resiliência diante de desafios, celebram seus sucessos e aprendem com seus erros juntos, criando uma identidade de equipe forte e coesa que inspira outros.
+*	*Mais Prestativo*: Equipes que vão além na assistência a outros, demonstrando espírito colaborativo e de apoio. Esta categoria homenageia aqueles que estão dispostos a compartilhar seu conhecimento, ferramentas e recursos. Seja ajudando a solucionar um problema técnico ou compartilhando insights estratégicos, essas equipes incorporam os valores de cooperação e comunidade, tornando a competição uma experiência positiva e enriquecedora para todos os participantes.
+
+Ao votar, a 1ª equipe recebe 3 pontos, a 2ª 2 pontos e a 3ª 1 ponto.
+Todas as equipes *DEVEM votar* e *NÃO podem votar em si mesmas*. Votar em si mesmo
+resultará na exclusão deste prêmio e na perda de pontos em espírito esportivo.
+
+A equipe com o *maior número de pontos de votação* geral receberá o prêmio e receberá
+um ponto extra no ranking geral — não suficiente para ultrapassar uma equipe melhor,
+mas pode quebrar um empate.
+
+[[certificates]]
+=== Certificados
+
+Os certificados são uma premiação valiosa, oferecendo reconhecimento às equipes que
+podem não ter conquistado um troféu, mas ainda demonstram conquistas e habilidades
+excepcionais. Enquanto os troféus destacam as melhores performances gerais, os
+certificados garantem que cada equipe merecedora seja reconhecida por seu trabalho
+árduo, dedicação e habilidades demonstradas ao longo da competição.
+As equipes podem conquistar Certificados com base nas seguintes categorias:
+
+*1.*	*1º, 2º, 3º lugar no Torneio de Jogabilidade* +
+*2.*	*Design Excepcional* +
+*3.*	*Inovação Excepcional* +
+*4.*	*Documentação Excepcional* + 
+*5.*	*Equipe Exemplar* +
+
+Não há limites físicos ou organizacionais para o número de certificados que podem ser
+concedidos. Todas as equipes que atenderem às qualificações abaixo receberão um certificado.
+
+[[gameplay-tournament]]
+==== 1º, 2º, 3º lugar no Torneio de Jogabilidade
+
+As equipes que ficarem em 1º, 2º ou 3º no Torneio Individual receberão um certificado
+por sua colocação. Isso pode ser concedido além dos Troféus de 1º, 2º ou 3º lugar geral.
+Para se qualificar, todos os seguintes critérios devem ser atendidos:
+*	Participou do torneio de jogabilidade e ficou em 1º, 2º ou 3º lugar.
+
+[[outstanding-design-certificate]]
+==== Certificado de Design Excepcional
+
+As equipes reconhecidas por design excepcional apresentaram robôs que são ótimos
+exemplos do que pode ser feito por meio da aplicação do processo de design de engenharia.
+Para se qualificar, todos os seguintes critérios devem ser atendidos:
+*	Elementos do Formulário TDP, TDP em Vídeo Curto, Entrevista em Grupo e Pôster superaram as expectativas.
+*	Obteve avaliação geral de proficiente ou melhor.
+*	A equipe tem bom desempenho no torneio, no desafio SuperTeam, OU nos desafios técnicos.
+
+[[outstanding-innovation-certificate]]
+==== Certificado de Inovação Excepcional
+
+As equipes reconhecidas por uma inovação excepcional criaram um design que é ao mesmo
+tempo novo e eficaz para que outros aprendam. Para se qualificar, todos os seguintes
+critérios devem ser atendidos:
+*	O Formulário TDP, TDP em Vídeo Curto, Entrevista em Grupo e Pôster descrevem claramente uma inovação que é potencialmente eficaz e instrutiva.
+*	A eficácia da inovação é aparente durante o torneio, os desafios técnicos, OU as partidas do SuperTeam.
+*	A mesma inovação não foi reconhecida em temporadas anteriores ou a equipe fez melhorias significativas.
+
+[[outstanding-documentation-certificate]]
+==== Certificado de Documentação Excepcional
+
+As equipes reconhecidas por documentação excepcional demonstraram excelência em capturar
+e comunicar seu processo de engenharia. Para se qualificar, todos os seguintes critérios
+devem ser atendidos:
+*	O Formulário TDP, TDP em Vídeo Curto, Entrevista em Grupo e Pôster são abrangentes, bem organizados e explicam claramente as decisões de engenharia e iterações da equipe.
+*	A documentação inclui vários dos seguintes: resultados de testes, processos de design, desafios e recomendações futuras para equipes aprenderem, designs publicados.
+*	A documentação foi disponibilizada online para que outras equipes possam aprender.
+
+[[exemplary-team-certificate]]
+==== Certificado de Equipe Exemplar
+
+Equipes exemplares são os melhores exemplos da aplicação eficaz de habilidades de
+engenharia soft e hard. Essas equipes estão entre as melhores performers, têm designs
+ou inovações excepcionais e servem como líderes comunitários para sua liga, impulsionando
+o estado da tecnologia disponível para a comunidade. Para se qualificar, todos os
+seguintes critérios devem ser atendidos:
+*	Superou as expectativas em Documentação e Critérios de Retribuição e em um outro critério.
+*	Todos os critérios devem ser de proficiente ou superior.
+*	A equipe tem bom desempenho no Torneio, no desafio SuperTeam, E nos desafios técnicos.
+
+[[superteam-challenge]]
+=== Desafio SuperTeam
+
+O Desafio SuperTeam é um torneio paralelo realizado durante a Competição Internacional.
+É normalmente organizado como grupos de 4 ou 5 Equipes que se unem para formar 1
+SuperTeam. Esses SuperTeams competirão em um mini torneio em um campo de soccer expandido.
+
+Os SuperTeams são criados com base nos resultados do ranking do Campeonato Individual
+de Jogabilidade, para melhor distribuir as Equipes em SuperTeams justos e equilibrados.
+Cada equipe pode ter no máximo 1 de seus robôs no Campo do SuperTeam, com as equipes
+com menor ranking podendo ter 2, apenas se outra Equipe não tiver robôs funcionando.
+
+https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf[*Saiba mais sobre SuperTeams aqui!*]
+
+Os rankings de posição do SuperTeam não afetam as pontuações do Campeonato Individual.
+No entanto, o Espírito Esportivo das equipes durante os jogos do SuperTeam afeta esse
+critério. Espera-se que as equipes membros do SuperTeam trabalhem juntas, ajudem umas
+às outras em caso de dificuldades técnicas, garantam que todas as equipes membros do
+SuperTeam compareçam aos jogos juntas e não marginalizem as equipes mais fracas.
+
+Há 1 Troféu a ser ganho pela SuperTeam vencedora do desafio. Cada equipe dentro da
+SuperTeam vencedora receberá este Troféu.
+
+[[score-criteria-and-rubrics]]
+== Critérios de Pontuação e Rubricas
+
+[[technical-documentation-paper-tdp]]
+=== Documentação Técnica (TDP)
+
+O Artigo de Descrição Técnica de uma equipe deve fornecer evidências do trabalho centrado
+nos estudantes em desenvolvimento elétrico, mecânico, de software e de estratégia, e é
+um recurso para todos, incluindo a equipe que publica e todas as equipes futuras. O
+Comitê de Soccer escolheu implementar isso por meio de um documento em Formulário Google
+para simplificar o processo para equipes e educadores. As respostas nesses documentos
+serão compiladas em documentos TDP e publicadas. Há 2 pontos bônus disponíveis por meio
+do Formulário TDP: *1 ponto bônus* por Open-Source dos arquivos CAD, PCB e Esquemáticos,
+e *1 ponto bônus* por Open-Source de repositórios de Software.
+
+|===
+| *Rubricas* | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
+| Elétrico     | A equipe não enviou no prazo. Poucas ou nenhuma imagem, vídeo, renderizações CAD, esquemas, esboços ou trabalho originais. Elementos do trabalho de outros sem atribuição adequada (por exemplo, trabalho de equipe anterior não referenciado). | A documentação fornece detalhes básicos do design elétrico. Inclui alguns artefatos visuais originais. Pode ter problemas de atribuição menores ou falta de clareza. | A documentação fornece detalhes suficientes para um leitor técnico replicar o processo de design. Inclui artefatos visuais originais (por exemplo, diagramas de fiação, esquemas, fotos). O design parece criado pelos estudantes. | Atende a todos os critérios Proficientes E avalia o uso de recursos (por exemplo, orçamento, ferramentas, componentes). Inclui raciocínio baseado em dados para decisões de design. Reflete sobre falhas e melhorias. Demonstra crescimento no conhecimento elétrico. +
+| Mecânico     | A documentação carece de um processo de design claro ou visuais. Contém diagramas mecânicos ou etapas de construção mínimos. Pode incluir conteúdo reutilizado sem contexto ou créditos. | Inclui etapas básicas de construção mecânica. Mostra algum trabalho original (por exemplo, CAD, protótipos). Descreve como os componentes foram construídos ou montados. | Descreve claramente a estratégia mecânica e as iterações de design. Os visuais suportam a narrativa (por exemplo, CAD anotado, vistas explodidas). Inclui dados de teste ou notas sobre como o design foi avaliado. | Atende a todos os critérios Proficientes E explica trade-offs e restrições de design (por exemplo, peso, materiais, mobilidade). Inclui revisões baseadas em desempenho. Demonstra uma estratégia mecânica coerente vinculada aos objetivos do robô. +
+| Software       | A documentação de software está ausente ou pouco clara. Trechos de código não são originais, inexplicados ou sem contexto. Sem evidência de depuração ou iteração. | Algum código é explicado com comentários ou capturas de tela. Inclui uma visão geral básica das linguagens de programação, bibliotecas ou plataformas utilizadas. | Fornece informações significativas sobre a estrutura e função do código. Descreve a lógica algorítmica e os esquemas de controle. Inclui alguma discussão sobre testes e refinamento. | Atende a todos os critérios Proficientes E inclui uso de controle de versão, fluxogramas ou pseudocódigo. Reflete sobre processos de depuração, teste e como o código evoluiu. Demonstra escolhas de programação cuidadosas vinculadas ao desempenho. +
+| Apresentação   | Documentação desorganizada ou incompleta. Formatação e navegação ruins. Sem sumário ou rotulagem de seções. | O documento é legível e tem estrutura básica. As seções são rotuladas, mas podem carecer de clareza ou acabamento. Podem estar faltando timestamps ou atribuições de membros da equipe. | Bem organizado e fácil de navegar. As seções são claramente rotuladas e incluem contexto (por exemplo, funções da equipe, datas). Mostra colaboração entre as sub-equipes. | Atende a todos os critérios Proficientes E inclui uma narrativa clara da jornada da equipe. Demonstra narrativa cuidadosa, estética e profissionalismo. Referencia todas as fontes e inclui reflexões da equipe. +
+|===
+
+[[poster-presentation]]
+=== Apresentação de Pôster
+
+O pôster de uma equipe é uma forma de compartilhar o design de seu robô e suas
+descobertas com todos durante e após o evento. A RoboCupJunior arquivará todos os
+pôsteres após o evento para que equipes futuras estudem. Durante a competição haverá
+um período de Apresentação de Pôster ("Sessão de Pôsteres") onde as equipes discutirão
+os robôs umas das outras em formato aberto.
+
+Exemplos de pôsteres de equipes de anos anteriores podem ser encontrados aqui:
+
+https://github.com/robocup-junior/awesome-rcj-soccer[*Repositório GitHub Awesome RCJ Soccer*]
+
+[[poster-requirements]]
+==== Requisitos do Pôster
+
+*	*Tamanho do Pôster* – no máximo Tamanho A1: 70,7 cm (28") de altura x 100,0 cm (40") de largura (horizontal).
+*	*Título / Identificação* – nome da equipe, região, sub-liga.
+*	*Resumo* – Um resumo conciso do projeto completo. O resumo deve sintetizar os elementos críticos do pôster, mas deve evitar repetir o que já está declarado em outras partes do pôster.
+*	*Método / Produção / Design do Robô* – Uma descrição das escolhas feitas durante a produção dos robôs, incluindo a justificativa por trás dessas escolhas. A produção inclui design, construção, programação, seleção de componentes e processo geral. As equipes devem indicar a linguagem de programação, sensores utilizados, tempo e custo de desenvolvimento. Incluir também uma lista de materiais para os principais componentes.
+*	*Dados / Resultados / Discussão* - O pôster tem detalhes do desenvolvimento e teste do robô pela equipe, incluindo quaisquer dados relevantes e modificações feitas como parte da criação do robô.
+*	*Fotos / Imagens* – Todas as imagens, incluindo gráficos para estilização, devem ser originais ou disponíveis para reutilização não comercial com modificação conforme a licença creative commons (http://creativecommons.org/). Qualquer foto ou imagem deve ser rotulada e citada, especialmente se não for original.
+*	Todas as informações no pôster devem estar em inglês.
+
+
+|===
+| *Rubricas*                     | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
+| Resumo | O resumo está ausente, pouco claro ou totalmente incompleto (ou seja, omite muitos elementos críticos do pôster). | O resumo está um pouco incompleto (ou seja, omite alguns aspectos críticos do pôster) OU repete informações detalhadas já no pôster. | O resumo resume claramente cada componente crítico E usa linguagem científica apropriada. | A Rubrica 3 é satisfeita E há uma intenção clara de compartilhar conhecimento acionável. +
+| Método, Produção e Design | Muito pouca ou nenhuma informação sobre produção (ou seja, design, construção, programação, seleção de componentes e processo geral). | Alguma informação sobre produção (ou seja, os listados na rubrica 1) OU informações completas são fornecidas, mas as descrições não são claras e concisas. | Informações completas sobre produção E as informações são claras e concisas. | A Rubrica 3 é satisfeita E há uma intenção clara de compartilhar todo o conhecimento acionável. +
+| Dados, Resultados e Discussão | Nenhum dado é exibido OU a análise de dados não é relevante para o desenvolvimento do projeto. | Dados menores resultantes de testes são exibidos OU dados significativos resultantes de testes são exibidos, mas nenhuma modificação importante baseada nos testes é mencionada. | Dados significativos resultantes de testes são exibidos E modificações importantes foram feitas no robô como resultado dos testes E dados e resultados são exibidos claramente (por exemplo, usando gráficos ou tabelas). | A Rubrica 3 é satisfeita E o pôster demonstra uma compreensão clara do vínculo entre testes, avaliação e modificação baseada nos testes E o método de teste é descrito de forma que possa ser repetido por outros. +
+| Fotos e Gráficos | Várias fotos e gráficos de baixa qualidade OU não relevantes para a seção relacionada do pôster. | Fotos e gráficos são relevantes para a seção relacionada do pôster, mas alguns não estão rotulados ou citados. | Fotos e gráficos são relevantes E de excelente qualidade E adequadamente rotulados e citados. | A Rubrica 3 é satisfeita E a quantidade de imagens é apropriada ao conteúdo sendo apresentado. +
+| Layout e Design | O pôster não segue um layout lógico OU contém muitos erros de ortografia ou gramática. | O pôster segue um layout um tanto, mas não totalmente, lógico OU o pôster contém alguns erros de ortografia ou gramática. | O pôster tem um layout claro e lógico (ou seja, as informações são fáceis de acessar para o visualizador, com gráficos, imagens e texto apropriadamente posicionados e tamanho de fonte consistente). Ortografia e gramática são impecáveis. | A Rubrica 3 em "Layout/Design" E tem um design original que destaca efetivamente a criatividade e o profissionalismo da equipe. +
+| Apresentação | Equipe ausente durante a sessão de apresentação de pôsteres. Pôster fora das especificações de formato. | A equipe ficou ausente por uma parte significativa da sessão de pôsteres OU não conseguiu responder adequadamente a qualquer pergunta. | A equipe esteve presente durante a sessão de pôsteres, mas ficou ausente regularmente OU não se engajou ativamente OU não respondeu adequadamente às perguntas. | Equipe presente durante toda a sessão de pôsteres E engajada ativamente com juízes, participantes e convidados E fez o possível para responder a todas as perguntas. +
+|===
+
+[[group-interview]]
+=== Entrevista em Grupo
+
+Nesta avaliação focada em desafios, as equipes participarão de uma tarefa em grupo
+estruturada projetada para avaliar trabalho em equipe, resolução de problemas e
+compreensão técnica. Cada equipe será solicitada a completar um pequeno desafio
+relacionado a robôs (por exemplo, programar seu robô para andar em quadrado) dentro de
+uma sessão compartilhada com uma a três outras equipes. As equipes demonstrarão sua
+abordagem, refletirão sobre sua colaboração e se envolverão em discussão com os colegas.
+Os juízes avaliarão a eficácia com que as equipes trabalham juntas, entendem seus
+sistemas robóticos e comunicam suas escolhas de design. Participação ativa, interação
+respeitosa com colegas e envolvimento compartilhado da equipe são fundamentais para uma
+boa pontuação.
+As equipes devem trazer seus Robôs, Laptops e equipamentos de programação para as
+entrevistas e esperar que as entrevistas contenham estes elementos:
+*	Apresentação: Mostre seu robô a todos, explique seu design básico e o que você considera como a característica mais interessante.
+*	Tarefa em Equipe: Programe seu robô para resolver uma tarefa definida pelos juízes no momento. É aqui que você demonstra sua compreensão do robô e como trabalha em equipe.
+*	Perguntas: Outras equipes e juízes podem querer saber coisas sobre como seu robô funciona, como você o projetou, por que tomou as decisões de design que tomou, etc.
+Durante a tarefa, os juízes podem fazer perguntas às equipes sobre seu design, estratégia
+ou outros itens. Essas perguntas serão apenas da lista em <<group-interview-questions>>.
+Consideração extra será dada às equipes que tenham estudantes com dificuldade em falar
+inglês, se os juízes forem informados.
+
+|===
+| *Rubricas*              | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
+| Trabalho em Equipe e Comunicação | A equipe estava desorganizada, um ou mais membros desengajados ou dominando. Comunicação deficiente ou conflito evidente. | A equipe mostrou alguma coordenação, mas a comunicação foi inconsistente ou dependia muito de uma pessoa. | A equipe trabalhou em conjunto com funções claras. Todos os membros contribuíram significativamente para a tarefa. | A equipe mostrou colaboração perfeita. Os membros apoiaram-se mutuamente e comunicaram-se efetivamente ao longo de todo o processo. +
+| Compreensão Técnica | A equipe teve dificuldade em explicar ou aplicar seu design. O robô não conseguiu completar a tarefa ou tinha função mínima. | A equipe completou a tarefa, mas com compreensão pouco clara ou limitada de como seu robô funcionava. | A equipe demonstrou uma compreensão sólida de seu design. A tarefa foi completada ou tentada com raciocínio e explicação lógicos. | A equipe mostrou forte fluência técnica e resolução de problemas. Explicação e execução foram claras, criativas e perspicazes. +
+| Execução da Tarefa e Resolução de Problemas | A tarefa foi tentada com funcionalidade básica ou parcial. Os erros não foram claramente diagnosticados. | A tarefa foi completada ou próxima de ser completada. A equipe se adaptou aos desafios e explicou bem as decisões. | A tarefa foi completada com eficiência com abordagens inovadoras. A equipe lidou com problemas com confiança e estratégia clara. | A tarefa foi completada com eficiência com abordagens inovadoras. A equipe lidou com problemas com confiança e estratégia clara. +
+|===
+
+[[sportsmanship]]
+=== Espírito Esportivo
+
+As expectativas de espírito esportivo incluem o comportamento de estudantes, mentores,
+pais e qualquer outra pessoa associada à equipe participando do evento. Embora todos
+estejam competindo, todos estamos envolvidos para aprender e nos divertir; os
+participantes não devem prejudicar a experiência dos outros.
+
+A presença em cada partida geral, Desafio Técnico, partida do SuperTeam e entrevista
+será registrada. As equipes devem chegar pontualmente e preparadas para manter seus
+robôs funcionais durante todo o evento e devem ter um membro responsável por manter
+um cronograma. Se uma equipe não puder participar de uma partida ou atividade, os
+árbitros devem ser notificados.
+
+Esperamos que o espírito esteja alto e conflitos entre equipes e/ou voluntários às
+vezes ocorrerão. É fundamental que esses sejam tratados de forma respeitosa, não
+acusando ninguém (equipe ou árbitro) de má conduta intencional sem um motivo muito
+bom e dando a todos o benefício da dúvida para resolver o que geralmente é apenas um
+mal-entendido. Exceto em casos extremos, os participantes receberão um aviso antes que
+as equipes sejam penalizadas pelos organizadores do torneio.
+
+Equipes exemplares aprimoram sua comunidade ou a comunidade RoboCup Junior em geral
+fornecendo recursos e incentivos para outros. O comitê organizador pode ser informado
+sobre esses esforços por meio de suas próprias observações, do que é apresentado em
+qualquer outro critério (por exemplo, documentação da equipe), ou por indicação de
+outra equipe ou voluntário através do processo de votação do prêmio comunidade.
+
+|===
+| *Rubricas*     | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
+| Espírito Esportivo | Comportamento desrespeitoso continuou após avisos. A equipe perdeu mais da metade das partidas ou desafios principais. Sem participação em SuperTeam ou desafios técnicos. A equipe não tinha funções definidas. Dependia de adultos. Pouca evidência de protagonismo dos estudantes. Impactou significativamente e negativamente a experiência de outras equipes na competição. | A equipe foi ocasionalmente não cooperativa ou atrasada. Perdeu algumas partidas ou desafios. O comportamento melhorou após lembretes. Alguma liderança estudantil evidente, mas funções pouco claras ou inconsistentes. Às vezes situações difíceis foram escaladas, mas acabaram sendo resolvidas de forma justa. | A equipe foi consistentemente respeitosa e pontual. Participou plenamente em partidas, SuperTeam e desafios técnicos. Contribuiu para um ambiente positivo. Funções e tomada de decisão claras lideradas pelos estudantes. A equipe mostrou independência e resolução de problemas. Lidou com situações difíceis com calma e justiça quando surgiram. | Todos os critérios Proficientes mais: A equipe apoiou ativamente os outros (por exemplo, compartilhou ferramentas, torceu pelos adversários, ajudou os colegas). Deu um exemplo excepcional de colaboração e gentileza. Todos os critérios Proficientes mais: Os estudantes orientaram os colegas, resolveram problemas de forma construtiva e deram voz a todos. Demonstraram iniciativa e responsabilidade. Evitaram que situações difíceis escalassem cedo e se comportaram com espírito esportivo em todos os momentos. +
+|===
+
+[[documentation-and-community-contribution]]
+=== Documentação e Contribuição à Comunidade
+
+A missão da RoboCup é avançar o campo da robótica e superar humanos no futebol até
+2050. Ninguém consegue fazer isso sozinho, por isso compartilhamos nosso conhecimento
+livremente no espírito da cooperação acadêmica.
+As equipes que disponibilizam seu trabalho para outros, além de construir robôs,
+contribuem para a capacidade de todas as equipes futuras (incluindo as que não estão
+presentes nos mesmos eventos) de desenvolver robôs mais avançados e construir sobre o
+trabalho delas. Essas contribuições podem ter qualquer forma, mas frequentemente
+assumem a forma de artigos, vídeos documentando e instruindo como replicar seu trabalho,
+às vezes acompanhados de lançamentos de código-fonte, diagramas de circuito ou arquivos CAD.
+
+|===
+| *Rubricas*                   | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
+| | | | Todos os critérios de "Satisfatório" também atendidos ou superados. | Todos os critérios de "Satisfatório" e "Proficiente" também atendidos ou superados. +
+| TDP | O TDP não foi preenchido, está quase incompleto ou não foi preenchido com nenhuma informação significativa. | O TDP foi preenchido com todas as informações necessárias. Pouco ou nenhum cuidado foi tomado para apresentar as informações de forma fácil de entender. | O TDP foi preenchido com todas as informações disponíveis e apresentado de forma útil e fácil de entender. | O TDP foi preenchido com todas as informações disponíveis, bem apresentado, complementado com fontes e links para material mais útil e fácil de entender. +
+| Pôster, Apresentação e Entrevista | O pôster não foi criado, a sessão de pôsteres não foi frequentada ou as informações não foram compartilhadas durante a entrevista. | Um pôster foi criado, mas faltavam muitas informações; a sessão de pôsteres foi frequentada; as informações foram compartilhadas sob solicitação na entrevista. | Um pôster informativo foi criado e as perguntas foram bem respondidas durante a sessão de pôsteres. Os destaques do design foram mostrados na entrevista por iniciativa própria. | O pôster foi informativo, detalhado, bem apresentado. Os destaques do design foram mostrados na entrevista por iniciativa própria. Ambos de uma forma que ajuda outros a replicar e construir sobre seu sucesso. +
+| Materiais Open Source e publicados | Nada foi compartilhado publicamente. Nota: Isso sozinho não resultará em "Em Desenvolvimento" — embora esperemos que coisas que possam ser úteis para a comunidade sejam compartilhadas no espírito acadêmico. | Nada além do pôster e TDP foi compartilhado publicamente. | Pelo menos um ou dois de dados de teste, desenhos ou arquivos de design, código, explicações ou fontes de materiais foram compartilhados publicamente para que outras equipes se beneficiem. | Tudo necessário para outros aprenderem com o design da equipe publicado (veja "Proficiente" para exemplos), detalhes de contato para perguntas disponíveis (nome(s) no Fórum ou Discord incentivados). +
+|===
+
+[[short-form-video-tdp]]
+=== TDP em Vídeo Curto
+
+Dificuldades técnicas ou enfrentar um adversário muito difícil durante a competição
+internacional podem ser razões para muitas equipes não conseguirem demonstrar todas as
+incríveis capacidades que seus robôs possuem.
+Por essa razão, adicionamos esta seção para que as equipes possam realmente demonstrar
+o recurso do qual mais se orgulham.
+
+|===
+| *Rubricas*     | Em Desenvolvimento | Satisfatório
+| TDP em Vídeo Curto | A explicação não é fácil de seguir e outras equipes não conseguem descobrir o que foi colocado nesse recurso dentro do robô. | O vídeo é fácil de seguir e um competidor colega pode entender como esse recurso foi realizado e por que pode ser impactante no robô. +
+|===
+
+[appendix]
+[[group-interview-questions]]
+== Perguntas da Entrevista em Grupo
+
+Os juízes podem fazer perguntas da lista a seguir e podem fazer perguntas de
+acompanhamento com base nas respostas. Os juízes devem focar as perguntas em itens que
+podem precisar de esclarecimento ou que estavam faltando em uma apresentação ou
+documento de design de uma equipe. Não deve ser feita mais de uma pergunta de cada
+categoria.
+
+.Geral: +
+-	Quais das suas decisões de design são influenciadas por quais testes/experiências? +
+-	Que outros trabalhos (outras equipes RCJ ou das ligas principais, outras coisas de robótica) serviram de inspiração para você? OU Como você aprendeu a fazer <isso>? +
+
+.Elétrico: +
+-	Por que/como você escolheu <este componente/circuito>? +
+-	O que você queimou? OU Você pode dar um exemplo de como você depurou seu circuito? +
+-	Qual foi um desafio que você teve ao construir ou projetar <esta parte> do seu circuito? OU quais benefícios você vê ao fazer o circuito <desta> forma? +
+
+.Mecânico: +
+-	Por que você incluiu ou não incluiu <Chutador/Driblador/Câmera/Vista 360°/outro recurso específico>? +
+-	Por que você optou por <material> para construir <sistema mecânico>? +
+-	Como você fabricou <esta peça personalizada>? +
+
+.Estratégia: +
+-	Se seus robôs estão <aqui> no campo e a bola está <aqui>, o que seus robôs farão? +
+-	Como seus robôs lidam com <gol ocluído/bola fora do campo de visão/outras situações desafiadoras de jogo>? +
+-	Quais táticas você usa? (por exemplo, esconder a bola, passar a bola, posicionamento tático, etc.) +
+-	Como você <desenvolveu/testou> táticas e estratégias? +
+
+.Software: +
+-	Como seu robô interpreta as entradas dos sensores? +
+-	Como você evita <sair dos limites/ficar preso/defesa múltipla/empurrão/outro problema>? +
+-	Como seus robôs <comunicam/realizam esta função> em software? +
+-	Como você <depura/calibra> seus robôs? +
+
+.Desenvolvimento e Documentação: +
+-	Que outros robôs/pôsteres/artigos você usou como fonte de ideias? +
+-	Como você acompanhou as ideias? (tanto suas próprias ideias quanto os materiais que leu) +
+-	Como você acompanhou o que já testou? +
+-	Que tipos de testes você realizou? (por exemplo, teste de componentes individuais, teste de um robô completo, teste de ambos os robôs juntos) Como você realizou esses testes? +

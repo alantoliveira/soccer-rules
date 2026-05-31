@@ -1,0 +1,617 @@
+= Regras RoboCupJunior Soccer Entry Level 2026
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+:numbered:
+
+IMPORTANT: Este documento é uma *adaptação das regras oficiais da RoboCupJunior
+Soccer* para a Liga Entry Level, direcionada à *liga brasileira (RoboCupJunior
+Brasil)*. Em caso de divergência, a versão oficial em inglês tem prioridade.
+
+IMPORTANT: Organizadores de torneios regionais e super-regionais podem utilizar estas
+regras, fazer adaptações específicas para suas regiões ou não realizar a liga de
+entrada. Entre em contato com os organizadores do seu torneio para saber quais regras
+serão utilizadas.
+
+NOTE: Este conjunto de regras não se destina ao nível internacional, exceto para
+torneios Super-Regionais.
+
+Estas são as Regras da Liga Entry Level do RoboCupJunior Soccer para a temporada
+2026, adaptadas das regras gerais da RoboCupJunior Soccer League para uso no contexto
+brasileiro. A versão em inglês das regras oficiais tem prioridade sobre qualquer tradução.
+
+O objetivo deste documento é fornecer um conjunto de regras de nível inicial para o
+RoboCupJunior Soccer no Brasil, harmonizado com as diretrizes internacionais e adaptado
+às necessidades específicas da liga brasileira. As equipes devem verificar com os
+organizadores do torneio local/regional as atualizações e alterações específicas para
+seu torneio. Cada equipe é responsável por verificar a versão correta e mais recente
+das regras antes da competição.
+
+[title="Duas equipes com um robô infrared cada competem em um campo de Soccer da RCJ."]
+image::media/smallfield_andreas_lander.jpg[]
+
+[discrete]
+== Prefácio
+
+No desafio RoboCupJunior Soccer Entry, equipes de jovens engenheiros projetam,
+constroem e programam um robô móvel totalmente autônomo para competir contra outra
+equipe em partidas. Os robôs devem detectar uma bola e marcá-la em um gol codificado
+por cores em um campo especial que se assemelha a um campo de futebol humano.
+
+Para ter sucesso, os participantes devem demonstrar habilidade em programação,
+robótica, eletrônica e mecatrônica. Espera-se que as equipes contribuam para o avanço
+da comunidade como um todo, compartilhando suas descobertas com outros participantes e
+praticando o bom espírito esportivo, independentemente de cultura, idade ou resultado
+da competição. *Espera-se que todos compitam, aprendam, se divirtam e cresçam.*
+
+A *Liga Entry Level* é uma liga principal da RoboCupJunior Soccer, sem separação entre
+kits específicos ou materiais de construção. O objetivo é maximizar a acessibilidade e
+permitir que equipes utilizem qualquer tecnologia disponível para competir no RoboCupJunior Soccer.
+
+== Diferenças em relação às ligas 2:2
+
+Estas regras são baseadas nos conjuntos de regras das ligas 2:2. As principais
+diferenças em relação a elas são:
+
+=== Liga Entry Level
+* *O Campo* não possui área fora dos limites (out-area), e o jogo pode encostar nas
+paredes. Isso reduz a complexidade da construção do robô e do jogo. O campo utilizado
+é o mesmo campo padrão das demais ligas RoboCupJunior Soccer (158 cm × 219 cm).
+* Cada equipe começa com *apenas um robô*.
+* *A Bola* é a mesma bola IR pulsada utilizada nas demais ligas Soccer.
+* Não há restrições sobre motores, materiais ou kits de construção (*Open*).
+* A participação em cada liga é limitada a dois anos (ver <<competition-cap>>).
+* Robôs que tenham sido construídos para qualquer uma das ligas 2:2 da RoboCupJunior
+Soccer em qualquer nível (local, regional, super-regional, internacional) anteriormente
+não podem ser utilizados em partidas da Liga Entry Level.
+
+[[competition-cap]]
+=== Limite de participação
+
+Os membros de uma equipe podem participar no máximo *duas vezes* na Liga Entry Level.
+Após sua segunda participação, devem avançar para uma das ligas 2:2
+(Soccer Vision ou Soccer Infrared).
+
+Membros que já participaram das ligas 2:2 da RoboCupJunior Soccer em qualquer nível
+(local, regional, super-regional, internacional) não podem participar da Liga Entry Level.
+
+[discrete]
+=== A construção e a programação devem ser realizadas exclusivamente pelos estudantes
+
+Os robôs devem ser construídos e programados exclusivamente pelos membros estudantes
+da equipe. Mentores, professores, pais ou empresas não devem se envolver no design,
+construção, montagem, programação ou depuração dos robôs. Para evitar possível
+desqualificação, é extremamente importante que as equipes cumpram os regulamentos de
+<<regulations-construction>> e <<regulations-programming>>.
+
+Em caso de dúvida, consulte seu Representante Regional antes de registrar sua equipe.
+
+[[gameplay]]
+== JOGABILIDADE
+
+[[game-procedure-and-length-of-a-game]]
+=== Procedimento de jogo e duração de uma partida
+
+As partidas da RCJ Soccer Entry consistem em duas equipes com um robô cada jogando
+futebol uma contra a outra. Cada equipe tem um robô autônomo. O jogo será composto por
+dois tempos. A duração de cada tempo é de 10 minutos. Haverá um intervalo de 5 minutos
+entre os tempos.
+
+Espera-se que as equipes estejam em campo 5 minutos antes do início do jogo. Estar na
+mesa de inspeção não conta a favor desse limite de tempo. Equipes que se atrasarem para
+o início do jogo podem ser penalizadas em um gol a cada *30 segundos*, a critério do
+árbitro.
+
+O placar final do jogo será limitado para que haja no máximo 10 gols de diferença entre
+o time perdedor e o time vencedor.
+
+[[pre-match-meeting]]
+=== Reunião pré-jogo
+
+No início do primeiro tempo do jogo, um árbitro lançará uma moeda. A equipe mencionada
+primeiro no sorteio deve chamar a moeda. O vencedor do sorteio pode escolher para qual
+extremidade chutar ou chutar primeiro. O perdedor do sorteio escolhe a outra opção.
+Após o primeiro tempo, as equipes trocam de lado. A equipe que não deu o pontapé
+inicial no primeiro tempo dará o pontapé inicial para iniciar o segundo tempo.
+
+Durante a reunião pré-jogo, o(s) árbitro(s) pode(m) verificar se os robôs são capazes
+de jogar (ou seja, se eles são pelo menos capazes de seguir e reagir à bola). Se nenhum
+dos robôs for capaz de jogar, o jogo não será disputado e zero gols serão concedidos a
+ambas as equipes.
+
+[[kick-off]]
+=== Pontapé inicial
+
+Cada tempo do jogo começa com um pontapé inicial. Todos os robôs devem estar localizados
+em seu próprio lado do campo. Todos os robôs devem estar parados. A bola é posicionada
+por um árbitro no centro do campo.
+
+A equipe que dá o pontapé inicial coloca seu robô no campo primeiro.
+
+A equipe que não deu o pontapé inicial colocará seu robô no lado defensivo do campo.
+O robô da equipe que não está dando o pontapé inicial deve estar a pelo menos 30 cm de
+distância da bola (fora do círculo central).
+
+Os robôs não podem ser colocados dentro do gol. Os robôs não podem ser reposicionados
+depois de colocados, exceto se o árbitro solicitar um ajuste de posicionamento para
+garantir que os robôs estejam posicionados corretamente dentro do campo.
+
+Ao comando do árbitro (geralmente por apito), todos os robôs serão iniciados
+imediatamente. Quaisquer robôs iniciados antecipadamente serão removidos do campo
+pelo árbitro e considerados danificados.
+
+Antes de um pontapé inicial, *todos os robôs danificados* têm permissão de retornar
+ao campo de jogo imediatamente se estiverem _prontos e totalmente funcionais_.
+
+[[neutral-kickoff]]
+==== Pontapé inicial neutro
+
+Um pontapé inicial neutro é o mesmo descrito em <<kick-off>> com uma pequena
+alteração: todos os robôs devem estar a pelo menos 30 cm de distância da bola
+(fora do círculo central).
+
+[[human-interference]]
+=== Interferência humana
+
+Exceto pelo pontapé inicial, a interferência humana das equipes (ex.: tocar os robôs)
+durante o jogo não é permitida, a menos que explicitamente permitida por um árbitro.
+A(s) equipe(s)/membro(s) que violarem isso podem ser desqualificados do jogo.
+
+O árbitro ou um assistente pode ajudar robôs presos se a bola não estiver sendo
+disputada perto deles e se a situação foi criada a partir de interação normal entre
+os robôs (ou seja, não foi uma falha de design ou programação do robô). O árbitro
+puxará os robôs apenas o suficiente para que possam se mover livremente novamente.
+
+[[ball-movement]]
+=== Movimento da bola
+
+Um robô não pode segurar a bola. Segurar a bola é definido como assumir o controle
+total dela, removendo todos os graus de liberdade. Exemplos incluem fixar a bola ao
+corpo do robô, cercar a bola usando o corpo do robô para impedir o acesso de outros,
+ou prender a bola com qualquer parte do corpo do robô. Se a bola não rolar enquanto
+um robô estiver se movendo, é uma boa indicação de que a bola está presa.
+
+A única exceção é o uso de um tambor giratório (um "driblador") que imprime um giro
+dinâmico para trás na bola para mantê-la em sua superfície.
+
+Outros jogadores devem poder acessar a bola.
+
+A bola precisa permanecer dentro dos limites do campo, conforme definido pelas paredes.
+Se um robô mover a bola para fora do campo (ou seja, além das paredes ou acima de sua
+altura), será considerado danificado. (<<damaged-robots>>)
+
+[[scoring]]
+=== Pontuação
+
+Um gol é marcado quando a bola atinge ou toca a parede do fundo do gol. Os gols
+marcados por qualquer robô têm o mesmo resultado final: concedem um gol para o time
+do lado oposto. Após um gol, o jogo será reiniciado com um pontapé inicial da equipe
+que sofreu o gol.
+
+[[lack-of-progress]]
+=== Falta de progresso
+
+Falta de progresso ocorre se não houver progresso no jogo por um período razoável de
+tempo e a situação não tiver probabilidade de mudar. Situações típicas de falta de
+progresso são quando a bola fica presa entre robôs, quando não há mudança nas posições
+da bola e dos robôs, ou quando a bola está além da capacidade de detecção ou alcance
+de todos os robôs em campo.
+
+Após uma contagem visível e audível footnote:[geralmente uma contagem de três], um
+árbitro chamará `*falta de progresso*` e moverá a bola para o ponto neutro desocupado
+mais próximo. Se isso não resolver a falta de progresso, o árbitro poderá chamar falta
+de progresso novamente e mover a bola para um ponto neutro diferente da mesma forma.
+
+[[damaged-robots]]
+=== Robôs danificados
+
+Se um robô estiver danificado, ele deve ser retirado do campo e reparado antes de
+poder jogar novamente. Mesmo se reparado, o robô deve permanecer fora do campo por
+pelo menos um minuto ou até o próximo pontapé inicial.
+
+Alguns exemplos de robô danificado incluem:
+
+* não responde à bola ou não consegue se mover (perdeu peças, energia, etc.).
+* vira sozinho.
+
+Após ser reparado, o robô será colocado no ponto neutro desocupado mais distante da
+bola, de frente para seu próprio gol. Um robô só pode retornar ao campo se o dano
+tiver sido reparado. Se o árbitro notar que o robô retornou ao campo com o mesmo
+problema original, pode solicitar que o robô seja removido.
+
+*Somente o árbitro decide se um robô está danificado.* Um robô só pode ser retirado
+ou devolvido com a permissão do árbitro. Sempre que um robô for removido do jogo,
+seus motores devem ser desligados.
+
+[[interruption-of-game-ref-interruption]]
+=== Interrupção do jogo
+
+Em princípio, um jogo não será interrompido.
+
+Um árbitro pode parar o jogo se houver uma situação no campo ou ao redor dele que o
+árbitro queira discutir com um oficial do torneio, ou se a bola apresentar mau
+funcionamento e uma substituta não estiver prontamente disponível.
+
+Quando o árbitro parar o jogo, todos os robôs devem ser parados e permanecer no campo
+sem ser tocados. O árbitro pode decidir se o jogo será continuado/retomado a partir da
+situação em que foi parado ou por um pontapé inicial.
+
+[[team]]
+== EQUIPE
+
+[[team-regulations]]
+=== Regulamentos
+
+Uma equipe deve ter mais de um membro para participar na competição. Membros e/ou robôs
+não podem ser compartilhados entre equipes. O número máximo de membros da equipe é
+definido por cada competição, geralmente 4.
+
+Cada membro da equipe precisa ter uma função técnica.
+
+Cada equipe deve ter um *capitão*. O capitão é a pessoa responsável pela comunicação
+com os árbitros. A equipe pode substituir seu capitão por outro membro durante a
+competição. Cada equipe tem permissão de ter no máximo dois membros ao lado do campo
+durante o jogo: geralmente o capitão e um membro assistente.
+
+[[team-violations]]
+=== Violações
+
+Equipes que não cumprirem as regras não têm permissão de participar.
+
+Qualquer pessoa próxima aos campos de jogo com paredes inferiores a 22 cm não pode
+usar roupas amarelas ou azuis que possam ser vistas pelos robôs (para evitar
+interferências). Um árbitro pode exigir que um membro da equipe troque de roupa ou
+seja substituído se houver suspeita de interferência.
+
+O árbitro pode interromper um jogo em andamento se houver suspeita de qualquer tipo
+de interferência de espectadores (roupas coloridas, emissores IR, flashes de câmera,
+celulares, rádios, computadores, etc.).
+
+[[robots]]
+== ROBÔS
+
+[[number-of-robots-substitution]]
+=== Número de robôs / substituições
+
+Cada equipe tem permissão de ter apenas um robô para todo o torneio. A substituição
+de robôs durante a competição dentro da equipe ou com outras equipes é proibida.
+
+[[robots-interference]]
+=== Interferência
+
+Os robôs não podem ter cor amarela ou azul para evitar interferências. Partes amarelas
+ou azuis usadas na construção do robô devem ser ocultadas por outras partes ou
+cobertas/pintadas com uma cor neutra.
+
+Os robôs não devem produzir interferência magnética em outro robô no campo.
+
+Os robôs não devem produzir luz visível que possa impedir a equipe adversária de jogar
+quando colocados em uma superfície plana. Qualquer parte de um robô que produza luz
+que possa interferir no sistema de visão do robô adversário deve ser coberta.
+
+[[robots-control]]
+=== Controle
+
+O uso de controle remoto de qualquer tipo não é permitido durante a partida. Os robôs
+devem ser iniciados e parados manualmente por humanos e controlados de forma autônoma.
+
+[[agility]]
+=== Agilidade
+
+Os robôs devem ser construídos e programados de forma que seu movimento não se limite
+a apenas uma dimensão (definida como um único eixo, como mover-se apenas em linha reta).
+Eles devem se mover em todas as direções, por exemplo, girando.
+
+Os robôs devem responder à bola com um movimento direto para a frente em direção a ela.
+
+Um robô deve tocar a bola posicionada a não mais de 20 cm dele em 10 segundos.
+Se um robô não fizer isso dentro do limite de tempo, será considerado danificado.
+(Ver <<damaged-robots>>.)
+
+Os robôs podem entrar nos gols.
+
+[[handle]]
+=== Alça
+
+Todos os robôs devem ter uma alça estável e facilmente perceptível para segurá-los e
+levantá-los. A alça deve ser facilmente acessível e permitir que o robô seja levantado
+a pelo menos 5 cm acima da estrutura mais alta do robô.
+
+As dimensões da alça podem exceder a limitação de altura do robô, mas a parte que
+excede esse limite não pode ser usada para montar componentes do robô.
+
+O peso da alça está incluído no peso do robô.
+
+[[top-markers]]
+=== Marcadores superiores
+
+Marcadores superiores (como exigidos nas ligas 2:2) não são obrigatórios.
+
+[[violations]]
+=== Violações
+
+Robôs que não cumprirem estas especificações/regulamentos não têm permissão de jogar.
+
+Se violações forem detectadas durante um jogo em andamento, a equipe pode ser
+desqualificada daquele jogo. Se violações semelhantes ocorrerem repetidamente, a equipe
+pode ser desqualificada do torneio.
+
+[[field]]
+== CAMPO
+
+[[dimensions-of-the-field]]
+=== Dimensões do campo
+
+A Liga Entry Level utiliza o mesmo campo padrão das demais ligas RoboCupJunior
+Soccer: *158 cm × 219 cm*.
+
+Isso permite o reaproveitamento dos campos já existentes nas competições regionais.
+Para as especificações completas do campo (paredes, gols, piso, pontos neutros e
+círculo central), consulte o documento de especificação do campo da liga.
+footnote:[Disponível em https://robocup-junior.github.io/soccer-rules/master/field_specification.html]
+
+NOTE: Diferentemente das ligas de entrada 1:1 do repositório oficial, a Liga de
+Entrada Open utiliza o campo *com* a área lateral (out-area), idêntico ao campo das
+ligas Soccer Vision e Soccer Infrared. Isso permite que o mesmo campo seja compartilhado
+por todas as ligas em um mesmo evento.
+
+[[ball]]
+== BOLA
+
+[[specification-for-ball]]
+=== Especificação da bola
+
+A Liga Entry Level utiliza a mesma bola IR pulsada utilizada nas ligas Soccer 2:2.
+Para as especificações técnicas completas, consulte a especificação de bola da liga.
+footnote:[Disponível em https://robocup-junior.github.io/soccer-rules/master/ball_specification.html]
+
+[[tournament-balls]]
+=== Bolas para o torneio
+
+As bolas para o torneio devem ser disponibilizadas pelos organizadores do torneio.
+Os organizadores do torneio não são responsáveis por fornecer bolas para prática.
+
+[[code-of-conduct]]
+== CÓDIGO DE CONDUTA
+
+[[fair-play]]
+=== Jogo Limpo
+
+Espera-se que o objetivo de todas as equipes seja disputar um jogo justo e limpo de
+futebol de robôs. Espera-se que todos os robôs sejam construídos com consideração
+pelos outros participantes.
+
+Os robôs não têm permissão de causar interferência deliberada ou danos a outros robôs
+durante o jogo normal.
+
+Os robôs não têm permissão de causar danos ao campo ou à bola durante o jogo normal.
+
+Um robô que causar danos pode ser desqualificado de uma partida específica a critério
+dos organizadores do torneio.
+
+Os humanos não têm permissão de causar interferência deliberada com robôs ou danos
+ao campo ou à bola.
+
+[[behavior]]
+=== Comportamento
+
+Espera-se que todos os participantes se comportem adequadamente. Todos os movimentos
+e comportamentos devem ser discretos dentro do local do torneio.
+
+[[help]]
+=== Ajuda
+
+Mentores (professores, pais, acompanhantes e outros membros adultos da equipe,
+incluindo tradutores) não têm permissão na área de trabalho dos estudantes, a menos
+que seja explicitamente e temporariamente permitido pelos organizadores do torneio.
+Apenas estudantes participantes podem estar dentro da área de trabalho.
+
+*Os mentores não devem tocar, construir, reparar ou programar robôs.*
+
+[[sharing]]
+=== Compartilhamento
+
+O entendimento de que quaisquer desenvolvimentos tecnológicos e curriculares devem ser
+compartilhados entre os participantes da RoboCup e da RoboCupJunior após o torneio tem
+sido parte das competições mundiais da RoboCup.
+
+[[spirit]]
+=== Espírito
+
+Espera-se que todos os participantes, estudantes, mentores e pais respeitem a missão
+da RoboCupJunior.
+
+*_Não importa se você ganha ou perde, mas o quanto você aprende!_*
+
+[[violations-disqualification]]
+=== Violações / Desqualificação
+
+Equipes que violarem o código de conduta podem ser desqualificadas do torneio. Também
+é possível desqualificar apenas uma única pessoa ou um único robô de sua participação
+ulterior no torneio.
+
+Em casos menos graves de violações do código de conduta, a equipe receberá um aviso.
+Em casos graves ou repetidos de violações, a equipe pode ser desqualificada
+imediatamente sem aviso.
+
+[[conflict-resolution]]
+== RESOLUÇÃO DE CONFLITOS
+
+[[referees]]
+=== Árbitros
+
+O(s) árbitro(s) é(são) responsável(is) por tomar decisões relativas ao jogo, de
+acordo com estas regras.
+
+*Durante o jogo, as decisões tomadas pelo(s) árbitro(s) são finais.*
+
+Somente os membros da equipe na mesa têm mandato para falar livremente com os
+árbitros. Ao final do jogo, os resultados se tornam finais com as assinaturas de
+ambas as equipes. Disputas devem ser resolvidas antes da assinatura.
+
+[[rule-clarification]]
+=== Esclarecimento de regras
+
+Esclarecimentos de regras podem ser feitos por membros dos organizadores do torneio e
+do Comitê da Soccer League, se necessário, mesmo durante um torneio.
+
+[[rule-modification]]
+=== Modificação de regras
+
+Se circunstâncias especiais, como problemas imprevistos ou capacidades de um robô
+ocorrerem, as regras podem ser modificadas pelos organizadores do torneio, se
+necessário, mesmo durante um torneio.
+
+[[regulatory-statutes]]
+=== Estatutos regulatórios
+
+Cada competição RoboCupJunior pode ter seus próprios estatutos regulatórios para
+definir o procedimento do torneio (por exemplo, modo de jogos, inspeção de robôs,
+entrevistas, cronogramas, etc.). Os estatutos regulatórios fazem parte desta regra.
+
+[[regulations]]
+=== Regulamentos
+
+[[dimensions]]
+==== Dimensões
+
+Os robôs serão medidos na posição vertical com todas as partes estendidas.
+As dimensões de um robô não devem exceder os seguintes limites:
+
+|===
+| | *Liga Entry Level*
+| Formato | Círculo de 22,0 cm de diâmetro
+| Altura | 22,0 cm ^[1]^
+| Peso | 1.400 g ^[2]^
+| Zona de captura de bola | 3,0 cm
+| Tensão máxima nominal | 12,0 V ^[3]^ ^[4]^
+|===
+
+TIP: [1] A alça do robô pode exceder a altura.
+
+TIP: [2] O peso do robô inclui o da alça.
+
+IMPORTANT: [3] Recomendamos *fortemente* que as equipes incluam circuitos de proteção
+para baterias de lítio.
+
+NOTE: [4] Os limites de tensão se referem aos *valores nominais*; tensões ligeiramente
+mais altas em estados de carga elevados são permitidas. Circuitos de bomba de tensão
+são permitidos *apenas* para acionamento de chutadores. Nenhuma tensão pode exceder
+48 V em nenhum momento.
+
+A zona de captura de bola é definida como qualquer espaço interno criado quando uma
+borda reta é colocada nos pontos salientes de um robô. Isso significa que a bola não
+deve entrar no casco convexo de um robô mais do que a profundidade especificada. Além
+disso, deve ser possível para outro robô tomar posse da bola.
+
+[[regulations-limitations]]
+==== Limitações
+
+Um robô pode usar qualquer número de câmeras sem restrições sobre lentes, partes
+ópticas, sistemas ópticos e campo de visão total.
+
+Os componentes podem ser adquiridos de qualquer forma que a equipe achar adequada.
+*Não há restrições sobre marcas, kits, motores ou materiais de construção.*
+
+O número máximo de motores de tração é 3 (três). Motores envolvidos em mover o robô
+pelo campo são considerados motores de tração. Qualquer número de motores adicionais
+pode ser usado para dribladores, chutadores e outros mecanismos.
+
+Dispositivos pneumáticos só podem usar ar ambiente.
+
+A força do chutador está sujeita a verificação de conformidade a qualquer momento
+durante a competição. Durante o jogo, um árbitro pode testar a força do chutador no
+campo antes de cada tempo, quando um robô danificado retornar ao campo ou quando o jogo
+estiver prestes a ser reiniciado após um gol.
+
+[[regulations-construction]]
+==== Construção
+
+IMPORTANT: Os robôs devem ser construídos exclusivamente pelos membros estudantes de
+uma equipe. Mentores, professores, pais ou empresas não podem se envolver no design,
+construção e montagem dos robôs.
+
+Para a construção de um robô, qualquer kit de robô ou bloco de construção pode ser
+utilizado, desde que o design e a construção sejam principalmente e substancialmente
+o trabalho original da equipe. Isso significa que kits comerciais podem ser usados,
+mas devem ser substancialmente modificados pela equipe. Não é permitido seguir
+principalmente um manual de construção nem apenas mudar partes sem importância.
+
+Indícios de violações são o uso de kits comerciais que basicamente só podem ser
+montados de uma forma, ou o fato de robôs de equipes diferentes, construídos com o
+mesmo kit comercial, terem basicamente a mesma aparência ou funcionar da mesma forma.
+
+Os robôs devem ser construídos de forma que possam ser iniciados pelo capitão sem a
+ajuda de outra pessoa.
+
+Como um contato com um robô adversário e/ou driblador que possa danificar peças dos
+robôs não pode ser totalmente antecipado, *os robôs devem ter todos os seus elementos
+ativos devidamente protegidos com materiais resistentes*. Por exemplo, circuitos
+elétricos e dispositivos pneumáticos devem ser protegidos de qualquer contato humano
+e contato direto com outros robôs.
+
+IMPORTANT: Todas as engrenagens de driblador acionadas devem ser cobertas com metal
+ou plástico rígido.
+
+Quando as baterias são transportadas ou movidas, recomenda-se *fortemente* o uso de
+bolsas de segurança. Devem ser feitos esforços razoáveis para garantir que os robôs
+evitem curtos-circuitos e vazamentos químicos ou de ar em todas as circunstâncias.
+
+IMPORTANT: O uso de baterias inchadas, danificadas ou de outra forma perigosas não
+é permitido.
+
+[[regulations-programming]]
+==== Programação
+
+Os robôs devem ser programados exclusivamente pelos membros estudantes da equipe.
+Mentores, professores, pais ou empresas não devem se envolver na programação e
+depuração dos robôs.
+
+Para a programação dos robôs, qualquer linguagem de programação, interface ou ambiente
+de desenvolvimento integrado (IDE) pode ser usado. O uso de programas que vêm junto
+com um kit comercial (especialmente programas de exemplo ou predefinições) ou partes
+substanciais desses programas não é permitido. Não é permitido usar programas de
+exemplo, mesmo que sejam modificados.
+
+[[regulations-inspections]]
+==== Inspeções
+
+Os robôs devem ser inspecionados e certificados todos os dias antes do primeiro jogo.
+Os organizadores do torneio podem solicitar outras inspeções se necessário, incluindo
+inspeções aleatórias que podem ocorrer a qualquer momento. As inspeções de rotina
+incluem:
+
+* Restrições de peso (ver <<dimensions>>).
+* Dimensões do robô (ver <<dimensions>>).
+* Restrições de tensão (ver <<dimensions>> e <<regulations-limitations>>).
+* Limites de força do chutador, se o robô tiver um chutador (ver <<kicker-power-measuring>>).
+
+As equipes podem ser entrevistadas sobre seus robôs e o processo de desenvolvimento a
+qualquer momento durante um torneio.
+
+[appendix]
+[[kicker-power-measuring]]
+== Procedimentos de Medição de Potência do Chutador
+
+Todos os chutadores dos robôs serão testados com a bola do torneio.
+A potência do chutador será medida por meio de um teste em campo.
+
+O teste é realizado da seguinte forma:
+
+. Posicione o robô dentro do canto esquerdo de um gol.
+. Realize um chute em direção ao gol adversário.
+. O teste de potência do chute é aprovado se a bola não cruzar para o lado oposto
+do campo.

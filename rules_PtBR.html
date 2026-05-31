@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="author" content="2026-05-31">
+<title>Regras RoboCupJunior Soccer 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Regras RoboCupJunior Soccer 2026</h1>
+<div class="details">
+<span id="author" class="author">2026-05-31</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#general-rules">1. Regras Gerais da RoboCupJunior Internacional 2026</a>
+<ul class="sectlevel2">
+<li><a href="#_requisitos_das_equipes">1.1. Requisitos das Equipes</a></li>
+<li><a href="#_processo_de_qualificação_para_a_equipe_internacional">1.2. Processo de Qualificação para a Equipe Internacional</a></li>
+<li><a href="#_requisitos_dos_robôs">1.3. Requisitos dos Robôs</a></li>
+<li><a href="#_requisitos_de_documentação_e_compartilhamento">1.4. Requisitos de Documentação e Compartilhamento</a></li>
+<li><a href="#_espírito_e_comportamento">1.5. Espírito e Comportamento</a></li>
+</ul>
+</li>
+<li><a href="#gameplay">2. JOGABILIDADE</a>
+<ul class="sectlevel2">
+<li><a href="#game-procedure-and-length-of-a-game">2.1. Procedimento de jogo e duração de uma partida</a></li>
+<li><a href="#pre-match-meeting">2.2. Reunião pré-jogo</a></li>
+<li><a href="#kick-off">2.3. Pontapé inicial</a></li>
+<li><a href="#scoring">2.4. Pontuação</a></li>
+<li><a href="#ball-movement">2.5. Movimento da bola</a></li>
+<li><a href="#inside-penalty-area">2.6. Dentro da Área de Pênalti (Empurrão e Defesa Múltipla)</a></li>
+<li><a href="#lack-of-progress">2.7. Falta de progresso</a></li>
+<li><a href="#out-of-bounds">2.8. Fora dos limites</a></li>
+<li><a href="#damaged-robots">2.9. Robôs danificados</a></li>
+<li><a href="#human-interference">2.10. Interferência humana</a></li>
+<li><a href="#interruption-of-game-ref-interruption">2.11. Interrupção do Jogo</a></li>
+</ul>
+</li>
+<li><a href="#robots">3. ROBÔS</a>
+<ul class="sectlevel2">
+<li><a href="#robots-interference">3.1. Interferência</a></li>
+<li><a href="#robots-control">3.2. Controle e Comunicação</a></li>
+<li><a href="#agility">3.3. Agilidade</a></li>
+<li><a href="#handle">3.4. Alça</a></li>
+<li><a href="#top-markers">3.5. Marcadores Superiores</a></li>
+<li><a href="#violations">3.6. Violações</a></li>
+<li><a href="#specifications">3.7. Especificações de materiais</a></li>
+<li><a href="#infrared-ball-change">3.8. Mudança de Bola da Liga Soccer Infrared 2026</a></li>
+<li><a href="#tournament-balls">3.9. Bolas do torneio</a></li>
+</ul>
+</li>
+<li><a href="#code-of-conduct">4. CÓDIGO DE CONDUTA</a>
+<ul class="sectlevel2">
+<li><a href="#fair-play">4.1. Jogo Limpo</a></li>
+</ul>
+</li>
+<li><a href="#conflict-resolution">5. RESOLUÇÃO DE CONFLITOS</a>
+<ul class="sectlevel2">
+<li><a href="#referees">5.1. Árbitros</a></li>
+<li><a href="#rule-clarification">5.2. Esclarecimento de regras</a></li>
+<li><a href="#rule-modification">5.3. Modificação de regras</a></li>
+<li><a href="#competition-specifics">5.4. Especificidades da competição</a></li>
+</ul>
+</li>
+<li><a href="#league-regulations">6. REGULAMENTOS DA LIGA</a>
+<ul class="sectlevel2">
+<li><a href="#league-regulations-preamble">6.1. Preâmbulo</a></li>
+<li><a href="#regulations">6.2. Regulamentos</a></li>
+</ul>
+</li>
+<li><a href="#international-competition">7. COMPETIÇÃO INTERNACIONAL</a>
+<ul class="sectlevel2">
+<li><a href="#international-competition-specifics">7.1. Especificidades da Competição Internacional</a></li>
+<li><a href="#interviews">7.2. Entrevistas</a></li>
+<li><a href="#technical-challenges">7.3. Desafios Técnicos</a></li>
+<li><a href="#further-information-on-international-competition">7.4. Mais informações sobre a Competição Internacional</a></li>
+</ul>
+</li>
+<li><a href="#entry-league">8. LIGA ENTRY LEVEL</a>
+<ul class="sectlevel2">
+<li><a href="#_liga_entry_level">8.1. Liga Entry Level</a></li>
+</ul>
+</li>
+<li><a href="#kicker-power-measuring">Appendix A: Procedimentos de Medição de Potência do Chutador</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Este documento é uma <strong>tradução e adaptação das regras oficiais da
+RoboCupJunior Soccer</strong>, direcionada à <strong>liga brasileira (RoboCupJunior Brasil)</strong>.
+Em caso de divergência, a versão oficial em inglês tem prioridade.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Estas são as regras de Soccer para a RoboCupJunior 2026, adaptadas das regras
+gerais da RoboCupJunior Soccer League para uso no contexto brasileiro. A versão
+em inglês das regras oficiais tem prioridade sobre qualquer tradução.</p>
+</div>
+<div class="paragraph">
+<p>As equipes são aconselhadas a verificar o site RoboCupJunior Soccer
+<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> e o fórum Soccer
+<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>
+para obter os procedimentos e requisitos para a competição internacional.
+Para competições locais, regionais e super-regionais, consulte os organizadores
+dos torneios. Cada equipe é responsável por verificar a versão mais recente das
+regras antes de cada competição. Equipes devem solicitar esclarecimentos no
+Fórum sempre que necessário.
+<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As equipes são encorajadas a entrar em contato com a comunidade RoboCupJunior
+em nosso Discord. Mostre o que você está trabalhando, faça perguntas ou participe
+das discussões semanais sobre futuras regras e design da liga.
+<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>
+Você também pode contatar o Comitê da Soccer League diretamente por e-mail
+<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="media/field_with_two_teams.jpg" alt="RCJASoccer" width="288" height="210">
+</div>
+<div class="title">Figure 1. Duas equipes de dois robôs com uma bola laranja em um campo de futebol RoboCupJunior.</div>
+</div>
+<h2 id="_prefácio" class="discrete">Prefácio</h2>
+<div class="paragraph">
+<p>No desafio RoboCupJunior Soccer, equipes de jovens engenheiros projetam, constroem
+e programam dois robôs móveis totalmente autônomos para competir contra outro time em
+partidas. Os robôs devem detectar uma bola e marcar em um gol codificado por cores
+em um campo especial que se assemelha a um campo de futebol humano.</p>
+</div>
+<div class="paragraph">
+<p>Para ter sucesso, os participantes devem demonstrar habilidade em programação, robótica,
+eletrônica e mecatrônica. Espera-se também que as equipes contribuam para o avanço da
+comunidade como um todo, compartilhando suas descobertas com outros participantes e
+praticando o bom espírito esportivo, independentemente da cultura, idade ou resultado
+da competição. <strong>Espera-se que todos compitam, aprendam, se divirtam e cresçam.</strong></p>
+</div>
+<div class="paragraph">
+<p>A RoboCupJunior Soccer consiste em três ligas: <a id="substitution-1"></a>
+<span class="red"><strong>Soccer Vision (anteriormente Soccer Open)</strong></span>
+<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>, <a id="substitution-2"></a>
+<span class="red"><strong>Soccer Infrared (anteriormente Soccer Lightweight)</strong></span>
+<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> e <strong>Soccer Entry Level</strong>. Estas regras
+aplicam-se às ligas Soccer Vision e Soccer Infrared. A liga Soccer Entry Level
+posssui seu próprio conjunto de regras (ver <a href="#entry-league">Rule 8, &#8220;LIGA ENTRY LEVEL&#8221;</a>).
+Existem três diferenças principais entre as ligas Vision e Infrared.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>O <a id="substitution-3"></a>
+<span class="red"><strong>Soccer Infrared</strong></span>
+<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> é jogado com uma bola especial que
+emite sinal IR. Os robôs podem pesar até <a id="substitution-4"></a>
+<span class="red"><strong>1,5 kg</strong></span>
+<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> e ter até 22 cm.</p>
+</li>
+<li>
+<p>O <a id="substitution-5"></a>
+<span class="red"><strong>Soccer Vision</strong></span>
+<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> é jogado com uma bola de golfe laranja. Os robôs
+não têm restrição de peso e podem ter até 18 cm.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Grande parte do ranking geral (para o torneio internacional; outros
+torneios podem funcionar de forma diferente) é determinada pelas categorias avaliadas.
+Há pontos para documentação, desempenho em entrevista, etc.
+<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><em>Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o
+organizador de sua competição regional RoboCupJunior e pergunte sobre a</em> <a href="#entry-league">Liga Entry Level</a>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+A liga Soccer está planejando aumentar o tamanho das equipes para 5. A partir
+de 23/04/2026, está confirmado que um tamanho máximo de 4 membros por equipe será
+permitido na competição de Incheon. Recomendamos equipes de 5 para Super-Regionais
+e onde os organizadores acharem prático também para competições regionais e locais.
+Consulte os organizadores de cada torneio que participar sobre o tamanho de equipe
+que podem acomodar. Informações de contato para o campeonato mundial:
+robocupjunior-soccer [ at \] robocup [ dot \] org
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="general-rules"><a class="anchor" href="#general-rules"></a><a class="link" href="#general-rules">1. Regras Gerais da RoboCupJunior Internacional 2026</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Estas regras se aplicam à competição internacional da RoboCupJunior.
+No entanto, torneios regionais, Super-Regionais e locais podem ter
+variações ou adaptações nestas regras para atender às suas necessidades
+específicas de competição. É importante verificar com os organizadores dos
+torneios em que você está participando para confirmar quais regras exatas
+serão utilizadas.</p>
+</div>
+<div class="paragraph">
+<p>Se as equipes tiverem dúvidas sobre qualquer aspecto das Regras Gerais ou das
+Regras Específicas da Liga, elas são encorajadas a consultar o Fórum Oficial
+da RoboCupJunior para esclarecimentos: <a href="https://junior.forum.robocup.org/" class="bare">https://junior.forum.robocup.org/</a></p>
+</div>
+<div class="paragraph">
+<p>Para perguntas sobre quaisquer regras ou sobre a RoboCupJunior em geral, as equipes
+também podem entrar em contato com a comunidade RoboCupJunior pelo <a href="https://robocup-junior.github.io/soccer-rules/discord/">Servidor Discord Oficial</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_requisitos_das_equipes"><a class="anchor" href="#_requisitos_das_equipes"></a><a class="link" href="#_requisitos_das_equipes">1.1. Requisitos das Equipes</a></h3>
+<div class="sect3">
+<h4 id="_tamanho_da_equipe"><a class="anchor" href="#_tamanho_da_equipe"></a><a class="link" href="#_tamanho_da_equipe">1.1.1. Tamanho da Equipe</a></h4>
+<div class="paragraph">
+<p><strong>Tamanho Mínimo da Equipe</strong>: As equipes devem ser compostas por pelo menos 2 membros.</p>
+</div>
+<div class="paragraph">
+<p><strong>Tamanho Máximo da Equipe</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ligas de Soccer e Resgate: 4 membros.</p>
+</li>
+<li>
+<p>Liga OnStage: 5 membros.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Competições regionais e Super-Regionais podem definir seus próprios tamanhos de equipe dependendo da capacidade do local e das variações regionais. As equipes que participam da competição Internacional poderão ter apenas o número máximo de participantes registrados na equipe classificada.</p>
+</div>
+<div class="paragraph">
+<p><strong>Membros e Robôs Compartilhados</strong>: Nenhum membro ou robô pode ser
+compartilhado entre equipes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_supervisão_da_equipe"><a class="anchor" href="#_supervisão_da_equipe"></a><a class="link" href="#_supervisão_da_equipe">1.1.2. Supervisão da Equipe</a></h4>
+<div class="paragraph">
+<p><strong>Requisito de Mentor Júnior</strong>: Cada equipe Júnior deve ter pelo menos
+um Mentor Júnior registrado e presente com a equipe.</p>
+</div>
+<div class="paragraph">
+<p>Mentores e Pais/Acompanhantes são responsáveis por supervisionar suas equipes
+e manter o dever de cuidado e bem-estar de seus membros, conforme apropriado para as regulamentações de sua região de origem.
+Qualquer preocupação referente ao bem-estar dos membros da equipe deve ser comunicada imediatamente aos organizadores do evento.</p>
+</div>
+<div class="paragraph">
+<p>O Mentor Júnior deve estar presente durante todos os eventos oficiais de competição com sua equipe.
+Eles não devem interagir de maneira impositiva com equipes, robôs, juízes ou o processo de julgamento. Qualquer incidente considerado inadequado será tratado pelos organizadores do evento e pode levar a ações disciplinares.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_requisitos_de_idade"><a class="anchor" href="#_requisitos_de_idade"></a><a class="link" href="#_requisitos_de_idade">1.1.3. Requisitos de Idade</a></h4>
+<div class="paragraph">
+<p><strong>Membros Estudantes Júnior:</strong> Devem ter entre 14 e 19 anos de idade em 1º de julho do ano da competição.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mentores Júnior e Pais/Acompanhantes:</strong> Devem ter 19 anos ou mais em 1º de julho do ano da competição.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_membros_da_equipe"><a class="anchor" href="#_membros_da_equipe"></a><a class="link" href="#_membros_da_equipe">1.1.4. Membros da Equipe</a></h4>
+<div class="paragraph">
+<p><strong>Ligas de Entrada</strong>: As ligas de entrada da RoboCupJunior e outras divisões "Primárias"
+(onde a idade mínima pode variar) não são realizadas na competição internacional,
+mas estão presentes em muitas regiões e torneios Super-Regionais.</p>
+</div>
+<div class="paragraph">
+<p><strong>Funções Técnicas</strong>: Todo membro da equipe deve ter uma função técnica definida
+(mecânica/design, elétrica/sensoriamento, software, etc.) e deve ser capaz de explicar sua função durante o julgamento técnico.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_processo_de_qualificação_para_a_equipe_internacional"><a class="anchor" href="#_processo_de_qualificação_para_a_equipe_internacional"></a><a class="link" href="#_processo_de_qualificação_para_a_equipe_internacional">1.2. Processo de Qualificação para a Equipe Internacional</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Para se qualificar para a competição Internacional, o Representante Regional de cada região completará o Processo de Alocação de Vagas no início do ano da competição. Os Representantes Regionais podem ser encontrados no <a href="https://junior.robocup.org/gettingstarted/">Site Oficial</a>.</p>
+</li>
+<li>
+<p>Após o torneio classificatório local da região, o Representante Regional
+atribuirá as vagas. Uma vez confirmadas pelos organizadores da RoboCupJunior, as equipes qualificadas serão convidadas a se registrar pelo sistema oficial de registro da Federação RoboCup.</p>
+</li>
+<li>
+<p>O processo de qualificação difere dependendo do tamanho de cada região,
+mas a alocação de vagas deve refletir fortemente os resultados das competições regionais.</p>
+</li>
+<li>
+<p>Se uma região não utilizar ou liberar suas vagas alocadas, os Representantes Regionais
+podem solicitar vagas adicionais durante uma fase posterior do processo de alocação.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requisitos_dos_robôs"><a class="anchor" href="#_requisitos_dos_robôs"></a><a class="link" href="#_requisitos_dos_robôs">1.3. Requisitos dos Robôs</a></h3>
+<div class="sect3">
+<h4 id="_comunicação_do_robô"><a class="anchor" href="#_comunicação_do_robô"></a><a class="link" href="#_comunicação_do_robô">1.3.1. Comunicação do Robô</a></h4>
+<div class="paragraph">
+<p><strong>Comunicação Permitida</strong>: A comunicação entre robôs durante o jogo é permitida, desde que utilize o espectro de 2,4 GHz e sua potência de saída não exceda 100 mW EIRP (Potência Radiada Isotropicamente Efetiva) em nenhuma circunstância.</p>
+</div>
+<div class="paragraph">
+<p><strong>Responsabilidade</strong>: As equipes são responsáveis por gerenciar a comunicação de seus robôs. A disponibilidade do espectro não é garantida.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comunicação entre Componentes</strong>: A comunicação entre componentes do
+mesmo robô é permitida.</p>
+</div>
+<div class="paragraph">
+<p><strong>Adaptabilidade da Liga</strong>: Cada liga pode modificar as regras de comunicação do robô
+para garantir que atendam aos seus requisitos específicos.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_requisitos_de_segurança_e_energia"><a class="anchor" href="#_requisitos_de_segurança_e_energia"></a><a class="link" href="#_requisitos_de_segurança_e_energia">1.3.2. Requisitos de Segurança e Energia</a></h4>
+<div class="paragraph">
+<p><strong>Energia Elétrica</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Os robôs não devem usar energia da rede elétrica.</p>
+</li>
+<li>
+<p>Tensão máxima permitida: 48V CC ou 25V CA RMS (Valor Quadrático Médio).</p>
+</li>
+<li>
+<p>A tensão deve ser facilmente medida durante as inspeções, e os pontos de medição
+devem ser cobertos para segurança ou projetados com considerações de segurança.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Segurança das Baterias</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>As baterias de lítio devem ser armazenadas em bolsas de segurança, e o carregamento deve ser
+supervisionado pelos membros da equipe nas áreas de competição.</p>
+</li>
+<li>
+<p>As equipes devem seguir os protocolos de segurança, incluindo procedimentos de manuseio de incêndio em baterias e evacuação.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Design de Segurança do Robô</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Gerenciamento de Energia</strong>: Baterias seguras, fiação segura e funcionalidade de parada de emergência.</p>
+</li>
+<li>
+<p><strong>Segurança Mecânica</strong>: Sem bordas afiadas, pontos de aperto ou outros riscos.
+Os atuadores devem ser apropriados para o tamanho e a função do robô.</p>
+</li>
+<li>
+<p><strong>Comportamento Perigoso</strong>: As equipes devem reportar comportamentos potencialmente perigosos dos robôs pelo menos duas semanas antes de um evento da RoboCupJunior.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requisitos_de_documentação_e_compartilhamento"><a class="anchor" href="#_requisitos_de_documentação_e_compartilhamento"></a><a class="link" href="#_requisitos_de_documentação_e_compartilhamento">1.4. Requisitos de Documentação e Compartilhamento</a></h3>
+<div class="sect3">
+<h4 id="_pôsteres_das_equipes_da_robocupjunior"><a class="anchor" href="#_pôsteres_das_equipes_da_robocupjunior"></a><a class="link" href="#_pôsteres_das_equipes_da_robocupjunior">1.4.1. Pôsteres das Equipes da RoboCupJunior</a></h4>
+<div class="paragraph">
+<p><strong>Finalidade</strong>: Os pôsteres são uma ferramenta para compartilhar designs de robôs e insights
+com juízes, equipes e o público. Os pôsteres serão afixados em áreas públicas da competição no local e cópias digitais ou fotografias serão compartilhadas pela RoboCupJunior após a competição.</p>
+</div>
+<div class="paragraph">
+<p><strong>Tamanho</strong>: Os pôsteres não devem ser maiores que o tamanho A1 (60 x 84 cm).</p>
+</div>
+<div class="paragraph">
+<p><strong>Conteúdo</strong>: Os pôsteres devem resumir os documentos de design e apresentar as
+capacidades do robô em um formato envolvente.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vídeo_de_descrição_técnica_ver_documentação_da_liga"><a class="anchor" href="#_vídeo_de_descrição_técnica_ver_documentação_da_liga"></a><a class="link" href="#_vídeo_de_descrição_técnica_ver_documentação_da_liga">1.4.2. Vídeo de Descrição Técnica (Ver Documentação da Liga)</a></h4>
+<div class="paragraph">
+<p><strong>Conteúdo</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Demonstração Robótica</strong>: Mostrar sistemas de robôs totalmente funcionais para
+destacar aspectos técnicos.</p>
+</li>
+<li>
+<p><strong>Processo de Design</strong>: Explicar as escolhas de design e as abordagens de resolução de problemas da equipe.</p>
+</li>
+<li>
+<p><strong>Apresentação</strong>: Clara e de alta qualidade, explicando técnicas inovadoras ou incomuns.</p>
+</li>
+<li>
+<p><strong>Inovação e Sustentabilidade</strong>: Destacar novas tecnologias e práticas sustentáveis.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Submissão</strong>: As diretrizes especificarão a duração do vídeo e os prazos por liga.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compartilhamento_de_recursos_da_equipe"><a class="anchor" href="#_compartilhamento_de_recursos_da_equipe"></a><a class="link" href="#_compartilhamento_de_recursos_da_equipe">1.4.3. Compartilhamento de Recursos da Equipe</a></h4>
+<div class="paragraph">
+<p><strong>Compartilhamento</strong>: Os materiais submetidos pelas equipes como parte da submissão de documentação serão compartilhados nos repositórios do GitHub para as ligas:
+<a href="https://github.com/robocup-junior" class="bare">https://github.com/robocup-junior</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Crédito</strong>: As equipes devem creditar os criadores de trabalhos externos e respeitar as regras de licenciamento. O foco deve permanecer no crescimento pessoal e no aprendizado.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_diretrizes_sobre_plágio"><a class="anchor" href="#_diretrizes_sobre_plágio"></a><a class="link" href="#_diretrizes_sobre_plágio">1.4.4. Diretrizes sobre Plágio</a></h4>
+<div class="paragraph">
+<p><strong>Uso de Código Externo</strong>: As equipes têm permissão para usar código externo, mas devem
+creditar os criadores originais.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prioridade de Aprendizado</strong>: As equipes devem priorizar o aprendizado e não usar
+soluções completas de terceiros. Sempre preste atenção às regras de licenciamento.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lista_de_materiais_bom"><a class="anchor" href="#_lista_de_materiais_bom"></a><a class="link" href="#_lista_de_materiais_bom">1.4.5. Lista de Materiais (BOM)</a></h4>
+<div class="paragraph">
+<p><strong>Submissão</strong>: As equipes devem enviar uma BOM (Lista de Materiais) listando os principais componentes e
+materiais utilizados.</p>
+</div>
+<div class="paragraph">
+<p><strong>Detalhes</strong>: A BOM deve incluir:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nome/descrição do componente (ex.: número da peça).</p>
+</li>
+<li>
+<p>Fornecedor/fonte do componente (incluindo PCBs/componentes usinados).</p>
+</li>
+<li>
+<p>Status (novo/reutilizado).</p>
+</li>
+<li>
+<p>Kit ou construído sob medida.</p>
+</li>
+<li>
+<p>Preço.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Modelo</strong>: Um modelo padronizado de BOM será fornecido com as submissões de documentação da liga para a competição internacional.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_espírito_e_comportamento"><a class="anchor" href="#_espírito_e_comportamento"></a><a class="link" href="#_espírito_e_comportamento">1.5. Espírito e Comportamento</a></h3>
+<div class="sect3">
+<h4 id="_comportamento"><a class="anchor" href="#_comportamento"></a><a class="link" href="#_comportamento">1.5.1. Comportamento</a></h4>
+<div class="paragraph">
+<p>Espera-se que todos os participantes se comportem de maneira adequada, sendo atenciosos e educados,
+especialmente, mas não somente, em relação a outros participantes, voluntários, árbitros e
+organizadores de todas as Ligas Júnior e Principais, bem como ao local do evento.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_código_de_conduta"><a class="anchor" href="#_código_de_conduta"></a><a class="link" href="#_código_de_conduta">1.5.2. Código de Conduta</a></h4>
+<div class="paragraph">
+<p>Todos os organizadores, voluntários, membros de equipes, mentores, apoiadores e visitantes devem respeitar o Código de Conduta da Federação RoboCup. Qualquer situação que não atenda ao código de conduta deve ser reportada a um membro da organização da Federação RoboCup e será investigada.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mentoria_e_assistência_no_local"><a class="anchor" href="#_mentoria_e_assistência_no_local"></a><a class="link" href="#_mentoria_e_assistência_no_local">1.5.3. Mentoria e Assistência no Local</a></h4>
+<div class="paragraph">
+<p>O apoio de outras equipes, mentores, professores, pais, patrocinadores, comunidades na internet etc. é uma parte fundamental de como as equipes aprendem e crescem.</p>
+</div>
+<div class="paragraph">
+<p>Para garantir uma competição justa e maximizar o aprendizado, é necessário que nenhum apoio recebido realize o trabalho de competição pela equipe. Um bom indicativo é a capacidade da equipe de explicar não apenas o que os componentes dos seus robôs fazem, mas também como eles fazem.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_equipes_no_local"><a class="anchor" href="#_equipes_no_local"></a><a class="link" href="#_equipes_no_local">1.5.4. Equipes no Local</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Durante a competição, apenas os membros oficiais da equipe (máximo 4/5 dependendo da liga)
+podem representar a equipe no registro, dia de instalação e ter acesso às áreas de competição para rodadas e entrevistas.</p>
+</li>
+<li>
+<p>Deve haver pelo menos 2 membros da equipe presentes no local, a menos que a equipe possa apresentar evidências de circunstâncias atenuantes, incluindo comprovante de viagem para outros membros. Equipes em que apenas um participante comparecer ao local poderão competir, mas não serão elegíveis para finais ou prêmios.</p>
+</li>
+<li>
+<p>É responsabilidade das equipes garantir que os membros estejam presentes no horário e local corretos para todas as atividades programadas.</p>
+</li>
+<li>
+<p>As equipes não têm permissão para se comunicar com ou receber ajuda virtualmente de partes externas com a intenção de impactar o desempenho da equipe durante as áreas de competição. A comunicação virtual inclui, mas não se limita a, chamadas telefônicas prolongadas, videochamadas, controle remoto de desktop etc.</p>
+</li>
+<li>
+<p>Qualquer equipe que violar estas regras poderá estar sujeita a ações disciplinares.</p>
+</li>
+<li>
+<p>Recomenda-se que as equipes busquem ajuda de outras equipes ou organizadores caso estejam enfrentando algum problema no local.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_violações"><a class="anchor" href="#_violações"></a><a class="link" href="#_violações">1.5.5. Violações</a></h4>
+<div class="paragraph">
+<p>Equipes, Mentores/Apoiadores ou Membros de Equipes que repetidamente se comportem de maneira inaceitável ou em violação às Regras Gerais ou das Ligas poderão ser
+desqualificados do torneio e solicitados a deixar o local.</p>
+</div>
+<h3 id="_mudanças_nas_regras_robocupjunior_soccer_2025" class="discrete">Mudanças nas Regras RoboCupJunior Soccer 2025</h3>
+<div class="paragraph">
+<p>As mudanças nas regras desenvolvidas pelo Comitê da Liga de Soccer em cooperação com a
+Comunidade RoboCup Junior Soccer (por favor, continue postando ideias para o futuro a
+qualquer momento) visam melhorar a jogabilidade.</p>
+</div>
+<div class="paragraph">
+<p>Alterações detalhadas estão listadas abaixo e vinculadas ao local correspondente nas regras.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#addition-1">Adicionado " Se o empurrão e a defesa múltipla ocorrerem simultaneamente, os árbitros chamarão e resolverão primeiro a situação de empurrão, depois a defesa múltipla."</a></p>
+</li>
+<li>
+<p><a href="#addition-2">Adicionado "chamará "empurrado para fora""</a></p>
+</li>
+<li>
+<p><a href="#addition-3">Adicionado "Essas regras de interferência significam que frequentemente luzes vermelhas (por exemplo, sensores de linha) são detectadas pelos sistemas de câmera de outras equipes como a bola laranja e, portanto, devem ser cobertas para que o robô seja autorizado a jogar. Isso já ocorre na Vision há muitos anos, mas pode ser novo para equipes da Infrared. As equipes são aconselhadas a garantir que seus robôs não tenham essas luzes/peças vermelhas brilhantes para evitar ajustes surpresa na competição."</a></p>
+</li>
+<li>
+<p><a href="#addition-4">Adicionado "A partir deste ano (2026), o Soccer Infrared está usando uma nova bola IR. A principal diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro, o mesmo tamanho da bola de golfe da Liga Vision."</a></p>
+</li>
+<li>
+<p><a href="#addition-5">Adicionado "Esta bola é Open Source, portanto qualquer pessoa pode produzi-la a partir dos arquivos e instruções na página do GitHub: https://github.com/robocup-junior/ir-golf-ball ."</a></p>
+</li>
+<li>
+<p><a href="#addition-6">Adicionado "Se você ou alguém que conhece puder ajudar produzindo ou distribuindo bolas para uma ou mais regiões, o Comitê de Soccer está interessado em ajudar a viabilizar isso e em listar você como fornecedor de bolas no site oficial. Entre em contato pelo Fórum, Discord ou e-mail"</a></p>
+</li>
+<li>
+<p><a href="#addition-7">Adicionado "As ligas de entrada continuarão a usar a bola infravermelha grande."</a></p>
+</li>
+<li>
+<p><a href="#addition-8">Adicionado "Estar 3 mm abaixo do limite de tamanho e 50 g abaixo do limite de peso geralmente tornará as inspeções mais tranquilas."</a></p>
+</li>
+<li>
+<p><a href="#addition-9">Adicionado "<strong>SOMENTE PARA A LIGA INFRARED:</strong>"</a></p>
+</li>
+<li>
+<p><a href="#substitution-1">Alterado "Soccer Open" para "Soccer Vision (anteriormente Soccer Open)"</a></p>
+</li>
+<li>
+<p><a href="#substitution-2">Alterado "Soccer Lightweight" para "Soccer Infrared (anteriormente Soccer Lightweight)"</a></p>
+</li>
+<li>
+<p><a href="#substitution-3">[substitution-3]</a></p>
+</li>
+<li>
+<p><a href="#substitution-4">Alterado "1,4 kg" para "1,5 kg"</a></p>
+</li>
+<li>
+<p><a href="#substitution-5">[substitution-5]</a></p>
+</li>
+<li>
+<p><a href="#substitution-6">Alterado "apenas o Campeonato Mundial, a partir do Brasil 2025," para "pelo menos no campeonato mundial (consulte outros organizadores de competições)"</a></p>
+</li>
+<li>
+<p><a href="#substitution-7">Alterado "Lightweight" para "Infrared"</a></p>
+</li>
+<li>
+<p><a href="#substitution-8">Alterado "Open" para "Vision"</a></p>
+</li>
+<li>
+<p><a href="#substitution-9">Alterado "Open" para "Vision"</a></p>
+</li>
+<li>
+<p><a href="#substitution-10">Alterado "Lightweight" para "Infrared"</a></p>
+</li>
+<li>
+<p><a href="#substitution-11">[substitution-11]</a></p>
+</li>
+<li>
+<p><a href="#substitution-12">[substitution-12]</a></p>
+</li>
+<li>
+<p><a href="#substitution-13">Alterado "1400 g" para "1500g"</a></p>
+</li>
+<li>
+<p><a href="#substitution-14">Alterado "3,0 cm" para "1,5 cm"</a></p>
+</li>
+<li>
+<p><a href="#substitution-15">Alterado "pedir para ver um chute de amostra" para "testar a potência do chutador"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gameplay"><a class="anchor" href="#gameplay"></a><a class="link" href="#gameplay">2. JOGABILIDADE</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="game-procedure-and-length-of-a-game"><a class="anchor" href="#game-procedure-and-length-of-a-game"></a><a class="link" href="#game-procedure-and-length-of-a-game">2.1. Procedimento de jogo e duração de uma partida</a></h3>
+<div class="paragraph">
+<p>As partidas RCJ Soccer consistem em dois times de robôs jogando futebol um contra o
+outro. Cada equipe tem dois robôs autônomos. O jogo será composto por dois tempos.
+A duração de cada tempo é de 10 minutos. Haverá um intervalo de 5 minutos entre os tempos.</p>
+</div>
+<div class="paragraph">
+<p>Espera-se que as equipes estejam em campo 5 minutos antes do início do jogo. Estar na
+mesa de inspeção não conta a favor desse limite de tempo. As equipes que se atrasarem
+para o início do jogo podem ser penalizadas em um gol a cada <strong>30 segundos</strong>, a critério
+do árbitro.</p>
+</div>
+<div class="paragraph">
+<p>O placar final do jogo será limitado para que haja no máximo 10 gols de diferença entre
+o time perdedor e o time vencedor.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pre-match-meeting"><a class="anchor" href="#pre-match-meeting"></a><a class="link" href="#pre-match-meeting">2.2. Reunião pré-jogo</a></h3>
+<div class="paragraph">
+<p>No início do primeiro tempo do jogo, um árbitro lançará uma moeda. A equipe mencionada
+primeiro no sorteio deve chamar a moeda. O vencedor do sorteio pode escolher para qual
+extremidade chutar ou chutar primeiro. O perdedor do sorteio escolhe a outra opção.
+Após o primeiro tempo, as equipes trocam de lado. A equipe que não deu o pontapé inicial
+no primeiro tempo dará o pontapé inicial para iniciar o segundo tempo.</p>
+</div>
+<div class="paragraph">
+<p>Durante a reunião pré-jogo, o(s) árbitro(s) pode(m) verificar se os robôs são capazes
+de jogar (ou seja, se eles são pelo menos capazes de seguir e reagir à bola). Se nenhum
+dos robôs for capaz de jogar, o jogo não será disputado e zero gols serão concedidos a
+ambas as equipes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="kick-off"><a class="anchor" href="#kick-off"></a><a class="link" href="#kick-off">2.3. Pontapé inicial</a></h3>
+<div class="paragraph">
+<p>Cada tempo do jogo começa com um pontapé inicial. Todos os robôs devem estar localizados
+em seu próprio lado do campo. Todos os robôs devem estar parados. A bola é posicionada
+por um árbitro no centro do campo.</p>
+</div>
+<div class="paragraph">
+<p>A equipe que dá o pontapé inicial coloca seus robôs no campo primeiro.</p>
+</div>
+<div class="paragraph">
+<p>A equipe que não deu o pontapé inicial colocará seus robôs no lado defensivo do campo.
+Todos os robôs da equipe que não está dando o pontapé inicial devem estar a pelo menos
+30 cm de distância da bola (fora do círculo central).</p>
+</div>
+<div class="paragraph">
+<p>Os robôs não podem ser colocados fora dos limites. Os robôs não podem ser reposicionados
+depois de colocados, exceto se o árbitro solicitar um ajuste de posicionamento para
+garantir que os robôs estejam posicionados corretamente dentro do campo.</p>
+</div>
+<div class="paragraph">
+<p>Ao comando do árbitro (geralmente por apito), todos os robôs serão iniciados
+imediatamente. Quaisquer robôs iniciados antecipadamente serão removidos do campo
+pelo árbitro e considerados danificados.</p>
+</div>
+<div class="paragraph">
+<p>Antes de um pontapé inicial, <strong>todos os robôs danificados ou fora dos limites</strong> têm
+permissão de retornar ao campo de jogo imediatamente se estiverem <em>prontos e
+totalmente funcionais</em>.</p>
+</div>
+<div class="sect3">
+<h4 id="neutral-kickoff"><a class="anchor" href="#neutral-kickoff"></a><a class="link" href="#neutral-kickoff">2.3.1. Pontapé inicial neutro</a></h4>
+<div class="paragraph">
+<p>Um pontapé inicial neutro é o mesmo descrito em <a href="#kick-off">Rule 2.3, &#8220;Pontapé inicial&#8221;</a> com uma pequena
+alteração: todos os robôs devem estar a pelo menos 30 cm de distância da bola
+(fora do círculo central).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scoring"><a class="anchor" href="#scoring"></a><a class="link" href="#scoring">2.4. Pontuação</a></h3>
+<div class="paragraph">
+<p>Um gol é marcado quando a bola atinge ou toca a parede do fundo do gol. Os gols
+marcados por qualquer robô têm o mesmo resultado final: concedem um gol para o time
+do lado oposto. Após um gol, o jogo será reiniciado com um pontapé inicial da equipe
+que sofreu o gol.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ball-movement"><a class="anchor" href="#ball-movement"></a><a class="link" href="#ball-movement">2.5. Movimento da bola</a></h3>
+<div class="paragraph">
+<p>Um robô não pode segurar a bola. Segurar a bola é definido como assumir o controle
+total dela, removendo todos os graus de liberdade. Exemplos de segurar a bola incluem
+fixar a bola ao corpo do robô, cercar a bola usando o corpo do robô para impedir o
+acesso de outros, encircular ou prender a bola com qualquer parte do corpo do robô.
+Se a bola não rolar enquanto um robô estiver se movendo, é uma boa indicação de que
+a bola está presa.</p>
+</div>
+<div class="paragraph">
+<p>A única exceção é o uso de um tambor giratório (um "driblador") que imprime um giro
+dinâmico para trás na bola para mantê-la em sua superfície.</p>
+</div>
+<div class="paragraph">
+<p>Outros jogadores devem poder acessar a bola.</p>
+</div>
+<div class="paragraph">
+<p>A bola precisa permanecer dentro dos limites do campo, conforme definido pelas paredes.
+Se um robô mover a bola para fora do campo (ou seja, além das paredes ou acima de sua
+altura), será considerado danificado. (<a href="#damaged-robots">Rule 2.9, &#8220;Robôs danificados&#8221;</a>)</p>
+</div>
+<div class="paragraph">
+<p>Qualquer robô deve se aproximar e tocar a bola quando ela for colocada no ponto neutro
+mais próximo. Deve fazer isso antes que a falta de progresso seja sinalizada. Quando
+estiver em seu próprio lado do campo, qualquer robô deve ser capaz de mover a bola do
+ponto neutro mais próximo para o lado adversário. Se um robô específico não agir
+desta forma, os árbitros poderão considerá-lo danificado a seu critério.
+(Veja <a href="#damaged-robots">Robôs Danificados</a>.) Esta regra não se aplica se o robô for
+impedido de detectar ou jogar a bola pelo adversário.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">2.6. Dentro da Área de Pênalti (Empurrão e Defesa Múltipla)</a></h3>
+<div class="paragraph">
+<p>Nenhum robô pode estar totalmente dentro da área de penalidade. Como as áreas de
+penalidade são marcadas com uma linha branca, a regra de Fora dos Limites se aplica.
+(<a href="#out-of-bounds">Rule 2.8, &#8220;Fora dos limites&#8221;</a>)</p>
+</div>
+<div class="paragraph">
+<p>Se dois robôs da mesma equipe estiverem pelo menos parcialmente em uma área de
+penalidade, o robô mais distante da bola será movido para o <em>ponto neutro desocupado
+mais distante</em> imediatamente. Se isso ocorrer repetidamente, um robô poderá ser
+considerado danificado a critério do árbitro. (<a href="#damaged-robots">Rule 2.9, &#8220;Robôs danificados&#8221;</a>)</p>
+</div>
+<div class="paragraph">
+<p>Se um robô atacante e um defensor se tocarem enquanto pelo menos um deles estiver pelo
+menos parcialmente dentro da área de penalidade, e pelo menos um deles tiver contato
+físico com a bola, isso pode ser chamado de "empurrão" a critério do árbitro. Neste
+caso, a bola será movida para o <em>ponto neutro desocupado mais distante</em> imediatamente.</p>
+</div>
+<div class="paragraph">
+<p>Se um gol for marcado como resultado de uma situação de "empurrão", ele não será
+concedido.</p>
+</div>
+<div id="addition-1" class="paragraph">
+<p><span class="red">* Se o empurrão e a defesa múltipla ocorrerem simultaneamente, os árbitros chamarão e resolverão primeiro a situação de empurrão, depois a defesa múltipla.*</span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lack-of-progress"><a class="anchor" href="#lack-of-progress"></a><a class="link" href="#lack-of-progress">2.7. Falta de progresso</a></h3>
+<div class="paragraph">
+<p>A falta de progresso ocorre se não houver progresso no jogo por um período razoável
+de tempo e a situação provavelmente não mudar. Situações típicas de falta de progresso
+são quando a bola está presa entre os robôs, quando não há mudança nas posições da
+bola e dos robôs, ou quando a bola está além da detecção ou alcance de todos os robôs
+no campo.</p>
+</div>
+<div class="paragraph">
+<p>Após uma contagem visível e em voz alta <sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup>,
+um árbitro informará <code><strong>falta de progresso</strong></code> e moverá a bola para o ponto neutro
+desocupado mais próximo. Se isso não resolver a falta de progresso, o árbitro poderá
+chamar falta de progresso novamente e mover a bola para um ponto neutro diferente.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">2.8. Fora dos limites</a></h3>
+<div class="paragraph">
+<p>Se um robô tocar uma parede ou se mover completamente para dentro da área de penalidade,
+será chamado <code><strong>fora dos limites</strong></code>. Quando essa situação ocorrer, o robô receberá uma
+penalidade de um minuto e será removido do campo. Não há interrupção do tempo para o
+jogo em si. O robô pode retornar se um pontapé inicial ocorrer antes que a penalidade
+tenha decorrido.</p>
+</div>
+<div class="paragraph">
+<p>A penalidade de um minuto começa quando o robô é removido do jogo. Além disso, qualquer
+gol marcado pela equipe penalizada enquanto o robô penalizado estiver em campo não será
+concedido. Os robôs fora dos limites podem ser consertados se a equipe precisar, conforme
+descrito em <a href="#damaged-robots">Rule 2.9, &#8220;Robôs danificados&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>Após o término da penalidade, o robô será colocado no ponto neutro desocupado mais
+distante da bola, de frente para seu próprio gol.</p>
+</div>
+<div class="paragraph">
+<p>Um árbitro pode dispensar a penalidade se o robô for acidentalmente empurrado para fora
+de campo por um robô adversário. Nesse caso, o árbitro <a id="addition-2"></a>
+<span class="red"><strong>chamará "empurrado para fora"</strong></span>
+e poderá empurrar levemente o robô de volta ao campo.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="damaged-robots"><a class="anchor" href="#damaged-robots"></a><a class="link" href="#damaged-robots">2.9. Robôs danificados</a></h3>
+<div class="paragraph">
+<p>Se um robô for danificado, ele deve ser retirado do campo e deve ser consertado antes
+que possa jogar novamente. Mesmo que consertado, o robô deve permanecer fora de campo
+por pelo menos um minuto ou até o próximo pontapé inicial.</p>
+</div>
+<div class="paragraph">
+<p>Alguns exemplos de robô danificado:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>não responde à bola ou não consegue se mover (perdeu peças, energia, etc.).</p>
+</li>
+<li>
+<p>move-se continuamente para dentro da área de penalidade ou para fora dos limites.</p>
+</li>
+<li>
+<p>vira por conta própria.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Após ser consertado, o robô será colocado no ponto neutro desocupado mais distante da
+bola, de frente para seu próprio gol.</p>
+</div>
+<div class="paragraph">
+<p><strong>Somente o árbitro decide se um robô está danificado.</strong> Um robô só pode ser retirado
+ou devolvido com a permissão do árbitro.</p>
+</div>
+<div class="paragraph">
+<p>Se ambos os robôs de uma mesma equipe forem considerados danificados no pontapé inicial,
+o jogo será pausado e a equipe restante receberá 1 gol a cada 30 segundos que os robôs
+adversários permanecerem danificados. Contudo, essas regras só se aplicam quando nenhum
+dos dois robôs da mesma equipe foram danificados como resultado de violação de regras
+pela equipe adversária.</p>
+</div>
+<div class="paragraph">
+<p>Sempre que um robô for removido do jogo, seus motores devem ser desligados.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="human-interference"><a class="anchor" href="#human-interference"></a><a class="link" href="#human-interference">2.10. Interferência humana</a></h3>
+<div class="paragraph">
+<p>Exceto para o pontapé inicial, a interferência humana das equipes (por exemplo, tocar
+os robôs) durante o jogo não é permitida, a menos que explicitamente permitida por um
+árbitro. A(s) equipe(s)/membro(s) da equipe infratores poderão ser desqualificados do jogo.</p>
+</div>
+<div class="paragraph">
+<p>O(s) árbitro(s) pode(m) ajudar robôs a se soltarem se a bola não estiver sendo disputada
+próxima a eles e se a situação tiver sido criada a partir da interação normal entre robôs
+(ou seja, não foi uma falha de projeto ou programação do robô sozinho). O(s) árbitro(s)
+puxará(ão) os robôs apenas o suficiente para que possam se mover livremente novamente.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interruption-of-game-ref-interruption"><a class="anchor" href="#interruption-of-game-ref-interruption"></a><a class="link" href="#interruption-of-game-ref-interruption">2.11. Interrupção do Jogo</a></h3>
+<div class="paragraph">
+<p>Em princípio, um jogo não será interrompido.</p>
+</div>
+<div class="paragraph">
+<p>Um árbitro pode interromper o jogo se houver uma situação no campo ou ao redor dele
+que o árbitro queira discutir com um oficial do torneio, ou se a bola apresentar defeito
+e uma substituta não estiver prontamente disponível.</p>
+</div>
+<div class="paragraph">
+<p>Quando o árbitro interromper o jogo, todos os robôs devem ser parados e permanecer no
+campo sem serem tocados. O árbitro decidirá se o jogo será continuado/retomado a partir
+da situação em que foi interrompido ou mediante um pontapé inicial neutro.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="robots"><a class="anchor" href="#robots"></a><a class="link" href="#robots">3. ROBÔS</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="robots-interference"><a class="anchor" href="#robots-interference"></a><a class="link" href="#robots-interference">3.1. Interferência</a></h3>
+<div class="paragraph">
+<p>Robôs não podem ser coloridos de laranja, amarelo ou azul para evitar interferência.
+Peças laranja, amarelas ou azuis usadas na construção do robô devem ser ocultadas por
+outras partes para não serem percebidas por outros robôs, ou devem ser cobertas com
+tinta ou fita de cor neutra.</p>
+</div>
+<div class="paragraph">
+<p>Robôs não devem produzir interferência magnética em outros robôs no campo.</p>
+</div>
+<div class="paragraph">
+<p>Robôs não devem produzir luz visível que possa impedir a equipe adversária de jogar
+quando colocados em uma superfície plana. Qualquer parte do robô que produza luz que
+possa interferir no sistema de visão do robô adversário deve ser coberta.
+Para regulamentações específicas da liga Infrared, veja <a href="#regulations-inference-in-infrared">Rule 6.2.2, &#8220;Interferência infravermelha&#8221;</a></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<a id="addition-3"></a>
+<span class="red"><strong>Essas regras de interferência significam que frequentemente luzes vermelhas (por exemplo, sensores de linha) são detectadas pelos sistemas de câmera de outras equipes como a bola laranja e, portanto, devem ser cobertas para que o robô seja autorizado a jogar. Isso já ocorre na Vision há muitos anos, mas pode ser novo para equipes da Infrared. As equipes são aconselhadas a garantir que seus robôs não tenham essas luzes/peças vermelhas brilhantes para evitar ajustes surpresa na competição.</strong></span>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Espera-se que os robôs sejam capazes de lidar com qualquer cor visível acima das paredes
+(por exemplo, camisetas azuis, amarelas, verdes ou laranja), seja por hardware (por
+exemplo, limitando o campo de visão para não olhar para cima) ou por software (por
+exemplo, mascarando a imagem de entrada).</p>
+</div>
+<div class="paragraph">
+<p>O árbitro pode interromper um jogo em andamento se qualquer tipo de interferência dos
+espectadores for suspeita (emissores IR, flashes de câmera, celulares, rádios,
+computadores, etc.).</p>
+</div>
+<div class="paragraph">
+<p>Uma equipe que afirmar que seu robô está sendo afetado pelo robô da outra equipe deve
+fornecer prova ou evidência da interferência. Qualquer interferência precisa ser
+confirmada pelos organizadores do torneio se uma reclamação for feita pela outra equipe.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="robots-control"><a class="anchor" href="#robots-control"></a><a class="link" href="#robots-control">3.2. Controle e Comunicação</a></h3>
+<div class="paragraph">
+<p>O uso de controle remoto de qualquer tipo não é permitido durante a partida. Os robôs
+devem ser controlados de forma autônoma.</p>
+</div>
+<div class="paragraph">
+<p>Para <a id="substitution-6"></a>
+<span class="red"><strong>pelo menos no campeonato mundial (consulte outros organizadores de competições)</strong></span>
+<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup> é obrigatório o uso de um
+Módulo de Comunicações para os árbitros controlarem os robôs.
+Veja <a href="#international-competition-specifics">Rule 7.1, &#8220;Especificidades da Competição Internacional&#8221;</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="agility"><a class="anchor" href="#agility"></a><a class="link" href="#agility">3.3. Agilidade</a></h3>
+<div class="paragraph">
+<p>Os robôs devem ser construídos e programados de forma que seu movimento não seja
+limitado a apenas uma dimensão (definida como um único eixo, como mover-se apenas em
+linha reta). Eles devem se mover em todas as direções, por exemplo, girando.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="handle"><a class="anchor" href="#handle"></a><a class="link" href="#handle">3.4. Alça</a></h3>
+<div class="paragraph">
+<p>Todos os robôs devem ter uma alça estável e facilmente perceptível para segurá-los e
+levantá-los. A alça deve ser facilmente acessível e permitir que o robô seja levantado
+a partir de pelo menos 5 cm acima da estrutura mais alta do robô. Deve haver um espaço
+mínimo de 5 cm para as mãos entre a parte não-alça mais alta do robô e a alça.</p>
+</div>
+<div class="paragraph">
+<p>As dimensões da alça podem exceder o limite de altura do robô, mas a parte da alça que
+excede esse limite não pode ser usada para montar componentes do robô.</p>
+</div>
+<div class="paragraph">
+<p>O peso do robô inclui o da alça.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="top-markers"><a class="anchor" href="#top-markers"></a><a class="link" href="#top-markers">3.5. Marcadores Superiores</a></h3>
+<div class="paragraph">
+<p>Um robô deve ter marcações para ser distinguido pelo árbitro. Cada robô deve ter um
+círculo de plástico branco com diâmetro mínimo de 4 cm montado horizontalmente no
+topo. Este círculo branco será usado pelo árbitro para escrever números nos robôs com
+marcadores, portanto os círculos brancos devem ser acessíveis e visíveis. Os marcadores
+superiores não precisam estar dentro do limite de tamanho do robô.</p>
+</div>
+<div class="paragraph">
+<p>Antes do jogo, o árbitro designará os números para cada robô e os escreverá no círculo
+branco superior. Robôs sem o círculo branco superior não estão aptos para jogar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="media/image4.jpeg" alt="image4">
+</div>
+<div class="title">Figure 2. Visualização do marcador superior</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="violations"><a class="anchor" href="#violations"></a><a class="link" href="#violations">3.6. Violações</a></h3>
+<div class="paragraph">
+<p>Robôs que não atendem às especificações/regulamentos (veja <a href="#regulations">Rule 6.2, &#8220;Regulamentos&#8221;</a>) não estão
+autorizados a jogar, a menos que estas regras especifiquem o contrário.</p>
+</div>
+<div class="paragraph">
+<p>Se violações forem detectadas durante um jogo em andamento, a equipe poderá ser
+desqualificada daquele jogo.</p>
+</div>
+<div class="paragraph">
+<p>Se violações semelhantes ocorrerem repetidamente, a equipe poderá ser desqualificada
+do torneio.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="specifications"><a class="anchor" href="#specifications"></a><a class="link" href="#specifications">3.7. Especificações de materiais</a></h3>
+<div class="paragraph">
+<p>Especificações detalhadas da bola e dos campos podem ser encontradas na nota de rodapé
+<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.8. Mudança de Bola da Liga Soccer Infrared 2026</a></h3>
+<div id="addition-4" class="paragraph">
+<p><span class="red"><strong>A partir deste ano (2026), o Soccer Infrared está usando uma nova bola IR. A principal diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro, o mesmo tamanho da bola de golfe da Liga Vision.</strong></span></p>
+</div>
+<div id="addition-5" class="paragraph">
+<p><span class="red"><strong>Esta bola é Open Source, portanto qualquer pessoa pode produzi-la a partir dos arquivos e instruções na página do GitHub: <a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a> .</strong></span></p>
+</div>
+<div id="addition-6" class="paragraph">
+<p><span class="red"><strong>Se você ou alguém que conhece puder ajudar produzindo ou distribuindo bolas para uma ou mais regiões, o Comitê de Soccer está interessado em ajudar a viabilizar isso e em listar você como fornecedor de bolas no site oficial. Entre em contato pelo Fórum, Discord ou e-mail</strong></span></p>
+</div>
+<div id="addition-7" class="paragraph">
+<p><span class="red"><strong>As ligas de entrada continuarão a usar a bola infravermelha grande.</strong></span>
+<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tournament-balls"><a class="anchor" href="#tournament-balls"></a><a class="link" href="#tournament-balls">3.9. Bolas do torneio</a></h3>
+<div class="paragraph">
+<p>As bolas para o torneio devem ser disponibilizadas pelos organizadores do torneio.
+Os organizadores do torneio não são responsáveis por fornecer bolas para treino.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="code-of-conduct"><a class="anchor" href="#code-of-conduct"></a><a class="link" href="#code-of-conduct">4. CÓDIGO DE CONDUTA</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="fair-play"><a class="anchor" href="#fair-play"></a><a class="link" href="#fair-play">4.1. Jogo Limpo</a></h3>
+<div class="paragraph">
+<p>Espera-se que o objetivo de todas as equipes seja jogar uma partida justa e limpa de
+futebol robótico. Espera-se que todos os robôs sejam construídos com consideração
+pelos outros participantes.</p>
+</div>
+<div class="paragraph">
+<p>Os robôs não são permitidos a causar interferência deliberada ou danos a outros robôs
+durante o jogo normal.</p>
+</div>
+<div class="paragraph">
+<p>Os robôs não são permitidos a causar danos ao campo ou à bola durante o jogo normal.</p>
+</div>
+<div class="paragraph">
+<p>Um robô que cause danos poderá ser desqualificado de uma partida específica a critério
+do organizador do torneio.</p>
+</div>
+<div class="paragraph">
+<p>Humanos não são permitidos a causar interferência deliberada com robôs ou danos ao
+campo ou à bola.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="conflict-resolution"><a class="anchor" href="#conflict-resolution"></a><a class="link" href="#conflict-resolution">5. RESOLUÇÃO DE CONFLITOS</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="referees"><a class="anchor" href="#referees"></a><a class="link" href="#referees">5.1. Árbitros</a></h3>
+<div class="paragraph">
+<p>O(s) árbitro(s) é(são) responsável(is) por tomar decisões em relação ao jogo, de
+acordo com estas regras.</p>
+</div>
+<div class="paragraph">
+<p><strong>Durante o jogo, as decisões tomadas pelo(s) árbitro(s) são definitivas.</strong></p>
+</div>
+<div class="paragraph">
+<p>Apenas o(s) membro(s) da equipe no banco têm mandato para falar livremente com o(s)
+árbitro(s).</p>
+</div>
+<div class="paragraph">
+<p>Ao final do jogo, os resultados tornam-se definitivos com as assinaturas de ambas as
+equipes. Disputas devem ser resolvidas antes da assinatura.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rule-clarification"><a class="anchor" href="#rule-clarification"></a><a class="link" href="#rule-clarification">5.2. Esclarecimento de regras</a></h3>
+<div class="paragraph">
+<p>Esclarecimentos de regras podem ser feitos por membros dos organizadores do torneio e
+do Comitê da Liga de Soccer, se necessário, inclusive durante um torneio.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rule-modification"><a class="anchor" href="#rule-modification"></a><a class="link" href="#rule-modification">5.3. Modificação de regras</a></h3>
+<div class="paragraph">
+<p>Se circunstâncias especiais, como problemas imprevistos ou capacidades de um robô,
+ocorrerem, as regras podem ser modificadas pelos organizadores do torneio, se necessário,
+inclusive durante um torneio.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="competition-specifics"><a class="anchor" href="#competition-specifics"></a><a class="link" href="#competition-specifics">5.4. Especificidades da competição</a></h3>
+<div class="paragraph">
+<p>Cada competição (desde local até internacional) pode ter regras adaptadas e
+especificidades adicionadas (pontuação, entrevistas, modos de torneio, variações de
+regras, etc.). Verifique com os organizadores de cada torneio do qual participar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="league-regulations"><a class="anchor" href="#league-regulations"></a><a class="link" href="#league-regulations">6. REGULAMENTOS DA LIGA</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="league-regulations-preamble"><a class="anchor" href="#league-regulations-preamble"></a><a class="link" href="#league-regulations-preamble">6.1. Preâmbulo</a></h3>
+<div class="paragraph">
+<p>Para a RoboCupJunior, existem três ligas: Soccer <a id="substitution-7"></a>
+<span class="red"><strong>Infrared</strong></span>
+<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup>,
+Soccer <a id="substitution-8"></a>
+<span class="red"><strong>Vision</strong></span>
+<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup> e Soccer Entry Level.</p>
+</div>
+<div class="paragraph">
+<p>As partidas da Soccer <a id="substitution-9"></a>
+<span class="red"><strong>Vision</strong></span>
+<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup> são disputadas com uma bola de golfe
+laranja (passiva), enquanto as partidas da Soccer <a id="substitution-10"></a>
+<span class="red"><strong>Infrared</strong></span>
+<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>
+são jogadas com a bola IR. Esta seção de regulamentos se aplica às ligas
+Vision e Infrared. Para a liga Entry Level, consulte <a href="#entry-league">Rule 8, &#8220;LIGA ENTRY LEVEL&#8221;</a>.
+<sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="regulations"><a class="anchor" href="#regulations"></a><a class="link" href="#regulations">6.2. Regulamentos</a></h3>
+<div class="sect3">
+<h4 id="dimensions"><a class="anchor" href="#dimensions"></a><a class="link" href="#dimensions">6.2.1. Dimensões</a></h4>
+<div class="paragraph">
+<p>Os robôs serão medidos em posição ereta com todas as partes estendidas. As dimensões
+de um robô não devem exceder os seguintes limites:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sub-liga</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soccer <a id="substitution-11"></a>
+<span class="red"><strong>Vision</strong></span>
+<sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soccer <a id="substitution-12"></a>
+<span class="red"><strong>Infrared</strong></span>
+<sup class="footnote">[<a id="_footnoteref_22" class="footnote" href="#_footnotedef_22" title="View footnote.">22</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tamanho <sup>[0]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18,0 cm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22,0 cm<br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">altura</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18,0 cm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22,0 cm<br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">peso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sem limite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-13"></a>
+<span class="red"><strong>1500g</strong></span>
+<sup class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnotedef_23" title="View footnote.">23</a>]</sup><br></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">zona de captura de bola</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,5 cm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-14"></a>
+<span class="red"><strong>1,5 cm</strong></span>
+<sup class="footnote">[<a id="_footnoteref_24" class="footnote" href="#_footnotedef_24" title="View footnote.">24</a>]</sup><br></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+[0] O robô deve caber suavemente em um cilindro deste diâmetro. <a id="addition-8"></a>
+<span class="red"><strong>Estar 3 mm abaixo do limite de tamanho e 50 g abaixo do limite de peso geralmente tornará as inspeções mais tranquilas.</strong></span>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>A zona de captura de bola é definida como qualquer espaço interno criado quando uma
+régua é colocada sobre os pontos salientes de um robô. Isso significa que a bola não
+deve entrar no casco convexo do robô por mais que a profundidade especificada. Além
+disso, deve ser possível para outro robô tomar posse da bola.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="regulations-inference-in-infrared"><a class="anchor" href="#regulations-inference-in-infrared"></a><a class="link" href="#regulations-inference-in-infrared">6.2.2. Interferência infravermelha</a></h4>
+<div id="addition-9" class="paragraph">
+<p><span class="red"><strong>SOMENTE PARA A LIGA INFRARED:</strong></span> Componentes projetados para emitir IR (por exemplo,
+ToF, LiDAR, sensores de distância IR, LEDs/LASERs IR, etc.) não são permitidos e os
+organizadores do torneio exigirão que tais dispositivos sejam removidos ou cobertos.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="regulations-limitations"><a class="anchor" href="#regulations-limitations"></a><a class="link" href="#regulations-limitations">6.2.3. Limitações</a></h4>
+<div class="paragraph">
+<p>Um robô pode usar qualquer número de câmeras sem restrições em lentes, peças ópticas,
+sistemas ópticos e campo de visão total. Os componentes podem ser obtidos de qualquer
+forma que a equipe considerar adequada.</p>
+</div>
+<div class="paragraph">
+<p>A força do chutador está sujeita a verificação de conformidade a qualquer momento
+durante a competição. Durante o jogo, um árbitro pode <a id="substitution-15"></a>
+<span class="red"><strong>testar a potência do chutador</strong></span>
+<sup class="footnote">[<a id="_footnoteref_25" class="footnote" href="#_footnotedef_25" title="View footnote.">25</a>]</sup> no campo antes de cada tempo, quando um
+robô danificado retornar ao campo ou quando o jogo estiver prestes a ser reiniciado
+após um gol.
+Veja <a href="#kicker-power-measuring">Appendix A, <em>Procedimentos de Medição de Potência do Chutador</em></a> para mais detalhes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="regulations-inspections"><a class="anchor" href="#regulations-inspections"></a><a class="link" href="#regulations-inspections">6.2.4. Inspeções</a></h4>
+<div class="paragraph">
+<p>Os robôs devem ser inspecionados e certificados todos os dias antes do primeiro jogo.
+Os organizadores do torneio podem solicitar outras inspeções, se necessário, incluindo
+inspeções aleatórias que podem ocorrer a qualquer momento.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="international-competition"><a class="anchor" href="#international-competition"></a><a class="link" href="#international-competition">7. COMPETIÇÃO INTERNACIONAL</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="international-competition-specifics"><a class="anchor" href="#international-competition-specifics"></a><a class="link" href="#international-competition-specifics">7.1. Especificidades da Competição Internacional</a></h3>
+<div class="paragraph">
+<p>Na competição internacional (para outras competições, consulte os organizadores), o
+Comitê da Liga Soccer fornecerá a cada equipe um Módulo de Comunicação. Isso permite
+uma coordenação mais fácil dos jogos e o controle dos robôs pelos árbitros durante as
+partidas. Espera-se que cada equipe faça interface com este módulo usando um único
+pino GPIO de 2,54 mm para iniciar e parar os robôs. O Comitê da Liga Soccer planeja
+expandir isso para usar UART para aplicações mais complexas em anos futuros. Consulte
+a página do GitHub para mais informações sobre o módulo:
+<a href="https://github.com/robocup-junior/soccer-communication-module" class="bare">https://github.com/robocup-junior/soccer-communication-module</a></p>
+</div>
+<div class="paragraph">
+<p>O módulo em si pode exceder a altura máxima do robô. Deve ser posicionado a pelo menos
+1 cm de distância do lado externo e protegido contra danos por impacto.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interviews"><a class="anchor" href="#interviews"></a><a class="link" href="#interviews">7.2. Entrevistas</a></h3>
+<div class="paragraph">
+<p>Durante a competição internacional, os organizadores do torneio podem organizar
+entrevistas com as equipes durante o Dia de Configuração do evento. Isso significa que
+as equipes precisam estar presentes desde cedo neste dia.</p>
+</div>
+<div class="paragraph">
+<p>Detalhes sobre o que é exigido e o que esperar das entrevistas podem ser encontrados
+no documento de pontuação disponível aqui <sup class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnotedef_26" title="View footnote.">26</a>]</sup>.</p>
+</div>
+<div class="paragraph">
+<p>O Comitê da Liga Soccer recomenda a implementação de entrevistas em competições
+regionais também, mas isso não é obrigatório. As equipes devem verificar com os
+organizadores do torneio se realizam entrevistas e, em caso afirmativo, que tipo de
+entrevista esperar.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="technical-challenges"><a class="anchor" href="#technical-challenges"></a><a class="link" href="#technical-challenges">7.3. Desafios Técnicos</a></h3>
+<div class="paragraph">
+<p>Inspirado pelas ligas principais e pela necessidade de avanço tecnológico adicional
+das ligas, o Comitê da Liga Soccer realiza os chamados <strong>Desafios Técnicos</strong>. Novos
+desafios são adicionados a cada ano e são desconhecidos até durante a Competição
+Internacional.</p>
+</div>
+<div class="paragraph">
+<p>A ideia desses desafios é dar às equipes a oportunidade de demonstrar diversas
+habilidades de seus robôs que podem não ser percebidas durante os jogos regulares.
+Além disso, o Comitê da Liga Soccer visa esses desafios como um espaço para testar
+novas ideias que podem se tornar futuras regras ou moldar a competição de outras formas.</p>
+</div>
+<div class="paragraph">
+<p>Qualquer equipe RoboCupJunior Soccer estará apta a tentar esses desafios.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="further-information-on-international-competition"><a class="anchor" href="#further-information-on-international-competition"></a><a class="link" href="#further-information-on-international-competition">7.4. Mais informações sobre a Competição Internacional</a></h3>
+<div class="paragraph">
+<p>Todas as equipes qualificadas para a competição internacional <strong>devem</strong> compartilhar
+seus projetos, tanto hardware quanto software, com todos os participantes presentes
+e futuros. Essas equipes também devem enviar um portfólio digital antes da competição.
+Mais detalhes sobre como será fornecido pelo Comitê da Liga Soccer, que atua como
+organizador do torneio para a competição internacional.</p>
+</div>
+<div class="paragraph">
+<p>Durante os dias de competição da competição internacional (bem como antes do evento),
+os membros das equipes são responsáveis por verificar todas as informações relevantes
+publicadas pelo Comitê da Liga Soccer ou qualquer outro oficial da RoboCup.</p>
+</div>
+<div class="paragraph">
+<p>Haverá também uma competição SuperTeam, na qual várias equipes de todo o mundo
+compartilham seus robôs em um "SuperTeam" e jogam contra outros SuperTeams em um
+chamado "Big Field". As equipes podem utilizar diferentes lentes de câmera ou sensores
+otimizados para os campos maiores para melhorar seu desempenho. As regras completas
+deste desafio podem ser encontradas em
+<a href="https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html</a> ou
+<a href="https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf</a></p>
+</div>
+<div class="paragraph">
+<p>As equipes que competem na competição internacional podem receber prêmios por seu
+desempenho. Esses prêmios são decididos e introduzidos pelo Comitê da Liga Soccer,
+que publica todos os detalhes necessários com antecedência ao evento real.
+<sup class="footnote">[<a id="_footnoteref_27" class="footnote" href="#_footnotedef_27" title="View footnote.">27</a>]</sup></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="entry-league"><a class="anchor" href="#entry-league"></a><a class="link" href="#entry-league">8. LIGA ENTRY LEVEL</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A liga Soccer Entry Level é uma liga principal da RoboCupJunior Soccer para equipes
+iniiciantes, ao lado das ligas Soccer Vision e Soccer Infrared. Embora não faça parte
+da competição internacional, é realizada em muitas regiões e nas competições
+Super-Regionais (Américas, EMEA e Ásia-Pacífico).</p>
+</div>
+<div class="sect2">
+<h3 id="_liga_entry_level"><a class="anchor" href="#_liga_entry_level"></a><a class="link" href="#_liga_entry_level">8.1. Liga Entry Level</a></h3>
+<div class="paragraph">
+<p>A <strong>Liga Entry Level</strong> é uma liga principal da RoboCupJunior Soccer destinada a
+equipes iniciantes. Suas características principais são:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>1 robô por equipe</strong> — cada time opera um único robô autônomo.</p>
+</li>
+<li>
+<p><strong>Open</strong> — sem restrições de kits, fabricantes de motores ou materiais de construção.</p>
+</li>
+<li>
+<p><strong>Mesmo campo</strong> das ligas Soccer Vision e Soccer Infrared (158 cm × 219 cm), incluindo
+a área lateral (out-area).</p>
+</li>
+<li>
+<p>Bola IR pulsada padrão da liga Soccer.</p>
+</li>
+<li>
+<p>Limite de participação: no máximo <strong>2 anos</strong> na Liga Entry Level; após isso, a equipe
+avança para uma das ligas 2:2.</p>
+</li>
+<li>
+<p>Membros que já participaram nas ligas 2:2 não podem participar da Liga Entry Level.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As regras completas da Liga Entry Level estão disponíveis em:
+<sup class="footnote">[<a id="_footnoteref_28" class="footnote" href="#_footnotedef_28" title="View footnote.">28</a>]</sup></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A Liga Entry Level não faz parte da competição internacional, mas é realizada em
+muitas regiões e Super-Regionais. Algumas competições podem ter variações nas regras.
+As equipes devem consultar os organizadores do seu torneio para confirmar as regras
+aplicáveis ao seu evento.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kicker-power-measuring"><a class="anchor" href="#kicker-power-measuring"></a><a class="link" href="#kicker-power-measuring">Appendix A: Procedimentos de Medição de Potência do Chutador</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Todos os chutadores dos robôs serão testados com a bola do torneio usada na sub-liga
+em que participam.
+A potência do chutador será medida por meio de um teste em campo.
+O ricocheteio nas paredes pode variar dependendo da construção do campo. As equipes
+devem garantir que possam ajustar a potência de seu chutador se necessário.</p>
+</div>
+<div class="paragraph">
+<p>O teste é realizado da seguinte forma:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Posicione o robô dentro de um gol com o robô tocando a parede do fundo do gol.</p>
+</li>
+<li>
+<p>Realize um chute em direção ao gol adversário.</p>
+</li>
+<li>
+<p>O teste de potência do chute é aprovado se, após ricochetear no gol oposto, a bola
+não atingir a parede do fundo do gol a partir do qual o robô realizou o teste de
+potência do chute.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://junior.robocup.org/" class="bare">https://junior.robocup.org/</a>
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://junior.forum.robocup.org/c/robocupjunior-soccer/5" class="bare">https://junior.forum.robocup.org/c/robocupjunior-soccer/5</a>
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. A versão atual dessas regras pode ser encontrada em <a href="https://robocup-junior.github.io/soccer-rules/master/rules.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/rules.html</a> em formato HTML e em <a href="https://robocup-junior.github.io/soccer-rules/master/rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/rules.pdf</a> em formato PDF.
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. Você pode entrar no servidor em <a href="https://robocup-junior.github.io/soccer-rules/discord/" class="bare">https://robocup-junior.github.io/soccer-rules/discord/</a>
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. robocupjunior-soccer [ at ] robocup [ dot ] org
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. Na versão anterior dizia "Soccer Open"
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. Na versão anterior dizia "Soccer Lightweight"
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. Na versão anterior dizia "Soccer Lightweight"
+</div>
+<div class="footnote" id="_footnotedef_9">
+<a href="#_footnoteref_9">9</a>. Na versão anterior dizia "1,4 kg"
+</div>
+<div class="footnote" id="_footnotedef_10">
+<a href="#_footnoteref_10">10</a>. Na versão anterior dizia "Soccer Open"
+</div>
+<div class="footnote" id="_footnotedef_11">
+<a href="#_footnoteref_11">11</a>. veja <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> ou <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
+</div>
+<div class="footnote" id="_footnotedef_12">
+<a href="#_footnoteref_12">12</a>. geralmente uma contagem de três
+</div>
+<div class="footnote" id="_footnotedef_13">
+<a href="#_footnoteref_13">13</a>. Na versão anterior dizia "apenas o Campeonato Mundial, a partir do Brasil 2025,"
+</div>
+<div class="footnote" id="_footnotedef_14">
+<a href="#_footnoteref_14">14</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf</a> ou <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.html</a> e <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf</a> ou <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.html</a> respectivamente
+</div>
+<div class="footnote" id="_footnotedef_15">
+<a href="#_footnoteref_15">15</a>. As ligas de entrada frequentemente usam kits de robótica Lego, FischerTechnik, Vex ou outros com os quais lidar com uma bola pequena é mais difícil, especialmente para iniciantes.
+</div>
+<div class="footnote" id="_footnotedef_16">
+<a href="#_footnoteref_16">16</a>. Na versão anterior dizia "Lightweight"
+</div>
+<div class="footnote" id="_footnotedef_17">
+<a href="#_footnoteref_17">17</a>. Na versão anterior dizia "Open"
+</div>
+<div class="footnote" id="_footnotedef_18">
+<a href="#_footnoteref_18">18</a>. Na versão anterior dizia "Open"
+</div>
+<div class="footnote" id="_footnotedef_19">
+<a href="#_footnoteref_19">19</a>. Na versão anterior dizia "Lightweight"
+</div>
+<div class="footnote" id="_footnotedef_20">
+<a href="#_footnoteref_20">20</a>. para especificações detalhadas da bola veja: <a href="#specifications">Rule 3.7, &#8220;Especificações de materiais&#8221;</a>
+</div>
+<div class="footnote" id="_footnotedef_21">
+<a href="#_footnoteref_21">21</a>. Na versão anterior dizia "Open"
+</div>
+<div class="footnote" id="_footnotedef_22">
+<a href="#_footnoteref_22">22</a>. Na versão anterior dizia "Lightweight"
+</div>
+<div class="footnote" id="_footnotedef_23">
+<a href="#_footnoteref_23">23</a>. Na versão anterior dizia "1400 g"
+</div>
+<div class="footnote" id="_footnotedef_24">
+<a href="#_footnoteref_24">24</a>. Na versão anterior dizia "3,0 cm"
+</div>
+<div class="footnote" id="_footnotedef_25">
+<a href="#_footnoteref_25">25</a>. Na versão anterior dizia "pedir para ver um chute de amostra"
+</div>
+<div class="footnote" id="_footnotedef_26">
+<a href="#_footnoteref_26">26</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> ou <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
+</div>
+<div class="footnote" id="_footnotedef_27">
+<a href="#_footnoteref_27">27</a>. para detalhes veja <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> ou <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
+</div>
+<div class="footnote" id="_footnotedef_28">
+<a href="#_footnoteref_28">28</a>. HTML e PDF gerados a partir de <code>entry_rules_PtBR.adoc</code> neste repositório
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2026-05-31 16:56:25 UTC
+</div>
+</div>
+</body>
+</html>
