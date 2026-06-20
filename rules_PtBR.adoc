@@ -62,12 +62,11 @@ comunidade como um todo, compartilhando suas descobertas com outros participante
 praticando o bom espírito esportivo, independentemente da cultura, idade ou resultado
 da competição. *Espera-se que todos compitam, aprendam, se divirtam e cresçam.*
 
-A RoboCupJunior Soccer consiste em três ligas: {~~Soccer Open~>Soccer Vision
-(anteriormente Soccer Open)~~}, {~~Soccer Lightweight~>Soccer Infrared
-(anteriormente Soccer Lightweight)~~} e *Soccer Entry Level*. Estas regras
-aplicam-se às ligas Soccer Vision e Soccer Infrared. A liga Soccer Entry Level
-posssui seu próprio conjunto de regras (ver <<entry-league>>).
-Existem três diferenças principais entre as ligas Vision e Infrared.
+A RoboCupJunior Soccer consiste em duas sub-ligas: {~~Soccer Open~>Soccer Vision
+(anteriormente Soccer Open)~~} e {~~Soccer Lightweight~>Soccer Infrared
+(anteriormente Soccer Lightweight)~~}. Este documento cobre apenas as sub-ligas
+Soccer Vision e Soccer Infrared. As principais diferenças entre as sub-ligas
+Soccer Vision e Soccer Infrared são:
 
 * O {~~Soccer Lightweight~>Soccer Infrared~~} é jogado com uma bola especial que
 emite sinal IR. Os robôs podem pesar até {~~1,4 kg~>1,5 kg~~} e ter até 22 cm.
@@ -83,11 +82,8 @@ veja https://robocup-junior.github.io/soccer-rules/master/scoring.pdf
 ou https://robocup-junior.github.io/soccer-rules/master/scoring.html
 ]
 
-_Se você gostaria de começar com o RoboCupJunior Soccer, entre em contato com o
-organizador de sua competição regional RoboCupJunior e pergunte sobre a_ <<entry-league,Liga Entry Level>>.
-
 TIP: A liga Soccer está planejando aumentar o tamanho das equipes para 5. A partir
-de 23/04/2026, está confirmado que um tamanho máximo de 4 membros por equipe será
+de 23 de abril de 2026, está confirmado que um tamanho máximo de 4 membros por equipe será
 permitido na competição de Incheon. Recomendamos equipes de 5 para Super-Regionais
 e onde os organizadores acharem prático também para competições regionais e locais.
 Consulte os organizadores de cada torneio que participar sobre o tamanho de equipe
@@ -334,7 +330,7 @@ Robôs não devem produzir interferência magnética em outros robôs no campo.
 Robôs não devem produzir luz visível que possa impedir a equipe adversária de jogar
 quando colocados em uma superfície plana. Qualquer parte do robô que produza luz que
 possa interferir no sistema de visão do robô adversário deve ser coberta.
-Para regulamentações específicas da liga Infrared, veja <<regulations-inference-in-infrared>>
+Para regulamentações específicas da sub-liga Soccer Infrared, veja <<regulations-inference-in-infrared>>
 
 IMPORTANT: {++Essas regras de interferência significam que frequentemente luzes
 vermelhas (por exemplo, sensores de linha) são detectadas pelos sistemas de câmera
@@ -430,7 +426,7 @@ ou https://robocup-junior.github.io/soccer-rules/master/ball_specification.html 
 
 {++A partir deste ano (2026), o Soccer Infrared está usando uma nova bola IR.
 A principal diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro,
-o mesmo tamanho da bola de golfe da Liga Vision.++}
+o mesmo tamanho da bola de golfe da sub-liga Soccer Vision.++}
 {++Esta bola é Open Source, portanto qualquer pessoa pode produzi-la a partir dos
 arquivos e instruções na página do GitHub:
 https://github.com/robocup-junior/ir-golf-ball .++}
@@ -438,11 +434,6 @@ https://github.com/robocup-junior/ir-golf-ball .++}
 uma ou mais regiões, o Comitê de Soccer está interessado em ajudar a viabilizar isso
 e em listar você como fornecedor de bolas no site oficial. Entre em contato pelo
 Fórum, Discord ou e-mail++}
-
-{++As ligas de entrada continuarão a usar a bola infravermelha grande.++}
-footnote:[As ligas de entrada frequentemente usam kits de robótica Lego, FischerTechnik,
-Vex ou outros com os quais lidar com uma bola pequena é mais difícil, especialmente
-para iniciantes.]
 
 [[tournament-balls]]
 === Bolas do torneio
@@ -507,6 +498,8 @@ inclusive durante um torneio.
 Cada competição (desde local até internacional) pode ter regras adaptadas e
 especificidades adicionadas (pontuação, entrevistas, modos de torneio, variações de
 regras, etc.). Verifique com os organizadores de cada torneio do qual participar.
+Competições regionais e super-regionais possuem regras baseadas na regra oficial e
+podem divergir um pouco desta versão brasileira.
 
 [[league-regulations]]
 == REGULAMENTOS DA LIGA
@@ -514,13 +507,13 @@ regras, etc.). Verifique com os organizadores de cada torneio do qual participar
 [[league-regulations-preamble]]
 === Preâmbulo
 
-Para a RoboCupJunior, existem três ligas: Soccer {~~Lightweight~>Infrared~~},
-Soccer {~~Open~>Vision~~} e Soccer Entry Level.
+Para a RoboCupJunior, existem duas sub-ligas: Soccer {~~Lightweight~>Infrared~~}
+e Soccer {~~Open~>Vision~~}.
 
-As partidas da Soccer {~~Open~>Vision~~} são disputadas com uma bola de golfe
-laranja (passiva), enquanto as partidas da Soccer {~~Lightweight~>Infrared~~}
-são jogadas com a bola IR. Esta seção de regulamentos se aplica às ligas
-Vision e Infrared. Para a liga Entry Level, consulte <<entry-league>>.
+As partidas da sub-liga Soccer {~~Open~>Vision~~} são disputadas com uma bola de golfe
+laranja (passiva), enquanto as partidas da sub-liga Soccer {~~Lightweight~>Infrared~~}
+são jogadas com a bola IR. Esta seção de regulamentos se aplica às sub-ligas
+Soccer Vision e Soccer Infrared.
 footnote:[para especificações detalhadas da bola veja: <<specifications>>]
 
 [[regulations]]
@@ -654,37 +647,6 @@ que publica todos os detalhes necessários com antecedência ao evento real.
 footnote:[para detalhes veja
 https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou
 https://robocup-junior.github.io/soccer-rules/master/scoring.html]
-
-[[entry-league]]
-== LIGA ENTRY LEVEL
-
-A liga Soccer Entry Level é uma liga principal da RoboCupJunior Soccer para equipes
-iniiciantes, ao lado das ligas Soccer Vision e Soccer Infrared. Embora não faça parte
-da competição internacional, é realizada em muitas regiões e nas competições
-Super-Regionais (Américas, EMEA e Ásia-Pacífico).
-
-=== Liga Entry Level
-
-A *Liga Entry Level* é uma liga principal da RoboCupJunior Soccer destinada a
-equipes iniciantes. Suas características principais são:
-
-* *1 robô por equipe* — cada time opera um único robô autônomo.
-* *Open* — sem restrições de kits, fabricantes de motores ou materiais de construção.
-* *Mesmo campo* das ligas Soccer Vision e Soccer Infrared (158 cm × 219 cm), incluindo
-a área lateral (out-area).
-* Bola IR pulsada padrão da liga Soccer.
-* Limite de participação: no máximo *2 anos* na Liga Entry Level; após isso, a equipe
-avança para uma das ligas 2:2.
-* Membros que já participaram nas ligas 2:2 não podem participar da Liga Entry Level.
-
-As regras completas da Liga Entry Level estão disponíveis em:
-footnote:[HTML e PDF gerados a partir de `entry_rules_PtBR.adoc` neste repositório]
-
-NOTE: A Liga Entry Level não faz parte da competição internacional, mas é realizada em
-muitas regiões e Super-Regionais. Algumas competições podem ter variações nas regras.
-As equipes devem consultar os organizadores do seu torneio para confirmar as regras
-aplicáveis ao seu evento.
-
 
 [appendix]
 [[kicker-power-measuring]]
