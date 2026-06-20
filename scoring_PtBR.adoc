@@ -21,17 +21,17 @@ endif::basebackend-html[]
 RoboCupJunior Soccer  
 Critérios de Premiação e Rubricas 2026  
 
-Estas são as diretrizes oficiais de premiação para a Liga Internacional RoboCupJunior
-Soccer, emitidas pelo Comitê da RoboCupJunior Soccer League. A versão em inglês tem
-precedência sobre todas as traduções. Para dúvidas ou sugestões, visite o
+Estas são as diretrizes oficiais de premiação para a Liga Brasileira da RoboCupJunior
+Soccer, emitidas pelo Comitê Técnico Brasileiro da RoboCupJunior Soccer League.
+Para dúvidas ou sugestões, visite o
 https://junior.forum.robocup.org/c/robocupjunior-soccer/5[*Fórum RoboCupJunior Soccer*] ou o
 https://discord.com/invite/45pxMQY4nJ[*Servidor Discord RoboCupJunior*].
 
-Este documento de Critérios de Premiação e Rubricas é garantido para uso apenas no
-Torneio Internacional. Cada região pode ter métodos diferentes para premiar equipes e
-determinar classificações. Os Torneios Regionais podem usá-lo como diretriz como está
-ou com modificações para suas próprias competições. Verifique com os organizadores dos
-torneios dos quais está participando para descobrir qual versão estão usando.
+Este documento de Critérios de Premiação e Rubricas é destinado à competição brasileira.
+Competições locais, regionais e super-regionais podem ter métodos diferentes para
+premiar equipes, determinar classificações e adaptar estes critérios. Verifique com os
+organizadores dos torneios dos quais está participando para descobrir qual versão estão
+usando.
 
 *Registro de Mudanças*  
   
@@ -48,8 +48,8 @@ torneios dos quais está participando para descobrir qual versão estão usando.
 [[award-types]]
 == Tipos de Premiação
 
-Dois tipos de premiação são concedidos no torneio internacional: troféus e certificados.
-Apenas uma equipe (ou SuperTeam) pode ganhar cada troféu. Os certificados serão
+Dois tipos de premiação são concedidos na competição brasileira: troféus e certificados.
+Apenas uma equipe pode ganhar cada troféu. Os certificados serão
 concedidos a todas as equipes que atenderem aos critérios de excelência e podem ser
 ganhos por qualquer número de equipes.
 
@@ -79,9 +79,6 @@ de Jogabilidade* será o critério de desempate.
 
 O *Prêmio Comunidade* será concedido a uma equipe votada por todas as outras equipes.
 
-Os SuperTeams vencedores receberão o *Prêmio SuperTeam*, que é separado da pontuação
-individual das equipes (as pontuações individuais e do SuperTeam não se afetam).
-
 [[individual-gameplay-tournament]]
 ==== Torneio Individual de Jogabilidade
 
@@ -101,8 +98,8 @@ geral da seguinte forma:
 
 O Formulário TDP é um questionário online a ser preenchido antes da competição. Consiste
 em uma série de perguntas projetadas para ajudar a criar um documento estruturado
-semelhante a um Artigo de Descrição Técnica. Você receberá este formulário por
-comunicação oficial após se inscrever nas competições internacionais. Note que há dois
+semelhante a uma documentação técnica da equipe. Você receberá este formulário por
+comunicação oficial após se inscrever nas competições brasileiras. Note que há dois
 pontos bônus mencionados no formulário TDP.
 
 .Valores de Pontuação do Formulário TDP
@@ -136,7 +133,7 @@ para demonstrar trabalho em equipe, resolução de problemas e compreensão téc
 tarefa ocorrerá junto com uma a três outras equipes. Os juízes avaliarão colaboração,
 comunicação e conhecimento de design.
 
-As equipes devem trazer seus Robôs, Laptops e equipamentos de programação para as
+As equipes devem trazer seus robôs, laptops e equipamentos de programação para as
 entrevistas e esperar que as entrevistas contenham estes elementos:
 *	Apresentação: Mostre seu robô a todos, explique seu design básico e o que você considera como a característica mais interessante.
 *	Tarefa em Equipe: Programe seu robô para resolver uma tarefa definida pelos juízes no momento. É aqui que você demonstra sua compreensão do robô e como trabalha em equipe.
@@ -264,7 +261,7 @@ exemplos do que pode ser feito por meio da aplicação do processo de design de 
 Para se qualificar, todos os seguintes critérios devem ser atendidos:
 *	Elementos do Formulário TDP, TDP em Vídeo Curto, Entrevista em Grupo e Pôster superaram as expectativas.
 *	Obteve avaliação geral de proficiente ou melhor.
-*	A equipe tem bom desempenho no torneio, no desafio SuperTeam, OU nos desafios técnicos.
+*	A equipe tem bom desempenho no torneio OU nos desafios técnicos.
 
 [[outstanding-innovation-certificate]]
 ==== Certificado de Inovação Excepcional
@@ -273,7 +270,7 @@ As equipes reconhecidas por uma inovação excepcional criaram um design que é 
 tempo novo e eficaz para que outros aprendam. Para se qualificar, todos os seguintes
 critérios devem ser atendidos:
 *	O Formulário TDP, TDP em Vídeo Curto, Entrevista em Grupo e Pôster descrevem claramente uma inovação que é potencialmente eficaz e instrutiva.
-*	A eficácia da inovação é aparente durante o torneio, os desafios técnicos, OU as partidas do SuperTeam.
+*	A eficácia da inovação é aparente durante o torneio OU os desafios técnicos.
 *	A mesma inovação não foi reconhecida em temporadas anteriores ou a equipe fez melhorias significativas.
 
 [[outstanding-documentation-certificate]]
@@ -296,30 +293,7 @@ o estado da tecnologia disponível para a comunidade. Para se qualificar, todos 
 seguintes critérios devem ser atendidos:
 *	Superou as expectativas em Documentação e Critérios de Retribuição e em um outro critério.
 *	Todos os critérios devem ser de proficiente ou superior.
-*	A equipe tem bom desempenho no Torneio, no desafio SuperTeam, E nos desafios técnicos.
-
-[[superteam-challenge]]
-=== Desafio SuperTeam
-
-O Desafio SuperTeam é um torneio paralelo realizado durante a Competição Internacional.
-É normalmente organizado como grupos de 4 ou 5 Equipes que se unem para formar 1
-SuperTeam. Esses SuperTeams competirão em um mini torneio em um campo de soccer expandido.
-
-Os SuperTeams são criados com base nos resultados do ranking do Campeonato Individual
-de Jogabilidade, para melhor distribuir as Equipes em SuperTeams justos e equilibrados.
-Cada equipe pode ter no máximo 1 de seus robôs no Campo do SuperTeam, com as equipes
-com menor ranking podendo ter 2, apenas se outra Equipe não tiver robôs funcionando.
-
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf[*Saiba mais sobre SuperTeams aqui!*]
-
-Os rankings de posição do SuperTeam não afetam as pontuações do Campeonato Individual.
-No entanto, o Espírito Esportivo das equipes durante os jogos do SuperTeam afeta esse
-critério. Espera-se que as equipes membros do SuperTeam trabalhem juntas, ajudem umas
-às outras em caso de dificuldades técnicas, garantam que todas as equipes membros do
-SuperTeam compareçam aos jogos juntas e não marginalizem as equipes mais fracas.
-
-Há 1 Troféu a ser ganho pela SuperTeam vencedora do desafio. Cada equipe dentro da
-SuperTeam vencedora receberá este Troféu.
+*	A equipe tem bom desempenho no torneio E nos desafios técnicos.
 
 [[score-criteria-and-rubrics]]
 == Critérios de Pontuação e Rubricas
@@ -327,14 +301,15 @@ SuperTeam vencedora receberá este Troféu.
 [[technical-documentation-paper-tdp]]
 === Documentação Técnica (TDP)
 
-O Artigo de Descrição Técnica de uma equipe deve fornecer evidências do trabalho centrado
+A documentação técnica de uma equipe deve fornecer evidências do trabalho centrado
 nos estudantes em desenvolvimento elétrico, mecânico, de software e de estratégia, e é
 um recurso para todos, incluindo a equipe que publica e todas as equipes futuras. O
-Comitê de Soccer escolheu implementar isso por meio de um documento em Formulário Google
+Comitê Brasileiro de Soccer escolheu implementar isso por meio de um documento em Formulário Google
 para simplificar o processo para equipes e educadores. As respostas nesses documentos
 serão compiladas em documentos TDP e publicadas. Há 2 pontos bônus disponíveis por meio
-do Formulário TDP: *1 ponto bônus* por Open-Source dos arquivos CAD, PCB e Esquemáticos,
-e *1 ponto bônus* por Open-Source de repositórios de Software.
+do Formulário TDP: *1 ponto bônus* pela publicação em código aberto dos arquivos CAD,
+PCB e esquemáticos, e *1 ponto bônus* pela publicação em código aberto dos repositórios
+de software.
 
 |===
 | *Rubricas* | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
@@ -392,7 +367,7 @@ Os juízes avaliarão a eficácia com que as equipes trabalham juntas, entendem 
 sistemas robóticos e comunicam suas escolhas de design. Participação ativa, interação
 respeitosa com colegas e envolvimento compartilhado da equipe são fundamentais para uma
 boa pontuação.
-As equipes devem trazer seus Robôs, Laptops e equipamentos de programação para as
+As equipes devem trazer seus robôs, laptops e equipamentos de programação para as
 entrevistas e esperar que as entrevistas contenham estes elementos:
 *	Apresentação: Mostre seu robô a todos, explique seu design básico e o que você considera como a característica mais interessante.
 *	Tarefa em Equipe: Programe seu robô para resolver uma tarefa definida pelos juízes no momento. É aqui que você demonstra sua compreensão do robô e como trabalha em equipe.
@@ -406,7 +381,7 @@ inglês, se os juízes forem informados.
 | *Rubricas*              | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
 | Trabalho em Equipe e Comunicação | A equipe estava desorganizada, um ou mais membros desengajados ou dominando. Comunicação deficiente ou conflito evidente. | A equipe mostrou alguma coordenação, mas a comunicação foi inconsistente ou dependia muito de uma pessoa. | A equipe trabalhou em conjunto com funções claras. Todos os membros contribuíram significativamente para a tarefa. | A equipe mostrou colaboração perfeita. Os membros apoiaram-se mutuamente e comunicaram-se efetivamente ao longo de todo o processo. +
 | Compreensão Técnica | A equipe teve dificuldade em explicar ou aplicar seu design. O robô não conseguiu completar a tarefa ou tinha função mínima. | A equipe completou a tarefa, mas com compreensão pouco clara ou limitada de como seu robô funcionava. | A equipe demonstrou uma compreensão sólida de seu design. A tarefa foi completada ou tentada com raciocínio e explicação lógicos. | A equipe mostrou forte fluência técnica e resolução de problemas. Explicação e execução foram claras, criativas e perspicazes. +
-| Execução da Tarefa e Resolução de Problemas | A tarefa foi tentada com funcionalidade básica ou parcial. Os erros não foram claramente diagnosticados. | A tarefa foi completada ou próxima de ser completada. A equipe se adaptou aos desafios e explicou bem as decisões. | A tarefa foi completada com eficiência com abordagens inovadoras. A equipe lidou com problemas com confiança e estratégia clara. | A tarefa foi completada com eficiência com abordagens inovadoras. A equipe lidou com problemas com confiança e estratégia clara. +
+| Execução da Tarefa e Resolução de Problemas | A tarefa foi tentada com funcionalidade básica ou parcial. Os erros não foram claramente diagnosticados. | A tarefa foi completada ou próxima de ser completada. A equipe se adaptou aos desafios e explicou bem as decisões. | A tarefa foi completada com eficiência. A equipe lidou com problemas com confiança e estratégia clara. | A tarefa foi completada com eficiência, usando abordagens inovadoras. A equipe antecipou problemas, adaptou a solução e explicou claramente suas decisões. +
 |===
 
 [[sportsmanship]]
@@ -417,7 +392,7 @@ pais e qualquer outra pessoa associada à equipe participando do evento. Embora 
 estejam competindo, todos estamos envolvidos para aprender e nos divertir; os
 participantes não devem prejudicar a experiência dos outros.
 
-A presença em cada partida geral, Desafio Técnico, partida do SuperTeam e entrevista
+A presença em cada partida geral, Desafio Técnico e entrevista
 será registrada. As equipes devem chegar pontualmente e preparadas para manter seus
 robôs funcionais durante todo o evento e devem ter um membro responsável por manter
 um cronograma. Se uma equipe não puder participar de uma partida ou atividade, os
@@ -438,7 +413,7 @@ outra equipe ou voluntário através do processo de votação do prêmio comunid
 
 |===
 | *Rubricas*     | Em Desenvolvimento | Satisfatório | Proficiente | Excelência
-| Espírito Esportivo | Comportamento desrespeitoso continuou após avisos. A equipe perdeu mais da metade das partidas ou desafios principais. Sem participação em SuperTeam ou desafios técnicos. A equipe não tinha funções definidas. Dependia de adultos. Pouca evidência de protagonismo dos estudantes. Impactou significativamente e negativamente a experiência de outras equipes na competição. | A equipe foi ocasionalmente não cooperativa ou atrasada. Perdeu algumas partidas ou desafios. O comportamento melhorou após lembretes. Alguma liderança estudantil evidente, mas funções pouco claras ou inconsistentes. Às vezes situações difíceis foram escaladas, mas acabaram sendo resolvidas de forma justa. | A equipe foi consistentemente respeitosa e pontual. Participou plenamente em partidas, SuperTeam e desafios técnicos. Contribuiu para um ambiente positivo. Funções e tomada de decisão claras lideradas pelos estudantes. A equipe mostrou independência e resolução de problemas. Lidou com situações difíceis com calma e justiça quando surgiram. | Todos os critérios Proficientes mais: A equipe apoiou ativamente os outros (por exemplo, compartilhou ferramentas, torceu pelos adversários, ajudou os colegas). Deu um exemplo excepcional de colaboração e gentileza. Todos os critérios Proficientes mais: Os estudantes orientaram os colegas, resolveram problemas de forma construtiva e deram voz a todos. Demonstraram iniciativa e responsabilidade. Evitaram que situações difíceis escalassem cedo e se comportaram com espírito esportivo em todos os momentos. +
+| Espírito Esportivo | Comportamento desrespeitoso continuou após avisos. A equipe perdeu mais da metade das partidas ou desafios principais. Sem participação em desafios técnicos. A equipe não tinha funções definidas. Dependia de adultos. Pouca evidência de protagonismo dos estudantes. Impactou significativamente e negativamente a experiência de outras equipes na competição. | A equipe foi ocasionalmente não cooperativa ou atrasada. Perdeu algumas partidas ou desafios. O comportamento melhorou após lembretes. Alguma liderança estudantil evidente, mas funções pouco claras ou inconsistentes. Às vezes situações difíceis foram escaladas, mas acabaram sendo resolvidas de forma justa. | A equipe foi consistentemente respeitosa e pontual. Participou plenamente em partidas e desafios técnicos. Contribuiu para um ambiente positivo. Funções e tomada de decisão claras lideradas pelos estudantes. A equipe mostrou independência e resolução de problemas. Lidou com situações difíceis com calma e justiça quando surgiram. | Além dos critérios de Proficiente, a equipe apoiou ativamente os outros (por exemplo, compartilhou ferramentas, torceu pelos adversários, ajudou os colegas) e deu um exemplo excepcional de colaboração e gentileza. Os estudantes orientaram colegas, resolveram problemas de forma construtiva, deram voz a todos, demonstraram iniciativa e responsabilidade, evitaram que situações difíceis escalassem cedo e se comportaram com espírito esportivo em todos os momentos. +
 |===
 
 [[documentation-and-community-contribution]]
@@ -466,7 +441,7 @@ assumem a forma de artigos, vídeos documentando e instruindo como replicar seu 
 === TDP em Vídeo Curto
 
 Dificuldades técnicas ou enfrentar um adversário muito difícil durante a competição
-internacional podem ser razões para muitas equipes não conseguirem demonstrar todas as
+brasileira podem ser razões para muitas equipes não conseguirem demonstrar todas as
 incríveis capacidades que seus robôs possuem.
 Por essa razão, adicionamos esta seção para que as equipes possam realmente demonstrar
 o recurso do qual mais se orgulham.
