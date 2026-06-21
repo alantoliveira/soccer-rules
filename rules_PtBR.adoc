@@ -74,13 +74,8 @@ emite sinal IR. Os robôs podem pesar até {~~1,4 kg~>1,5 kg~~} e ter até 22 cm
 * O {~~Soccer Open~>Soccer Vision~~} é jogado com uma bola de golfe laranja. Os robôs
 não têm restrição de peso e podem ter até 18 cm.
 
-IMPORTANT: Grande parte do ranking geral (para o torneio internacional; outros
-torneios podem funcionar de forma diferente) é determinada pelas categorias avaliadas.
+IMPORTANT: Grande parte do ranking geral é determinada pelas categorias avaliadas.
 Há pontos para documentação, desempenho em entrevista, etc.
-footnote:[
-veja https://robocup-junior.github.io/soccer-rules/master/scoring.pdf
-ou https://robocup-junior.github.io/soccer-rules/master/scoring.html
-]
 
 TIP: A liga Soccer está planejando aumentar o tamanho das equipes para 5. A partir
 de 23 de abril de 2026, está confirmado que um tamanho máximo de 4 membros por equipe será
@@ -88,7 +83,7 @@ permitido na competição de Incheon. Recomendamos equipes de 5 para Super-Regio
 e onde os organizadores acharem prático também para competições regionais e locais.
 Consulte os organizadores de cada torneio que participar sobre o tamanho de equipe
 que podem acomodar. Informações de contato para o campeonato mundial:
-robocupjunior-soccer [ at \] robocup [ dot \] org
+robocupjunior-soccer [ at\] robocup [ dot\] org
 
 [[general-rules]]
 include::general-rules_PtBR.adoc[]
@@ -571,47 +566,26 @@ Os organizadores do torneio podem solicitar outras inspeções, se necessário, 
 inspeções aleatórias que podem ocorrer a qualquer momento.
 
 [[international-competition]]
-== COMPETIÇÃO INTERNACIONAL
+== COMPETIÇÃO 
 
 [[international-competition-specifics]]
-=== Especificidades da Competição Internacional
-
-Na competição internacional (para outras competições, consulte os organizadores), o
-Comitê da Liga Soccer fornecerá a cada equipe um Módulo de Comunicação. Isso permite
-uma coordenação mais fácil dos jogos e o controle dos robôs pelos árbitros durante as
-partidas. Espera-se que cada equipe faça interface com este módulo usando um único
-pino GPIO de 2,54 mm para iniciar e parar os robôs. O Comitê da Liga Soccer planeja
-expandir isso para usar UART para aplicações mais complexas em anos futuros. Consulte
-a página do GitHub para mais informações sobre o módulo:
-https://github.com/robocup-junior/soccer-communication-module
-
-O módulo em si pode exceder a altura máxima do robô. Deve ser posicionado a pelo menos
-1 cm de distância do lado externo e protegido contra danos por impacto.
 
 [[interviews]]
 === Entrevistas
 
-Durante a competição internacional, os organizadores do torneio podem organizar
+Durante a competição, os organizadores do torneio podem organizar
 entrevistas com as equipes durante o Dia de Configuração do evento. Isso significa que
 as equipes precisam estar presentes desde cedo neste dia.
 
 Detalhes sobre o que é exigido e o que esperar das entrevistas podem ser encontrados
-no documento de pontuação disponível aqui footnote:[
-https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou
-https://robocup-junior.github.io/soccer-rules/master/scoring.html].
-
-O Comitê da Liga Soccer recomenda a implementação de entrevistas em competições
-regionais também, mas isso não é obrigatório. As equipes devem verificar com os
-organizadores do torneio se realizam entrevistas e, em caso afirmativo, que tipo de
-entrevista esperar.
+no documento de pontuação.
 
 [[technical-challenges]]
 === Desafios Técnicos
 
 Inspirado pelas ligas principais e pela necessidade de avanço tecnológico adicional
 das ligas, o Comitê da Liga Soccer realiza os chamados *Desafios Técnicos*. Novos
-desafios são adicionados a cada ano e são desconhecidos até durante a Competição
-Internacional.
+desafios são adicionados a cada ano e são desconhecidos até durante a Competição.
 
 A ideia desses desafios é dar às equipes a oportunidade de demonstrar diversas
 habilidades de seus robôs que podem não ser percebidas durante os jogos regulares.
@@ -621,32 +595,21 @@ novas ideias que podem se tornar futuras regras ou moldar a competição de outr
 Qualquer equipe RoboCupJunior Soccer estará apta a tentar esses desafios.
 
 [[further-information-on-international-competition]]
-=== Mais informações sobre a Competição Internacional
+=== Mais informações sobre a Competição
 
-Todas as equipes qualificadas para a competição internacional *devem* compartilhar
+Todas as equipes qualificadas para a competição *devem* compartilhar
 seus projetos, tanto hardware quanto software, com todos os participantes presentes
 e futuros. Essas equipes também devem enviar um portfólio digital antes da competição.
 Mais detalhes sobre como será fornecido pelo Comitê da Liga Soccer, que atua como
-organizador do torneio para a competição internacional.
+organizador do torneio para a competição.
 
-Durante os dias de competição da competição internacional (bem como antes do evento),
+Durante os dias de competição da competição (bem como antes do evento),
 os membros das equipes são responsáveis por verificar todas as informações relevantes
 publicadas pelo Comitê da Liga Soccer ou qualquer outro oficial da RoboCup.
 
-Haverá também uma competição SuperTeam, na qual várias equipes de todo o mundo
-compartilham seus robôs em um "SuperTeam" e jogam contra outros SuperTeams em um
-chamado "Big Field". As equipes podem utilizar diferentes lentes de câmera ou sensores
-otimizados para os campos maiores para melhorar seu desempenho. As regras completas
-deste desafio podem ser encontradas em
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html ou
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf
-
-As equipes que competem na competição internacional podem receber prêmios por seu
+As equipes que competem na competição podem receber prêmios por seu
 desempenho. Esses prêmios são decididos e introduzidos pelo Comitê da Liga Soccer,
 que publica todos os detalhes necessários com antecedência ao evento real.
-footnote:[para detalhes veja
-https://robocup-junior.github.io/soccer-rules/master/scoring.pdf ou
-https://robocup-junior.github.io/soccer-rules/master/scoring.html]
 
 [appendix]
 [[kicker-power-measuring]]
@@ -665,3 +628,27 @@ O teste é realizado da seguinte forma:
 . O teste de potência do chute é aprovado se, após ricochetear no gol oposto, a bola
 não atingir a parede do fundo do gol a partir do qual o robô realizou o teste de
 potência do chute.
+
+[appendix]
+[[technical-inspection-checklist]]
+== Checklist de Inspeção Técnica
+
+Durante a inspeção técnica, poderão ser verificados os seguintes itens ou outros que o arbrito da partida julgar necessário:
+
+. Quantidade de robôs da equipe;
+. Dimensões máximas do robô;
+. Peso máximo do robô;
+. Altura e acessibilidade da alça;
+. Tensão nominal das baterias;
+. Proteção de baterias e circuitos;
+. Quantidade de motores de tração;
+. Identificação de motores auxiliares;
+. Zona de captura da bola;
+. Presença de partes amarelas ou azuis visíveis;
+. Presença de emissores infravermelhos que possam causar interferência;
+. Proteção de engrenagens, dribladores e partes móveis;
+. Funcionamento autônomo do robô;
+. Capacidade mínima de detectar e reagir à bola;
+. Teste do chutador, se houver;
+. Ausência de controle remoto durante a partida;
+. Conformidade geral com o código de conduta e construção estudantil.
