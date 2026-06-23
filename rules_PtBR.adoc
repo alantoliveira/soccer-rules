@@ -611,6 +611,25 @@ As equipes que competem na competição podem receber prêmios por seu
 desempenho. Esses prêmios são decididos e introduzidos pelo Comitê da Liga Soccer,
 que publica todos os detalhes necessários com antecedência ao evento real.
 
+[[superteam]]
+=== SuperTeam
+
+A competição poderá incluir uma atividade SuperTeam, organizada como uma dinâmica
+paralela à competição principal. O objetivo é incentivar cooperação entre equipes,
+integração entre participantes e aplicação prática dos robôs em um contexto compartilhado.
+
+As equipes SuperTeam serão formadas pela organização com base no ranking da competição,
+buscando distribuir as equipes de forma equilibrada. Cada SuperTeam será composto por
+duas equipes, e cada equipe participará com um robô em campo.
+
+As partidas de SuperTeam utilizarão o mesmo campo, a mesma bola e as mesmas regras da
+competição principal, salvo adaptações específicas anunciadas pela organização antes
+do início da atividade.
+
+A participação no SuperTeam não altera a classificação da competição principal e não
+gera classificação para outras competições. A premiação, quando houver, será realizada
+por meio de certificados.
+
 [appendix]
 [[kicker-power-measuring]]
 == Procedimentos de Medição de Potência do Chutador
