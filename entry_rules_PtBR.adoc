@@ -26,8 +26,7 @@ regras, fazer adaptações específicas para suas regiões ou não realizar a li
 entrada. Entre em contato com os organizadores do seu torneio para saber quais regras
 serão utilizadas.
 
-NOTE: Este conjunto de regras não se destina ao nível internacional, exceto para
-torneios Super-Regionais.
+NOTE: Este conjunto de regras não se destina ao nível internacional. 
 
 Estas são as Regras da Liga Entry Level do RoboCupJunior Soccer para a temporada
 2026, adaptadas das regras gerais da RoboCupJunior Soccer League para uso no contexto
@@ -73,7 +72,6 @@ das demais ligas RoboCupJunior Soccer (158 cm × 219 cm), permitindo o reaprovei
 dos campos já existentes nas competições regionais.
 * Cada equipe começa com *apenas um robô*.
 * *A Bola* é a bola RoboCup Junior Soccer modelo antigo operando em *MODE A (pulsado)*, fabricada pela EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R[RCJ-05R]). A bola nova também pode ser utilizada com um adaptador para operar em MODE A.
-* Não há restrições sobre motores, materiais ou kits de construção (*Open*).
 * A participação em cada liga é limitada a dois anos (ver <<competition-cap>>).
 * É *vedada* a utilização de robôs que tenham participado de qualquer competição
 RoboCupJunior Soccer (Soccer Infrared, Soccer Vision ou qualquer liga Entry Level)
