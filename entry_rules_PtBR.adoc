@@ -71,7 +71,7 @@ diferenças em relação a elas são:
 paredes. Isso reduz a complexidade da construção do robô e do jogo. O campo utilizado
 é o mesmo campo padrão das demais ligas RoboCupJunior Soccer (158 cm × 219 cm).
 * Cada equipe começa com *apenas um robô*.
-* *A Bola* é a mesma bola IR pulsada utilizada nas demais ligas Soccer.
+* *A Bola* é a bola RoboCup Junior Soccer modelo antigo operando em *MODE A (pulsado)*, fabricada pela EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R[RCJ-05R]). A bola nova também pode ser utilizada com um adaptador para operar em MODE A.
 * Não há restrições sobre motores, materiais ou kits de construção (*Open*).
 * A participação em cada liga é limitada a dois anos (ver <<competition-cap>>).
 * Robôs que tenham sido construídos para qualquer uma das ligas 2:2 da RoboCupJunior
@@ -374,7 +374,15 @@ por todas as ligas em um mesmo evento.
 [[specification-for-ball]]
 === Especificação da bola
 
-A Liga Entry Level utiliza a mesma bola IR pulsada utilizada nas ligas Soccer 2:2.
+A Liga Entry Level utiliza a bola RoboCup Junior Soccer modelo antigo, fabricada pela
+EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R[RCJ-05R]), operando em
+*MODE A (pulsado)*.
+
+O novo modelo de bola também é compatível, desde que utilizado com um adaptador para
+operar em MODE A. O novo modelo é Open Source: qualquer pessoa pode produzi-la a
+partir dos arquivos e instruções disponíveis no GitHub:
+https://github.com/robocup-junior/ir-golf-ball[robocup-junior/ir-golf-ball].
+
 Para as especificações técnicas completas, consulte a especificação de bola da liga.
 footnote:[Disponível em https://robocup-junior.github.io/soccer-rules/master/ball_specification.html]
 
