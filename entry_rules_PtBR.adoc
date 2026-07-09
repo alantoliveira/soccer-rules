@@ -67,16 +67,19 @@ Estas regras são baseadas nos conjuntos de regras das ligas 2:2. As principais
 diferenças em relação a elas são:
 
 === Liga Entry Level
-* *O Campo* não possui área fora dos limites (out-area), e o jogo pode encostar nas
-paredes. Isso reduz a complexidade da construção do robô e do jogo. O campo utilizado
-é o mesmo campo padrão das demais ligas RoboCupJunior Soccer (158 cm × 219 cm).
+* *O Campo* possui área fora dos limites (out-area), mas estas *não são consideradas*
+no jogo — o jogo pode encostar nas paredes. O campo utilizado é o mesmo campo padrão
+das demais ligas RoboCupJunior Soccer (158 cm × 219 cm), permitindo o reaproveitamento
+dos campos já existentes nas competições regionais.
 * Cada equipe começa com *apenas um robô*.
 * *A Bola* é a bola RoboCup Junior Soccer modelo antigo operando em *MODE A (pulsado)*, fabricada pela EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R[RCJ-05R]). A bola nova também pode ser utilizada com um adaptador para operar em MODE A.
 * Não há restrições sobre motores, materiais ou kits de construção (*Open*).
 * A participação em cada liga é limitada a dois anos (ver <<competition-cap>>).
-* Robôs que tenham sido construídos para qualquer uma das ligas 2:2 da RoboCupJunior
-Soccer em qualquer nível (local, regional, super-regional, internacional) anteriormente
-não podem ser utilizados em partidas da Liga Entry Level.
+* É *vedada* a utilização de robôs que tenham participado de qualquer competição
+RoboCupJunior Soccer (Soccer Infrared, Soccer Vision ou qualquer liga Entry Level)
+em qualquer nível (local, regional, super-regional, internacional), no mesmo ano ou
+em anos anteriores. Cada robô só pode competir na Liga Entry Level se nunca tiver sido
+utilizado em outro torneio oficial da RoboCupJunior Soccer.
 
 [[competition-cap]]
 === Limite de participação
@@ -87,6 +90,8 @@ Após sua segunda participação, devem avançar para uma das ligas 2:2
 
 Membros que já participaram das ligas 2:2 da RoboCupJunior Soccer em qualquer nível
 (local, regional, super-regional, internacional) não podem participar da Liga Entry Level.
+
+Ver também <<robot-eligibility>> para as restrições relativas ao robô utilizado.
 
 [discrete]
 === A construção e a programação devem ser realizadas exclusivamente pelos estudantes
@@ -230,7 +235,8 @@ Alguns exemplos de robô danificado incluem:
 Após ser reparado, o robô será colocado no ponto neutro desocupado mais distante da
 bola, de frente para seu próprio gol. Um robô só pode retornar ao campo se o dano
 tiver sido reparado. Se o árbitro notar que o robô retornou ao campo com o mesmo
-problema original, pode solicitar que o robô seja removido.
+problema original, pode solicitar que o robô seja removido e prosseguir com o jogo
+como se o robô não tivesse retornado.
 
 *Somente o árbitro decide se um robô está danificado.* Um robô só pode ser retirado
 ou devolvido com a permissão do árbitro. Sempre que um robô for removido do jogo,
@@ -259,6 +265,8 @@ Uma equipe deve ter mais de um membro para participar na competição. Membros e
 não podem ser compartilhados entre equipes. O número máximo de membros da equipe é
 definido por cada competição, geralmente 4.
 
+Os membros da equipe devem ter entre *12 e 16 anos* de idade durante a competição.
+
 Cada membro da equipe precisa ter uma função técnica.
 
 Cada equipe deve ter um *capitão*. O capitão é a pessoa responsável pela comunicação
@@ -280,6 +288,10 @@ O árbitro pode interromper um jogo em andamento se houver suspeita de qualquer 
 de interferência de espectadores (roupas coloridas, emissores IR, flashes de câmera,
 celulares, rádios, computadores, etc.).
 
+Isso deve ser confirmado pelos organizadores do torneio se uma reclamação for feita
+pela outra equipe. A equipe que alegar que seu robô é afetado por cores deve apresentar
+prova/evidência da interferência.
+
 [[robots]]
 == ROBÔS
 
@@ -288,6 +300,17 @@ celulares, rádios, computadores, etc.).
 
 Cada equipe tem permissão de ter apenas um robô para todo o torneio. A substituição
 de robôs durante a competição dentro da equipe ou com outras equipes é proibida.
+
+[[robot-eligibility]]
+=== Elegibilidade do robô
+
+É *vedada* a utilização de robôs que tenham participado de qualquer competição
+RoboCupJunior Soccer (Soccer Infrared, Soccer Vision ou qualquer liga Entry Level)
+em qualquer nível (local, regional, super-regional, internacional), no mesmo ano ou
+em anos anteriores.
+
+Cada robô só pode competir na Liga Entry Level se nunca tiver sido utilizado em outro
+torneio oficial da RoboCupJunior Soccer.
 
 [[robots-interference]]
 === Interferência
@@ -301,6 +324,10 @@ Os robôs não devem produzir interferência magnética em outro robô no campo.
 Os robôs não devem produzir luz visível que possa impedir a equipe adversária de jogar
 quando colocados em uma superfície plana. Qualquer parte de um robô que produza luz
 que possa interferir no sistema de visão do robô adversário deve ser coberta.
+
+Uma equipe que alegar que seu robô é afetado pelo robô da outra equipe deve apresentar
+prova/evidência da interferência. Qualquer interferência deve ser confirmada pelos
+organizadores do torneio se uma reclamação for feita pela outra equipe.
 
 [[robots-control]]
 === Controle
@@ -520,10 +547,33 @@ mais altas em estados de carga elevados são permitidas. Circuitos de bomba de t
 são permitidos *apenas* para acionamento de chutadores. Nenhuma tensão pode exceder
 48 V em nenhum momento.
 
+[[regulations-voltage]]
+===== Limites de tensão
+
+Todos os circuitos elétricos internos do robô não podem exceder *12,0 V nominal*.
+O robô deve ser projetado de forma a permitir a verificação da tensão dos pacotes de
+baterias e de seus circuitos, a menos que a tensão nominal seja óbvia pela inspeção
+visual do robô, de suas baterias e conexões.
+
+O limite de tensão permanece em 12 V nominal, independentemente dos ajustes realizados
+nas ligas 2:2 Infrared. Os contatos de medição devem estar protegidos contra toques acidentais ou
+curtos-circuitos quando não estiverem em uso.
+
 A zona de captura de bola é definida como qualquer espaço interno criado quando uma
 borda reta é colocada nos pontos salientes de um robô. Isso significa que a bola não
 deve entrar no casco convexo de um robô mais do que a profundidade especificada. Além
 disso, deve ser possível para outro robô tomar posse da bola.
+
+[[regulations-ir-interference]]
+==== Interferência infravermelha
+
+Componentes projetados para emitir IR (ex.: ToF, LiDAR, sensores de distância IR,
+LEDs/LASERs IR, etc.) não são permitidos. Os organizadores do torneio podem exigir
+que tais dispositivos sejam removidos ou cobertos.
+
+Materiais refletores de luz infravermelha não podem ser visíveis. Se os robôs forem
+pintados, devem ser pintados com tinta fosca. Pequenas partes que reflitam luz
+infravermelha podem ser utilizadas, desde que outros robôs não sejam afetados.
 
 [[regulations-limitations]]
 ==== Limitações
@@ -623,3 +673,34 @@ O teste é realizado da seguinte forma:
 . Realize um chute em direção ao gol adversário.
 . O teste de potência do chute é aprovado se a bola não cruzar para o lado oposto
 do campo.
+
+[appendix]
+[[motor-information]]
+== Informações sobre Motores
+
+A Liga Entry Level é uma liga *Open*: não há restrições sobre marcas, modelos ou
+tipos de motores de tração, desde que o número máximo de três (3) motores de tração
+seja respeitado (ver <<regulations-limitations>>).
+
+NOTE: A lista abaixo é uma referência informativa baseada na lista oficial de motores
+aprovados para a liga 1:1 Standard Kit (regra oficial internacional). Ela *não é
+obrigatória* para a Liga Entry Level brasileira, mas pode servir de guia para equipes
+que desejam referências de motores com desempenho equivalente.
+
+|===
+| Fabricante | Modelo | Observações
+
+| Lego | Todos os modelos | Peças originais e réplicas permitidas
+| Fischertechnik | Todos os modelos | Peças originais e réplicas permitidas
+| Pololu | Metal Gearmotor 25Dx48L mm MP 12V | Com ou sem qualquer relação de caixa
+| Pololu | Metal Gearmotor 25Dx48L mm LP 12V | Com ou sem qualquer relação de caixa
+| Robotis | Dynamixel XL-320, XL-330 |
+| XYT | JGA25-370 |
+| QITA | XYT 12V Mini DC Motor (JGA25-370) |
+| Vex Motor | IQ Smart Motor (228-2560) |
+| TT Motor | GMP16-050SH |
+| TT Motor | GMP22-180SH |
+|===
+
+Para sugerir novos motores à lista oficial da liga Standard Kit, acesse o fórum:
+https://junior.forum.robocup.org/t/robocupjunior-soccer-entry-stantard-kit-motor-whitelist-discussion/3516[RoboCupJunior Soccer Entry — Motor Whitelist Discussion].
