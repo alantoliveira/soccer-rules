@@ -17,8 +17,8 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-Este documento contém especificações para a bola passiva (Liga Vision, bola de
-golfe laranja) e a bola infravermelha grande (Liga Infrared e Liga Entry Level).
+Este documento contém especificações para a bola passiva da Liga Vision (bola de
+golfe laranja) e para a bola infravermelha pulsada da Liga Infrared.
 
 [[technical-specification-for-pulsed-soccer-ball]]
 == Especificação Técnica para Bola de Soccer Pulsada
@@ -28,8 +28,8 @@ golfe laranja) e a bola infravermelha grande (Liga Infrared e Liga Entry Level).
 
 Atendendo à solicitação de uma bola de soccer para torneios RCJ que fosse mais robusta
 a luzes interferentes, menos consumidora de energia e mecanicamente mais resistente, o
-Comitê da Liga Soccer definiu as seguintes especificações técnicas com a colaboração
-especial da EK Japan e da HiTechnic.
+Comitê da Liga Soccer definiu as seguintes especificações técnicas para a bola
+infravermelha pulsada de tamanho de bola de golfe.
 
 Os produtores dessas bolas devem solicitar um processo de certificação após o qual
 podem exibir o rótulo de conformidade RCJ e suas bolas serem usadas em torneios RCJ.
@@ -40,17 +40,13 @@ etc. — detecção liga/desliga com uma possível indicação grosseira de dist
 
 [[pulsed-golf-2026]]
 === Mudança para bola pulsada de tamanho de bola de golfe em 2026
-A partir de 2026, o Soccer Infrared passará a usar uma nova bola IR. A
-principal diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro,
-o mesmo tamanho da bola passiva da Liga Vision. Mais informações serão divulgadas
-durante a temporada 2025 pelo Comitê. Esta bola é Open-Source, portanto qualquer pessoa
-pode produzi-la a partir dos arquivos e instruções na página do GitHub:
-https://github.com/robocup-junior/ir-golf-ball .
+A partir de 2026, o Soccer Infrared passa a usar uma nova bola IR. A principal
+diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro,
+o mesmo tamanho da bola passiva da Liga Vision.
 
-A Liga Entry Level continuará a usar a bola infravermelha grande.
-footnote:[A Liga Entry Level frequentemente utiliza kits de robótica Lego, FischerTechnik,
-Vex ou outros com os quais lidar com uma bola pequena é mais difícil, especialmente
-para iniciantes.]
+Esta bola é Open Source, portanto qualquer pessoa pode produzi-la a partir dos
+arquivos e instruções na página do GitHub:
+https://github.com/robocup-junior/ir-golf-ball .
 
 [[pulsed-specifications]]
 === Especificações
@@ -59,14 +55,15 @@ para iniciantes.]
 ==== Luz IR
 
 A bola emite luz infravermelha (IR) com comprimentos de onda na faixa de 920 nm a
-960 nm, pulsada a uma frequência portadora de onda quadrada de 40 kHz. A bola deve ter
-LEDs ultrabrilhantes e de ângulo amplo suficientes para minimizar a irregularidade da
-saída IR.
+960 nm, pulsada a uma frequência portadora de onda quadrada de 40 kHz. O projeto de
+referência usa múltiplos LEDs IR de ângulo amplo distribuídos ao redor da bola para
+minimizar a irregularidade da saída IR.
 
 [[pulsed-diameter]]
 ==== Diâmetro
 
-O diâmetro da bola deve ser de 74 mm. Uma bola bem equilibrada deve ser utilizada.
+O diâmetro da bola deve ser de 42 mm ± 1 mm. Uma bola bem equilibrada deve ser
+utilizada.
 
 [[pulsed-drop-test]]
 ==== Teste de Queda
@@ -78,41 +75,34 @@ uma mesa ou piso de madeira.
 [[pulsed-modulation]]
 ==== Modulação
 
-A saída de portadora de 40 kHz da bola deve ser modulada com uma forma de onda
-trapezoidal (escalonada) de frequência de 1,2 kHz. Cada ciclo de 833 microssegundos
-da forma de onda de modulação deve compreender 8 pulsos de portadora em intensidade
-total, seguidos (por sua vez) de 4 pulsos de portadora a 1/4 da intensidade total,
-quatro pulsos a 1/16 da intensidade total e quatro pulsos a 1/64 da intensidade total,
-seguidos por um espaço (ou seja, intensidade zero) de cerca de 346 microssegundos.
-O nível de corrente de pico nos LEDs deve estar na faixa de 45-55 mA. A intensidade
-radiante deve ser superior a 20 mW/sr por LED.
+A saída de portadora de 40 kHz da bola deve ser modulada com um padrão de pulsos de
+frequência de 1,2 kHz. Cada ciclo de modulação deve compreender 8 pulsos de portadora
+em 40 kHz, seguidos por um período desligado até o próximo ciclo de modulação.
 
 [[pulsed-battery-life]]
 ==== Vida da Bateria
 
-Se a bola tiver bateria recarregável integrada, quando nova e totalmente carregada deve
-durar mais de 3 horas de uso contínuo antes que o brilho dos LEDs caia para 90% do
-valor inicial. Se a bola usar pilhas substituíveis, um conjunto de pilhas alcalinas de
-alta qualidade novas deve durar mais de 8 horas de uso contínuo antes que o brilho dos
-LEDs caia para 90% do valor inicial.
+O projeto de referência é alimentado por uma bateria Li-Ion 18350. As bolas do torneio
+devem estar totalmente carregadas antes do uso e manter brilho suficiente para detecção
+confiável durante as partidas.
 
 [[pulsed-coloration]]
 ==== Coloração
 
 A bola não deve ter marcas ou descoloração que possam ser confundidas com os gols ou
-com o próprio campo.
+com o próprio campo. A carcaça deve permitir que a luz IR seja emitida de forma
+uniforme ao redor da bola.
 
 [[official-suppliers-for-pulsed-balls]]
-=== Fornecedores oficiais para bolas pulsadas
+=== Projeto de referência para bolas pulsadas
 
-Atualmente, há uma bola aprovada pelo Comitê da Liga Soccer:
+O projeto de referência Open Source para a bola IR de tamanho de bola de golfe está
+disponível em:
 
-- Bola RoboCup Junior Soccer operando no MODO A (pulsada) fabricada pela EK Japan/Elekit
-(https://elekit.co.jp/en/product/RCJ-05R)
+https://github.com/robocup-junior/ir-golf-ball
 
-Note que esta bola era anteriormente chamada RCJ-05. Embora você possa não encontrar
-mais uma bola com este nome, qualquer bola IR produzida pela EK Japan/Elekit é
-considerada aprovada pelo Comitê da Liga Soccer.
+Organizadores de torneios podem usar bolas produzidas a partir desse projeto ou bolas
+equivalentes que atendam a estas especificações.
 
 [appendix]
 [[passive-ball-spec]]

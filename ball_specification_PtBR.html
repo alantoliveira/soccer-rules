@@ -449,7 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#pulsed-preamble">1.1. Preâmbulo</a></li>
 <li><a href="#pulsed-golf-2026">1.2. Mudança para bola pulsada de tamanho de bola de golfe em 2026</a></li>
 <li><a href="#pulsed-specifications">1.3. Especificações</a></li>
-<li><a href="#official-suppliers-for-pulsed-balls">1.4. Fornecedores oficiais para bolas pulsadas</a></li>
+<li><a href="#official-suppliers-for-pulsed-balls">1.4. Projeto de referência para bolas pulsadas</a></li>
 </ul>
 </li>
 <li><a href="#passive-ball-spec">Appendix A: Especificação Técnica para Bola de Soccer Passiva</a>
@@ -467,8 +467,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <script src="https://hypothes.is/embed.js" async></script>
 <div class="paragraph">
-<p>Este documento contém especificações para a bola passiva (Liga Vision, bola de
-golfe laranja) e a bola infravermelha grande (Liga Infrared e Liga Entry Level).</p>
+<p>Este documento contém especificações para a bola passiva da Liga Vision (bola de
+golfe laranja) e para a bola infravermelha pulsada da Liga Infrared.</p>
 </div>
 </div>
 </div>
@@ -480,8 +480,8 @@ golfe laranja) e a bola infravermelha grande (Liga Infrared e Liga Entry Level).
 <div class="paragraph">
 <p>Atendendo à solicitação de uma bola de soccer para torneios RCJ que fosse mais robusta
 a luzes interferentes, menos consumidora de energia e mecanicamente mais resistente, o
-Comitê da Liga Soccer definiu as seguintes especificações técnicas com a colaboração
-especial da EK Japan e da HiTechnic.</p>
+Comitê da Liga Soccer definiu as seguintes especificações técnicas para a bola
+infravermelha pulsada de tamanho de bola de golfe.</p>
 </div>
 <div class="paragraph">
 <p>Os produtores dessas bolas devem solicitar um processo de certificação após o qual
@@ -496,16 +496,14 @@ etc. — detecção liga/desliga com uma possível indicação grosseira de dist
 <div class="sect2">
 <h3 id="pulsed-golf-2026"><a class="anchor" href="#pulsed-golf-2026"></a><a class="link" href="#pulsed-golf-2026">1.2. Mudança para bola pulsada de tamanho de bola de golfe em 2026</a></h3>
 <div class="paragraph">
-<p>A partir de 2026, o Soccer Infrared passará a usar uma nova bola IR. A
-principal diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro,
-o mesmo tamanho da bola passiva da Liga Vision. Mais informações serão divulgadas
-durante a temporada 2025 pelo Comitê. Esta bola é Open-Source, portanto qualquer pessoa
-pode produzi-la a partir dos arquivos e instruções na página do GitHub:
-<a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a> .</p>
+<p>A partir de 2026, o Soccer Infrared passa a usar uma nova bola IR. A principal
+diferença desta bola é a mudança de tamanho de 74 mm para 42 mm de diâmetro,
+o mesmo tamanho da bola passiva da Liga Vision.</p>
 </div>
 <div class="paragraph">
-<p>A Liga Entry Level continuará a usar a bola infravermelha grande.
-<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+<p>Esta bola é Open Source, portanto qualquer pessoa pode produzi-la a partir dos
+arquivos e instruções na página do GitHub:
+<a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a> .</p>
 </div>
 </div>
 <div class="sect2">
@@ -514,15 +512,16 @@ pode produzi-la a partir dos arquivos e instruções na página do GitHub:
 <h4 id="ir-light"><a class="anchor" href="#ir-light"></a><a class="link" href="#ir-light">1.3.1. Luz IR</a></h4>
 <div class="paragraph">
 <p>A bola emite luz infravermelha (IR) com comprimentos de onda na faixa de 920 nm a
-960 nm, pulsada a uma frequência portadora de onda quadrada de 40 kHz. A bola deve ter
-LEDs ultrabrilhantes e de ângulo amplo suficientes para minimizar a irregularidade da
-saída IR.</p>
+960 nm, pulsada a uma frequência portadora de onda quadrada de 40 kHz. O projeto de
+referência usa múltiplos LEDs IR de ângulo amplo distribuídos ao redor da bola para
+minimizar a irregularidade da saída IR.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="pulsed-diameter"><a class="anchor" href="#pulsed-diameter"></a><a class="link" href="#pulsed-diameter">1.3.2. Diâmetro</a></h4>
 <div class="paragraph">
-<p>O diâmetro da bola deve ser de 74 mm. Uma bola bem equilibrada deve ser utilizada.</p>
+<p>O diâmetro da bola deve ser de 42 mm ± 1 mm. Uma bola bem equilibrada deve ser
+utilizada.</p>
 </div>
 </div>
 <div class="sect3">
@@ -536,51 +535,40 @@ uma mesa ou piso de madeira.</p>
 <div class="sect3">
 <h4 id="pulsed-modulation"><a class="anchor" href="#pulsed-modulation"></a><a class="link" href="#pulsed-modulation">1.3.4. Modulação</a></h4>
 <div class="paragraph">
-<p>A saída de portadora de 40 kHz da bola deve ser modulada com uma forma de onda
-trapezoidal (escalonada) de frequência de 1,2 kHz. Cada ciclo de 833 microssegundos
-da forma de onda de modulação deve compreender 8 pulsos de portadora em intensidade
-total, seguidos (por sua vez) de 4 pulsos de portadora a 1/4 da intensidade total,
-quatro pulsos a 1/16 da intensidade total e quatro pulsos a 1/64 da intensidade total,
-seguidos por um espaço (ou seja, intensidade zero) de cerca de 346 microssegundos.
-O nível de corrente de pico nos LEDs deve estar na faixa de 45-55 mA. A intensidade
-radiante deve ser superior a 20 mW/sr por LED.</p>
+<p>A saída de portadora de 40 kHz da bola deve ser modulada com um padrão de pulsos de
+frequência de 1,2 kHz. Cada ciclo de modulação deve compreender 8 pulsos de portadora
+em 40 kHz, seguidos por um período desligado até o próximo ciclo de modulação.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="pulsed-battery-life"><a class="anchor" href="#pulsed-battery-life"></a><a class="link" href="#pulsed-battery-life">1.3.5. Vida da Bateria</a></h4>
 <div class="paragraph">
-<p>Se a bola tiver bateria recarregável integrada, quando nova e totalmente carregada deve
-durar mais de 3 horas de uso contínuo antes que o brilho dos LEDs caia para 90% do
-valor inicial. Se a bola usar pilhas substituíveis, um conjunto de pilhas alcalinas de
-alta qualidade novas deve durar mais de 8 horas de uso contínuo antes que o brilho dos
-LEDs caia para 90% do valor inicial.</p>
+<p>O projeto de referência é alimentado por uma bateria Li-Ion 18350. As bolas do torneio
+devem estar totalmente carregadas antes do uso e manter brilho suficiente para detecção
+confiável durante as partidas.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="pulsed-coloration"><a class="anchor" href="#pulsed-coloration"></a><a class="link" href="#pulsed-coloration">1.3.6. Coloração</a></h4>
 <div class="paragraph">
 <p>A bola não deve ter marcas ou descoloração que possam ser confundidas com os gols ou
-com o próprio campo.</p>
+com o próprio campo. A carcaça deve permitir que a luz IR seja emitida de forma
+uniforme ao redor da bola.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="official-suppliers-for-pulsed-balls"><a class="anchor" href="#official-suppliers-for-pulsed-balls"></a><a class="link" href="#official-suppliers-for-pulsed-balls">1.4. Fornecedores oficiais para bolas pulsadas</a></h3>
+<h3 id="official-suppliers-for-pulsed-balls"><a class="anchor" href="#official-suppliers-for-pulsed-balls"></a><a class="link" href="#official-suppliers-for-pulsed-balls">1.4. Projeto de referência para bolas pulsadas</a></h3>
 <div class="paragraph">
-<p>Atualmente, há uma bola aprovada pelo Comitê da Liga Soccer:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Bola RoboCup Junior Soccer operando no MODO A (pulsada) fabricada pela EK Japan/Elekit
-(<a href="https://elekit.co.jp/en/product/RCJ-05R" class="bare">https://elekit.co.jp/en/product/RCJ-05R</a>)</p>
-</li>
-</ul>
+<p>O projeto de referência Open Source para a bola IR de tamanho de bola de golfe está
+disponível em:</p>
 </div>
 <div class="paragraph">
-<p>Note que esta bola era anteriormente chamada RCJ-05. Embora você possa não encontrar
-mais uma bola com este nome, qualquer bola IR produzida pela EK Japan/Elekit é
-considerada aprovada pelo Comitê da Liga Soccer.</p>
+<p><a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a></p>
+</div>
+<div class="paragraph">
+<p>Organizadores de torneios podem usar bolas produzidas a partir desse projeto ou bolas
+equivalentes que atendam a estas especificações.</p>
 </div>
 </div>
 </div>
@@ -594,7 +582,7 @@ considerada aprovada pelo Comitê da Liga Soccer.</p>
 <p>Para impulsionar o estado da arte na competição de Soccer, ao mesmo tempo em que tenta
 aproximar as ligas Junior e Major, o Comitê da Liga Soccer escolheu uma bola de golfe
 laranja padrão como bola "passiva". Esta é a mesma escolha feita pela Small Size
-League <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>
+League <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>
 e, como essas bolas são padronizadas, devem ser baratas e fáceis de encontrar em
 qualquer lugar do mundo.</p>
 </div>
@@ -646,15 +634,12 @@ conforme fornecidas pelos organizadores do torneio.</p>
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. A Liga Entry Level frequentemente utiliza kits de robótica Lego, FischerTechnik, Vex ou outros com os quais lidar com uma bola pequena é mais difícil, especialmente para iniciantes.
-</div>
-<div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. Veja as regras SSL em <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
+<a href="#_footnoteref_1">1</a>. Veja as regras SSL em <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-23 01:20:00 UTC
+Last updated 2026-06-23 01:44:37 UTC
 </div>
 </div>
 </body>
